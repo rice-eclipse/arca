@@ -344,23 +344,6 @@ GenerateClassCluster=0
 DocumentUniqueId=ICWVVFBM
 
 [Document19]
-DocumentPath=Test_Points_SCH.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=TTICOJFW
-
-[Document20]
 DocumentPath=Thermocouples_SCH.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -377,7 +360,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=PDYHSJHD
 
-[Document21]
+[Document20]
 DocumentPath=Top_Level_SCH.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -394,7 +377,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=JGGUNMQX
 
-[Document22]
+[Document21]
 DocumentPath=ADC_SCH.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -411,7 +394,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document23]
+[Document22]
 DocumentPath=Top_Level_SCH.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
