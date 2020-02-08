@@ -1,0 +1,63 @@
+PCAD Importer Log
+Project : IRF640.LibPkg
+
+Section : C:\Users\anyss\Documents\arca\ARCA\IRF640\IRF640.lia
+    Section : PCB Library - IRF640.PcbLib
+        Section : Load Messages
+            Warning - 1 : Skipping Token isVisible On Line 139
+            Warning - 1 : Skipping Token isVisible On Line 140
+            Warning - 1 : Skipping Token isVisible On Line 141
+            Warning - 1 : Skipping Token isVisible On Line 152
+            Warning - 1 : Skipping Token isVisible On Line 153
+            Warning - 1 : Skipping Token isVisible On Line 154
+            Warning - 1 : Skipping Token isVisible On Line 212
+            Warning - 1 : Skipping Token isVisible On Line 213
+            Warning - 1 : Skipping Token isVisible On Line 214
+            Warning - 1 : Skipping Token isVisible On Line 263
+            Warning - 1 : Skipping Token isVisible On Line 264
+            Warning - 1 : Skipping Token isVisible On Line 265
+            Warning - 1 : Skipping Token isVisible On Line 364
+            Warning - 1 : Skipping Token isVisible On Line 365
+            Warning - 1 : Skipping Token isVisible On Line 366
+            Warning - 1 : Skipping Token isVisible On Line 400
+            Warning - 1 : Skipping Token isVisible On Line 401
+            Warning - 1 : Skipping Token isVisible On Line 402
+            Warning - 1 : Skipping Token MFNS On Line 449
+            Warning - 1 : Skipping Token attachedSymbol On Line 557
+        EndSection
+
+        Section : Import Messages
+        EndSection
+    EndSection
+
+    Section : SCH Library - IRF640.SchLib
+        Section : Parsing Messages
+            Warning - 1 : Skipping Token padStyleDef On Line 9
+            Warning - 1 : Skipping Token padStyleDef On Line 21
+            Warning - 1 : Skipping Token padStyleDef On Line 33
+            Warning - 1 : Skipping Token padStyleDef On Line 44
+            Warning - 1 : Skipping Token padStyleDef On Line 56
+            Warning - 1 : Skipping Token multiLayer On Line 131
+            Warning - 1 : Skipping Token layerContents On Line 136
+            Warning - 1 : Skipping Token layerContents On Line 149
+            Warning - 1 : Skipping Token layerContents On Line 162
+            Warning - 1 : Skipping Token multiLayer On Line 195
+            Warning - 1 : Skipping Token layerContents On Line 201
+            Warning - 1 : Skipping Token layerContents On Line 205
+            Warning - 1 : Skipping Token layerContents On Line 252
+            Warning - 1 : Skipping Token layerContents On Line 256
+            Warning - 1 : Skipping Token layerContents On Line 303
+            Warning - 1 : Skipping Token layerContents On Line 307
+            Warning - 1 : Skipping Token multiLayer On Line 347
+            Warning - 1 : Skipping Token layerContents On Line 352
+            Warning - 1 : Skipping Token layerContents On Line 388
+            Warning - 1 : Skipping Token layerContents On Line 424
+            Warning - 1 : Skipping Token isVisible On Line 509
+            Warning - 1 : Skipping Token isVisible On Line 510
+            Warning - 1 : Skipping Token isVisible On Line 511
+        EndSection
+
+        Section : Generating SCH Library - IRF640.SchLib
+        EndSection
+    EndSection
+EndSection

@@ -1,0 +1,14 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 3:22:48 PM On 2/8/2020
+
+Output: Electrical Rules Check
+Type  : ERC
+From  : Project [arca.PrjPCB]
+   Generated File[arca.html]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 3:22:51 PM On 2/8/2020
