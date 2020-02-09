@@ -1,0 +1,29 @@
+PCAD Importer Log
+Project : 1101M2S3CQE2.LibPkg
+
+Section : C:\Users\anyss\Documents\arca\ARCA\1101M2S3CQE2\1101M2S3CQE2.lia
+    Section : PCB Library - 1101M2S3CQE2.PcbLib
+        Section : Load Messages
+            Warning - 1 : Skipping Token 1101M2S3CQE2 On Line 129
+            Warning - 1 : Skipping Token attachedSymbol On Line 195
+        EndSection
+
+        Section : Import Messages
+        EndSection
+    EndSection
+
+    Section : SCH Library - 1101M2S3CQE2.SchLib
+        Section : Parsing Messages
+            Warning - 1 : Skipping Token padStyleDef On Line 9
+            Warning - 1 : Skipping Token padStyleDef On Line 21
+            Warning - 1 : Skipping Token multiLayer On Line 96
+            Warning - 1 : Skipping Token layerContents On Line 101
+            Warning - 1 : Skipping Token layerContents On Line 105
+            Warning - 1 : Skipping Token layerContents On Line 109
+            Warning - 1 : Skipping Token layerContents On Line 115
+        EndSection
+
+        Section : Generating SCH Library - 1101M2S3CQE2.SchLib
+        EndSection
+    EndSection
+EndSection
