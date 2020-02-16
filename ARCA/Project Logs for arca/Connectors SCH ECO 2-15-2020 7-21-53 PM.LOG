@@ -1,0 +1,11 @@
+Change Component Designator: Old Designator=ADC2_BREAK New Designator=ADC?
+Change Component Designator: Old Designator=ADC3_BREAK New Designator=ADC?
+Change Component Designator: Old Designator=LC1 New Designator=LC?
+Change Component Designator: Old Designator=LC2_LC3 New Designator=LC?
+Change Component Designator: Old Designator=LC4_LC5 New Designator=LC?
+Change Component Designator: Old Designator=PT1_PT2 New Designator=PT?
+Change Component Designator: Old Designator=PT3_PT4 New Designator=PT?
+Change Component Designator: Old Designator=PWR_CON New Designator=PWR_CON?
+Change Component Designator: Old Designator=RELAY_CON New Designator=RELAY_CON?
+Change Component Designator: Old Designator=SOLENOID_NEGATIVES New Designator=SOLENOID_NEGATIVES?
+Change Component Designator: Old Designator=TC1_TC2_TC3_TC$ New Designator=TC?
