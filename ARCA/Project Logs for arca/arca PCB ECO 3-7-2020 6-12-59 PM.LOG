@@ -1,0 +1,3 @@
+Change Component Designator: OldDesignator=PWR_CON1 NewDesignator=Power
+Change Component Designator: OldDesignator=RELAY_CON1 NewDesignator=Drivers_2
+Change Component Designator: OldDesignator=SOLENOID_NEGATIVES1 NewDesignator=Drivers_1

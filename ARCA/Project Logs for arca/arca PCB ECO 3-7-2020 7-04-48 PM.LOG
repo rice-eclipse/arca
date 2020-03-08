@@ -1,0 +1,11 @@
+Change Component Designator: OldDesignator=3V3_LED NewDesignator=3V3
+Change Component Designator: OldDesignator=5V_LED NewDesignator=5V
+Change Component Designator: OldDesignator=10V_LED NewDesignator=10V
+Change Component Designator: OldDesignator=12V_LED NewDesignator=12V
+Change Net Name : Old Net Name=Net3V3_LED_K New Net Name=Net3V3_K
+Change Net Name : Old Net Name=Net5V_LED_K New Net Name=Net5V_K
+Change Net Name : Old Net Name=Net10V_LED_K New Net Name=Net10V_K
+Change Net Name : Old Net Name=Net12V_LED_K New Net Name=Net12V_K
+Added Pin To Net: NetName=Net12V_A Pin=12V-A
+Added Pin To Net: NetName=Net12V_A Pin=VR1-1
+Added Net: Name=Net12V_A

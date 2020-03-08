@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=+12V Pin=Power-1
+Removed Pin From Net: NetName=+3V3 Pin=Power-2
+Removed Pin From Net: NetName=+5V Pin=Power-3
+Added Component: Designator=GND(4PinCanConnector)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=GND Pin=GND-1
+Added Pin To Net: NetName=GND Pin=GND-2
+Added Pin To Net: NetName=GND Pin=GND-3
+Added Pin To Net: NetName=+10V Pin=Power-1
+Added Pin To Net: NetName=+5V Pin=Power-2
+Added Pin To Net: NetName=+3V3 Pin=Power-3
+Added Member To Class: ClassName=Connectors Member=Component GND 1991118

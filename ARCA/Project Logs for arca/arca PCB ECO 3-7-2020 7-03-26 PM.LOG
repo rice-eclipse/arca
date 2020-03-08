@@ -1,0 +1,29 @@
+Removed Pin From Net: NetName=GND Pin=LED2-K
+Removed Pin From Net: NetName=+12V Pin=LED3-A
+Removed Pin From Net: NetName=+10V Pin=R39-2
+Removed Pin From Net: NetName=+12V Pin=VR1-1
+Removed Member From Class: ClassName=Power Member=R39
+Change Component Designator: OldDesignator=LED1 NewDesignator=5V_LED
+Change Component Designator: OldDesignator=LED2 NewDesignator=10V_LED
+Change Component Designator: OldDesignator=LED3 NewDesignator=12V_LED
+Change Component Designator: OldDesignator=LED4 NewDesignator=3V3_LED
+Added Component: Designator=R?(RESC_0805_2012)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DeviceName"; Value = "R0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DeviceSetName"; Value = "R-US_"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "GateName_1"; Value = "G$1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LibraryName"; Value = "resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SymbolName_1"; Value = "R-US"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+10V Pin=10V_LED-A
+Added Pin To Net: NetName=GND Pin=R?-1
+Change Net Name : Old Net Name=NetLED1_K New Net Name=Net5V_LED_K
+Change Net Name : Old Net Name=NetLED3_K New Net Name=Net12V_LED_K
+Change Net Name : Old Net Name=NetLED4_K New Net Name=Net3V3_LED_K
+Added Pin To Net: NetName=Net10V_LED_K Pin=10V_LED-K
+Added Pin To Net: NetName=Net10V_LED_K Pin=R?-2
+Added Net: Name=Net10V_LED_K
+Added Pin To Net: NetName=Net12V_LED_A Pin=12V_LED-A
+Added Pin To Net: NetName=Net12V_LED_A Pin=VR1-1
+Added Net: Name=Net12V_LED_A
+Added Member To Class: ClassName=Power Member=Component R? 470
+Added Room: Name=PI_SCH

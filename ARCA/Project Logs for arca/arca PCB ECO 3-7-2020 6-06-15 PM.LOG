@@ -1,0 +1,12 @@
+Added Component: Designator=PWR_CON1(4PinCanConnector)
+Add component. Clean all parameters for all variants
+Added Component: Designator=SOLENOID_NEGATIVES1(4PinCanConnector)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=+12V Pin=PWR_CON1-1
+Added Pin To Net: NetName=+3V3 Pin=PWR_CON1-2
+Added Pin To Net: NetName=+5V Pin=PWR_CON1-3
+Added Pin To Net: NetName=DRIVER_2 Pin=SOLENOID_NEGATIVES1-1
+Added Pin To Net: NetName=DRIVER_3 Pin=SOLENOID_NEGATIVES1-2
+Added Pin To Net: NetName=DRIVER_4 Pin=SOLENOID_NEGATIVES1-3
+Added Member To Class: ClassName=Connectors Member=Component PWR_CON1 1991118
+Added Member To Class: ClassName=Connectors Member=Component SOLENOID_NEGATIVES1 1991118
