@@ -1,0 +1,54 @@
+Removed Pin From Net: NetName=NetC16_2 Pin=LC4-2
+Removed Pin From Net: NetName=NetC17_2 Pin=LC5-2
+Removed Pin From Net: NetName=NetC22_2 Pin=LC6-2
+Removed Pin From Net: NetName=NetC24_2 Pin=LC7-2
+Removed Pin From Net: NetName=NetC28_2 Pin=LC8-2
+Removed Member From Class: ClassName=LC_to_ADC Member=LC4
+Removed Member From Class: ClassName=LC_to_ADC Member=LC5
+Removed Member From Class: ClassName=LC_to_ADC Member=LC6
+Removed Member From Class: ClassName=LC_to_ADC Member=LC7
+Removed Member From Class: ClassName=LC_to_ADC Member=LC8
+Change Component Footprint: Designator=C27 Old Footprint=C0805 New Footprint=CAPCP2012X06N
+Change Component Footprint: Designator=C42 Old Footprint=C0805 New Footprint=CAPCP2012X06N
+Change Component Footprint: Designator=C43 Old Footprint=C0805 New Footprint=CAPCP2012X06N
+Change Component Footprint: Designator=C44 Old Footprint=C0805 New Footprint=CAPCP2012X06N
+Change Component Footprint: Designator=C45 Old Footprint=C0805 New Footprint=CAPCP2012X06N
+Change Component Footprint: Designator=R18 Old Footprint=R0805 New Footprint=RESC_0805_2012
+Change Component Footprint: Designator=R19 Old Footprint=R0805 New Footprint=RESC_0805_2012
+Change Component Footprint: Designator=R20 Old Footprint=R0805 New Footprint=RESC_0805_2012
+Change Component Footprint: Designator=R24 Old Footprint=R0805 New Footprint=RESC_0805_2012
+Change Component Footprint: Designator=R42 Old Footprint=R0805 New Footprint=RESC_0805_2012
+Change Component Footprint: Designator=R43 Old Footprint=R0805 New Footprint=RESC_0805_2012
+Change Component Footprint: Designator=R44 Old Footprint=R0805 New Footprint=RESC_0805_2012
+Change Component Footprint: Designator=R45 Old Footprint=R0805 New Footprint=RESC_0805_2012
+Change Component Footprint: Designator=R46 Old Footprint=R0805 New Footprint=RESC_0805_2012
+Change Component Footprint: Designator=R47 Old Footprint=R0805 New Footprint=RESC_0805_2012
+Change Component Footprint: Designator=R48 Old Footprint=R0805 New Footprint=RESC_0805_2012
+Change Component Footprint: Designator=R49 Old Footprint=R0805 New Footprint=RESC_0805_2012
+Change Component Footprint: Designator=R50 Old Footprint=R0805 New Footprint=RESC_0805_2012
+Change Component Footprint: Designator=R51 Old Footprint=R0805 New Footprint=RESC_0805_2012
+Change Component Footprint: Designator=R52 Old Footprint=R0805 New Footprint=RESC_0805_2012
+Change Component Footprint: Designator=R53 Old Footprint=R0805 New Footprint=RESC_0805_2012
+Change Component Footprint: Designator=R54 Old Footprint=R0805 New Footprint=RESC_0805_2012
+Change Component Footprint: Designator=R55 Old Footprint=R0805 New Footprint=RESC_0805_2012
+Change Component Footprint: Designator=R56 Old Footprint=R0805 New Footprint=RESC_0805_2012
+Change Component Footprint: Designator=R57 Old Footprint=R0805 New Footprint=RESC_0805_2012
+Change Component Footprint: Designator=R58 Old Footprint=R0805 New Footprint=RESC_0805_2012
+Change Component Footprint: Designator=R59 Old Footprint=R0805 New Footprint=RESC_0805_2012
+Change Component Footprint: Designator=R60 Old Footprint=R0805 New Footprint=RESC_0805_2012
+Change Component Footprint: Designator=R61 Old Footprint=R0805 New Footprint=RESC_0805_2012
+Added Pin To Net: NetName=NetC17_2 Pin=ADC1-1
+Added Pin To Net: NetName=NetC22_2 Pin=ADC1-2
+Added Pin To Net: NetName=NetC24_2 Pin=ADC1-3
+Added Pin To Net: NetName=NetC28_2 Pin=ADC1-4
+Change Net Name : Old Net Name=NetC16_2 New Net Name=LC1
+Change Net Name : Old Net Name=NetC17_2 New Net Name=LC2
+Change Net Name : Old Net Name=NetC22_2 New Net Name=LC3
+Change Net Name : Old Net Name=NetC24_2 New Net Name=LC4
+Change Net Name : Old Net Name=NetC28_2 New Net Name=LC5
+Added Room: Name=ADC_SCH
+Added Room: Name=Connectors
+Added Room: Name=drivers_SCH
+Added Room: Name=Load_Cells_SCH
+Added Room: Name=PI_SCH
+Added Room: Name=Power

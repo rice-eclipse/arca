@@ -1,0 +1,35 @@
+Removed Pin From Net: NetName=ADC_PWR Pin=ADC1-15
+Removed Pin From Net: NetName=ADC_PWR Pin=ADC2-15
+Removed Pin From Net: NetName=ADC_PWR Pin=ADC3-15
+Removed Pin From Net: NetName=ADC_PWR Pin=C1-2
+Removed Pin From Net: NetName=ADC_PWR Pin=C2-1
+Removed Pin From Net: NetName=ADC_PWR Pin=C6-2
+Removed Pin From Net: NetName=ADC_PWR Pin=C7-1
+Removed Pin From Net: NetName=ADC_PWR Pin=C11-2
+Removed Pin From Net: NetName=ADC_PWR Pin=C12-1
+Removed Pin From Net: NetName=+3V3 Pin=JP1-1
+Removed Pin From Net: NetName=ADC_PWR Pin=JP1-2
+Removed Pin From Net: NetName=+10V Pin=Power-1
+Removed Pin From Net: NetName=+5V Pin=Power-2
+Removed Member From Class: ClassName=ADC_SCH Member=JP1
+Added Component: Designator=VREF_SW(HDR1X3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+3V3 Pin=ADC1-15
+Added Pin To Net: NetName=+3V3 Pin=ADC2-15
+Added Pin To Net: NetName=+3V3 Pin=ADC3-15
+Added Pin To Net: NetName=+3V3 Pin=C1-2
+Added Pin To Net: NetName=+3V3 Pin=C2-1
+Added Pin To Net: NetName=+3V3 Pin=C6-2
+Added Pin To Net: NetName=+3V3 Pin=C7-1
+Added Pin To Net: NetName=+3V3 Pin=C11-2
+Added Pin To Net: NetName=+3V3 Pin=C12-1
+Added Pin To Net: NetName=+12V Pin=Power-1
+Added Pin To Net: NetName=+3V3 Pin=Power-2
+Added Pin To Net: NetName=+3V3 Pin=VREF_SW-1
+Added Pin To Net: NetName=ADC_PWR Pin=VREF_SW-2
+Added Pin To Net: NetName=+5V Pin=VREF_SW-3
+Change Net Name : Old Net Name=ADC_PWR New Net Name=ADC_VREF
+Added Member To Class: ClassName=ADC_SCH Member=Component VREF_SW Header 3
