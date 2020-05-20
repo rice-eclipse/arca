@@ -1,0 +1,63 @@
+Added Component: Designator=ADC1(SOP64P600X175-16N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "LTC1867"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com/ProductDetail/Analog-Devices-Linear-Technology/LTC1867CGNPBF?qs=sGAEpiMZZMvTvDTV69d2QmBn0BVuX5FEarpcve2605Y%3D"; VariantName = "[No Variations]"
+Added Component: Designator=ADC2(SOP64P600X175-16N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "LTC1867"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com/ProductDetail/Analog-Devices-Linear-Technology/LTC1867CGNPBF?qs=sGAEpiMZZMvTvDTV69d2QmBn0BVuX5FEarpcve2605Y%3D"; VariantName = "[No Variations]"
+Added Component: Designator=ADC3(SOP64P600X175-16N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "LTC1867"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com/ProductDetail/Analog-Devices-Linear-Technology/LTC1867CGNPBF?qs=sGAEpiMZZMvTvDTV69d2QmBn0BVuX5FEarpcve2605Y%3D"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=LC1 Pin=ADC1-1
+Added Pin To Net: NetName=LC2 Pin=ADC1-2
+Added Pin To Net: NetName=LC3 Pin=ADC1-3
+Added Pin To Net: NetName=LC4 Pin=ADC1-4
+Added Pin To Net: NetName=LC5 Pin=ADC1-5
+Added Pin To Net: NetName=ADC1_A5 Pin=ADC1-6
+Added Pin To Net: NetName=ADC1_A6 Pin=ADC1-7
+Added Pin To Net: NetName=ADC1_A7 Pin=ADC1-8
+Added Pin To Net: NetName=NetADC1_9 Pin=ADC1-9
+Added Pin To Net: NetName=ADC_VREF Pin=ADC1-10
+Added Pin To Net: NetName=ADC1_CS Pin=ADC1-11
+Added Pin To Net: NetName=SCK Pin=ADC1-12
+Added Pin To Net: NetName=MISO Pin=ADC1-13
+Added Pin To Net: NetName=MOSI Pin=ADC1-14
+Added Pin To Net: NetName=GND Pin=ADC1-15
+Added Pin To Net: NetName=+3V3 Pin=ADC1-16
+Added Pin To Net: NetName=PT1 Pin=ADC2-1
+Added Pin To Net: NetName=PT2 Pin=ADC2-2
+Added Pin To Net: NetName=PT3 Pin=ADC2-3
+Added Pin To Net: NetName=PT4 Pin=ADC2-4
+Added Pin To Net: NetName=ADC2_A4 Pin=ADC2-5
+Added Pin To Net: NetName=ADC2_A5 Pin=ADC2-6
+Added Pin To Net: NetName=ADC2_A6 Pin=ADC2-7
+Added Pin To Net: NetName=ADC2_A7 Pin=ADC2-8
+Added Pin To Net: NetName=NetADC2_9 Pin=ADC2-9
+Added Pin To Net: NetName=ADC_VREF Pin=ADC2-10
+Added Pin To Net: NetName=ADC2_CS Pin=ADC2-11
+Added Pin To Net: NetName=SCK Pin=ADC2-12
+Added Pin To Net: NetName=MISO Pin=ADC2-13
+Added Pin To Net: NetName=MOSI Pin=ADC2-14
+Added Pin To Net: NetName=GND Pin=ADC2-15
+Added Pin To Net: NetName=+3V3 Pin=ADC2-16
+Added Pin To Net: NetName=TC1 Pin=ADC3-1
+Added Pin To Net: NetName=TC2 Pin=ADC3-2
+Added Pin To Net: NetName=TC3 Pin=ADC3-3
+Added Pin To Net: NetName=TC4 Pin=ADC3-4
+Added Pin To Net: NetName=ADC3_A4 Pin=ADC3-5
+Added Pin To Net: NetName=ADC3_A5 Pin=ADC3-6
+Added Pin To Net: NetName=ADC3_A6 Pin=ADC3-7
+Added Pin To Net: NetName=ADC3_A7 Pin=ADC3-8
+Added Pin To Net: NetName=NetADC3_9 Pin=ADC3-9
+Added Pin To Net: NetName=ADC_VREF Pin=ADC3-10
+Added Pin To Net: NetName=ADC3_CS Pin=ADC3-11
+Added Pin To Net: NetName=SCK Pin=ADC3-12
+Added Pin To Net: NetName=MISO Pin=ADC3-13
+Added Pin To Net: NetName=MOSI Pin=ADC3-14
+Added Pin To Net: NetName=GND Pin=ADC3-15
+Added Pin To Net: NetName=+3V3 Pin=ADC3-16
+Added Member To Class: ClassName=ADC_SCH Member=Component ADC1 8 CH ADC
+Added Member To Class: ClassName=ADC_SCH Member=Component ADC2 8 CH ADC
+Added Member To Class: ClassName=ADC_SCH Member=Component ADC3 8 CH ADC
