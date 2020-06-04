@@ -300,6 +300,10 @@ DItemRevisionGUID=
 DocumentPath=Project Outputs for Free Documents\ERC\arca.html
 DItemRevisionGUID=
 
+[GeneratedDocument3]
+DocumentPath=Project Outputs for arca\Design Rule Check - arca.html
+DItemRevisionGUID=
+
 [Configuration1]
 Name=Sources
 ParameterCount=0
