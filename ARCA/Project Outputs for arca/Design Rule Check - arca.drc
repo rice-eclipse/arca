@@ -1,0 +1,164 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\anyss\Documents\arca\ARCA\arca.PcbDoc
+Date     : 6/11/2020
+Time     : 5:55:06 PM
+
+Processing Rule : Clearance Constraint (Gap=5mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+   Violation between Short-Circuit Constraint: Between Pad PCB?-1(9980mil,-320mil) on Multi-Layer And Region (0 hole(s)) Bottom Layer Location : [X = 12445mil][Y = 4375mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-1(9980mil,-320mil) on Multi-Layer And Region (0 hole(s)) Multi-Layer Location : [X = 12445mil][Y = 4375mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-1(9980mil,-320mil) on Multi-Layer And Region (0 hole(s)) Top Layer Location : [X = 12445mil][Y = 4375mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-10(9880mil,-720mil) on Multi-Layer And Region (0 hole(s)) Bottom Layer Location : [X = 12345mil][Y = 3975mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-10(9880mil,-720mil) on Multi-Layer And Region (0 hole(s)) Multi-Layer Location : [X = 12345mil][Y = 3975mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-10(9880mil,-720mil) on Multi-Layer And Region (0 hole(s)) Top Layer Location : [X = 12345mil][Y = 3975mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-12(9880mil,-820mil) on Multi-Layer And Region (0 hole(s)) Bottom Layer Location : [X = 12345mil][Y = 3875mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-12(9880mil,-820mil) on Multi-Layer And Region (0 hole(s)) Multi-Layer Location : [X = 12345mil][Y = 3875mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-12(9880mil,-820mil) on Multi-Layer And Region (0 hole(s)) Top Layer Location : [X = 12345mil][Y = 3875mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-16(9880mil,-1020mil) on Multi-Layer And Region (0 hole(s)) Bottom Layer Location : [X = 12345mil][Y = 3675mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-16(9880mil,-1020mil) on Multi-Layer And Region (0 hole(s)) Multi-Layer Location : [X = 12345mil][Y = 3675mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-16(9880mil,-1020mil) on Multi-Layer And Region (0 hole(s)) Top Layer Location : [X = 12345mil][Y = 3675mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-17(9980mil,-1120mil) on Multi-Layer And Region (0 hole(s)) Bottom Layer Location : [X = 12445mil][Y = 3575mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-17(9980mil,-1120mil) on Multi-Layer And Region (0 hole(s)) Multi-Layer Location : [X = 12445mil][Y = 3575mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-17(9980mil,-1120mil) on Multi-Layer And Region (0 hole(s)) Top Layer Location : [X = 12445mil][Y = 3575mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-2(9880mil,-320mil) on Multi-Layer And Region (0 hole(s)) Bottom Layer Location : [X = 12345mil][Y = 4375mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-2(9880mil,-320mil) on Multi-Layer And Region (0 hole(s)) Multi-Layer Location : [X = 12345mil][Y = 4375mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-2(9880mil,-320mil) on Multi-Layer And Region (0 hole(s)) Top Layer Location : [X = 12345mil][Y = 4375mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-27(9980mil,-1620mil) on Multi-Layer And Region (0 hole(s)) Bottom Layer Location : [X = 12445mil][Y = 3075mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-27(9980mil,-1620mil) on Multi-Layer And Region (0 hole(s)) Multi-Layer Location : [X = 12445mil][Y = 3075mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-27(9980mil,-1620mil) on Multi-Layer And Region (0 hole(s)) Top Layer Location : [X = 12445mil][Y = 3075mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-28(9880mil,-1620mil) on Multi-Layer And Region (0 hole(s)) Bottom Layer Location : [X = 12345mil][Y = 3075mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-28(9880mil,-1620mil) on Multi-Layer And Region (0 hole(s)) Multi-Layer Location : [X = 12345mil][Y = 3075mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-28(9880mil,-1620mil) on Multi-Layer And Region (0 hole(s)) Top Layer Location : [X = 12345mil][Y = 3075mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-29(9980mil,-1720mil) on Multi-Layer And Region (0 hole(s)) Bottom Layer Location : [X = 12445mil][Y = 2975mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-29(9980mil,-1720mil) on Multi-Layer And Region (0 hole(s)) Multi-Layer Location : [X = 12445mil][Y = 2975mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-29(9980mil,-1720mil) on Multi-Layer And Region (0 hole(s)) Top Layer Location : [X = 12445mil][Y = 2975mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-3(9980mil,-420mil) on Multi-Layer And Region (0 hole(s)) Bottom Layer Location : [X = 12445mil][Y = 4275mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-3(9980mil,-420mil) on Multi-Layer And Region (0 hole(s)) Multi-Layer Location : [X = 12445mil][Y = 4275mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-3(9980mil,-420mil) on Multi-Layer And Region (0 hole(s)) Top Layer Location : [X = 12445mil][Y = 4275mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-31(9980mil,-1820mil) on Multi-Layer And Region (0 hole(s)) Bottom Layer Location : [X = 12445mil][Y = 2875mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-31(9980mil,-1820mil) on Multi-Layer And Region (0 hole(s)) Multi-Layer Location : [X = 12445mil][Y = 2875mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-31(9980mil,-1820mil) on Multi-Layer And Region (0 hole(s)) Top Layer Location : [X = 12445mil][Y = 2875mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-35(9980mil,-2020mil) on Multi-Layer And Region (0 hole(s)) Bottom Layer Location : [X = 12445mil][Y = 2675mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-35(9980mil,-2020mil) on Multi-Layer And Region (0 hole(s)) Multi-Layer Location : [X = 12445mil][Y = 2675mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-35(9980mil,-2020mil) on Multi-Layer And Region (0 hole(s)) Top Layer Location : [X = 12445mil][Y = 2675mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-36(9880mil,-2020mil) on Multi-Layer And Region (0 hole(s)) Bottom Layer Location : [X = 12345mil][Y = 2675mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-36(9880mil,-2020mil) on Multi-Layer And Region (0 hole(s)) Multi-Layer Location : [X = 12345mil][Y = 2675mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-36(9880mil,-2020mil) on Multi-Layer And Region (0 hole(s)) Top Layer Location : [X = 12345mil][Y = 2675mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-37(9980mil,-2120mil) on Multi-Layer And Region (0 hole(s)) Bottom Layer Location : [X = 12445mil][Y = 2575mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-37(9980mil,-2120mil) on Multi-Layer And Region (0 hole(s)) Multi-Layer Location : [X = 12445mil][Y = 2575mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-37(9980mil,-2120mil) on Multi-Layer And Region (0 hole(s)) Top Layer Location : [X = 12445mil][Y = 2575mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-38(9880mil,-2120mil) on Multi-Layer And Region (0 hole(s)) Bottom Layer Location : [X = 12345mil][Y = 2575mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-38(9880mil,-2120mil) on Multi-Layer And Region (0 hole(s)) Multi-Layer Location : [X = 12345mil][Y = 2575mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-38(9880mil,-2120mil) on Multi-Layer And Region (0 hole(s)) Top Layer Location : [X = 12345mil][Y = 2575mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-39(9980mil,-2220mil) on Multi-Layer And Region (0 hole(s)) Bottom Layer Location : [X = 12445mil][Y = 2475mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-39(9980mil,-2220mil) on Multi-Layer And Region (0 hole(s)) Multi-Layer Location : [X = 12445mil][Y = 2475mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-39(9980mil,-2220mil) on Multi-Layer And Region (0 hole(s)) Top Layer Location : [X = 12445mil][Y = 2475mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-4(9880mil,-420mil) on Multi-Layer And Region (0 hole(s)) Bottom Layer Location : [X = 12345mil][Y = 4275mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-4(9880mil,-420mil) on Multi-Layer And Region (0 hole(s)) Multi-Layer Location : [X = 12345mil][Y = 4275mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-4(9880mil,-420mil) on Multi-Layer And Region (0 hole(s)) Top Layer Location : [X = 12345mil][Y = 4275mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-40(9880mil,-2220mil) on Multi-Layer And Region (0 hole(s)) Bottom Layer Location : [X = 12345mil][Y = 2475mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-40(9880mil,-2220mil) on Multi-Layer And Region (0 hole(s)) Multi-Layer Location : [X = 12345mil][Y = 2475mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-40(9880mil,-2220mil) on Multi-Layer And Region (0 hole(s)) Top Layer Location : [X = 12345mil][Y = 2475mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-5(9980mil,-520mil) on Multi-Layer And Region (0 hole(s)) Bottom Layer Location : [X = 12445mil][Y = 4175mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-5(9980mil,-520mil) on Multi-Layer And Region (0 hole(s)) Multi-Layer Location : [X = 12445mil][Y = 4175mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-5(9980mil,-520mil) on Multi-Layer And Region (0 hole(s)) Top Layer Location : [X = 12445mil][Y = 4175mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-7(9980mil,-620mil) on Multi-Layer And Region (0 hole(s)) Bottom Layer Location : [X = 12445mil][Y = 4075mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-7(9980mil,-620mil) on Multi-Layer And Region (0 hole(s)) Multi-Layer Location : [X = 12445mil][Y = 4075mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-7(9980mil,-620mil) on Multi-Layer And Region (0 hole(s)) Top Layer Location : [X = 12445mil][Y = 4075mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-8(9880mil,-620mil) on Multi-Layer And Region (0 hole(s)) Bottom Layer Location : [X = 12345mil][Y = 4075mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-8(9880mil,-620mil) on Multi-Layer And Region (0 hole(s)) Multi-Layer Location : [X = 12345mil][Y = 4075mil]
+   Violation between Short-Circuit Constraint: Between Pad PCB?-8(9880mil,-620mil) on Multi-Layer And Region (0 hole(s)) Top Layer Location : [X = 12345mil][Y = 4075mil]
+Rule Violations :63
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+   Violation between Un-Routed Net Constraint: Net MOSI Between Pad ADC1-14(7627.716mil,-1945mil) on Top Layer And Track (8282.5mil,-1942.5mil)(8452.716mil,-1942.5mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net MISO Between Pad ADC2-13(8452.716mil,-1917.5mil) on Top Layer And Track (9207.034mil,-1859.534mil)(9265mil,-1917.5mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net MOSI Between Pad ADC2-14(8452.716mil,-1942.5mil) on Top Layer And Track (9226.358mil,-1941.358mil)(9321.574mil,-1941.358mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net ADC2_CS Between Pad R2-1(8201.338mil,-1730mil) on Top Layer And Track (8250mil,-1730mil)(8355mil,-1625mil) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net PT4 Between Track (6839.212mil,-2122.402mil)(7012.402mil,-2122.402mil) on Top Layer And Track (7012.402mil,-2122.402mil)(7205mil,-2315mil) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net ADC1_CS Between Track (7331.338mil,-1763.78mil)(7346.686mil,-1748.432mil) on Top Layer And Track (7464.87mil,-1759.87mil)(7619.74mil,-1605mil) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net ADC_VREF Between Track (8068.662mil,-1795mil)(8126.162mil,-1737.5mil) on Top Layer And Track (7443.432mil,-1795mil)(8068.662mil,-1795mil) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net MOSI Between Track (7450mil,-1945mil)(7627.716mil,-1945mil) on Top Layer And Track (7450mil,-1945mil)(7480mil,-1975mil) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net PT1 Between Track (8286.568mil,-2460mil)(8346.568mil,-2400mil) on Bottom Layer And Track (8350mil,-2400mil)(8667.284mil,-2082.716mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net ADC3_CS Between Track (9259.174mil,-1835.666mil)(9259.174mil,-1753.78mil) on Top Layer And Track (9259.174mil,-1753.78mil)(9259.174mil,-1750.826mil) on Bottom Layer 
+Rule Violations :10
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=5mil) (Max=1000mil) (Preferred=5mil) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Direct Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (InPadClass('PowerPads'))
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=11.811mil) (Conductor Width=5mil) (Air Gap=5mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=3mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=11.811mil) (Max=248.031mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=9.842mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=5mil) (IsPad),(All)
+   Violation between Silk To Solder Mask Clearance Constraint: (2.208mil < 5mil) Between Pad IC13-2(4770.788mil,-2980mil) on Top Layer And Text "R60" (4759mil,-3059mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [2.208mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 5mil) Between Pad IC13-3(4770.788mil,-3017.402mil) on Top Layer And Text "R60" (4759mil,-3059mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 5mil) Between Pad IC13-4(4869.212mil,-3017.402mil) on Top Layer And Text "R60" (4759mil,-3059mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 5mil) Between Pad PCB?-PE_TR(9930mil,-2411.732mil) on Multi-Layer And Text "39" (10057.953mil,-2234.567mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]
+Rule Violations :4
+
+Processing Rule : Silk to Silk (Clearance=0mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+   Violation between Net Antennae: Track (6839.212mil,-2122.402mil)(7012.402mil,-2122.402mil) on Top Layer 
+   Violation between Net Antennae: Track (7012.402mil,-2122.402mil)(7205mil,-2315mil) on Bottom Layer 
+   Violation between Net Antennae: Track (7450mil,-1945mil)(7480mil,-1975mil) on Bottom Layer 
+   Violation between Net Antennae: Track (7450mil,-1945mil)(7627.716mil,-1945mil) on Top Layer 
+   Violation between Net Antennae: Track (7464.87mil,-1759.87mil)(7619.74mil,-1605mil) on Bottom Layer 
+   Violation between Net Antennae: Track (8068.662mil,-1795mil)(8126.162mil,-1737.5mil) on Top Layer 
+   Violation between Net Antennae: Track (8250mil,-1730mil)(8355mil,-1625mil) on Bottom Layer 
+   Violation between Net Antennae: Track (8282.5mil,-1942.5mil)(8452.716mil,-1942.5mil) on Top Layer 
+   Violation between Net Antennae: Track (8282.5mil,-1942.5mil)(9222.048mil,-1937.048mil) on Bottom Layer 
+   Violation between Net Antennae: Track (8286.568mil,-2460mil)(8346.568mil,-2400mil) on Bottom Layer 
+   Violation between Net Antennae: Track (8350mil,-2400mil)(8667.284mil,-2082.716mil) on Top Layer 
+   Violation between Net Antennae: Track (9207.034mil,-1859.534mil)(9265mil,-1917.5mil) on Top Layer 
+   Violation between Net Antennae: Track (9226.358mil,-1941.358mil)(9321.574mil,-1941.358mil) on Top Layer 
+   Violation between Net Antennae: Track (9259.174mil,-1750.826mil)(9345mil,-1665mil) on Bottom Layer 
+   Violation between Net Antennae: Track (9259.174mil,-1835.666mil)(9259.174mil,-1753.78mil) on Top Layer 
+Rule Violations :15
+
+Processing Rule : Board Clearance Constraint (Gap=0mil) (All)
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Arc (11878.819mil,-108.583mil) on Bottom Overlay And Board Edge 
+   Violation between Board Outline Clearance(Outline Edge): (0.572mil < 7.874mil) Between Arc (11878.819mil,-3218.819mil) on Bottom Overlay And Board Edge 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Arc (9910.315mil,-108.583mil) on Bottom Overlay And Board Edge 
+   Violation between Board Outline Clearance(Outline Edge): (7.028mil < 7.874mil) Between Arc (9910.315mil,-3218.819mil) on Bottom Overlay And Board Edge 
+   Violation between Board Outline Clearance(Outline Edge): (6.221mil < 7.874mil) Between Board Edge And Pad PCB?-PE_BL(11859.134mil,-128.268mil) on Multi-Layer 
+   Violation between Board Outline Clearance(Outline Edge): (6.221mil < 7.874mil) Between Board Edge And Pad PCB?-PE_TL(9930mil,-128.268mil) on Multi-Layer 
+   Violation between Board Outline Clearance(Outline Edge): (0mil < 7.874mil) Between Board Edge And Polygon Region (93 hole(s)) Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Text "PCB?" (11989mil,42mil) on Bottom Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (0mil,0mil)(12000mil,0mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (0mil,-3346.456mil)(0mil,0mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (0mil,-3346.456mil)(12000mil,-3346.456mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (0.57mil < 7.874mil) Between Board Edge And Track (11996.93mil,-3218.818mil)(11996.93mil,-108.582mil) on Bottom Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (12000mil,-3346.456mil)(12000mil,0mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (7.027mil < 7.874mil) Between Board Edge And Track (9910.314mil,-3336.93mil)(11878.818mil,-3336.93mil) on Bottom Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 7.874mil) Between Board Edge And Track (9910.314mil,9.528mil)(11878.818mil,9.528mil) on Bottom Overlay 
+Rule Violations :15
+
+Processing Rule : Height Constraint (Min=0mil) (Max=71497.938mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+
+Violations Detected : 107
+Waived Violations : 0
+Time Elapsed        : 00:00:02
