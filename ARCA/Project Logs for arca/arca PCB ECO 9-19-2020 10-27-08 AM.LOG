@@ -1,0 +1,41 @@
+Removed Pin From Net: NetName=GND Pin=PCB?-PE_BL
+Removed Pin From Net: NetName=GND Pin=PCB?-PE_BR
+Removed Pin From Net: NetName=GND Pin=PCB?-PE_TL
+Removed Pin From Net: NetName=GND Pin=PCB?-PE_TR
+Removed Member From Class: ClassName=Connectors Member=ADC2
+Removed Member From Class: ClassName=Connectors Member=ADC3
+Change Component Designator: OldDesignator=ADC4 NewDesignator=ADC5
+Change Component Designator: OldDesignator=ADC5 NewDesignator=ADC4
+Added Component: Designator=*(HDR2X20)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=GND Pin=*-6
+Added Pin To Net: NetName=GND Pin=*-9
+Added Pin To Net: NetName=DRIVER_1 Pin=*-11
+Added Pin To Net: NetName=DRIVER_2 Pin=*-13
+Added Pin To Net: NetName=GND Pin=*-14
+Added Pin To Net: NetName=DRIVER_3 Pin=*-15
+Added Pin To Net: NetName=DRIVER_4 Pin=*-18
+Added Pin To Net: NetName=MOSI Pin=*-19
+Added Pin To Net: NetName=GND Pin=*-20
+Added Pin To Net: NetName=MISO Pin=*-21
+Added Pin To Net: NetName=ADC1_CS Pin=*-22
+Added Pin To Net: NetName=SCK Pin=*-23
+Added Pin To Net: NetName=ADC2_CS Pin=*-24
+Added Pin To Net: NetName=GND Pin=*-25
+Added Pin To Net: NetName=ADC3_CS Pin=*-26
+Added Pin To Net: NetName=GND Pin=*-30
+Added Pin To Net: NetName=DRIVER_6 Pin=*-32
+Added Pin To Net: NetName=DRIVER_5 Pin=*-33
+Added Pin To Net: NetName=GND Pin=*-34
+Added Member To Class: ClassName=PI_SCH Member=Component * raspberry_pi
+Added Member To Class: ClassName=Connectors Member=Component ADC4 PTSA 1,5/ 4-3,5-Z - 1985218
+Added Member To Class: ClassName=Connectors Member=Component ADC5 PTSA 1,5/ 4-3,5-Z - 1985218
+Added Room: Name=ADC_SCH
+Added Room: Name=Connectors
+Added Room: Name=drivers_SCH
+Added Room: Name=LC_to_ADC
+Added Room: Name=Load_Cells_SCH
+Added Room: Name=PI_SCH
+Added Room: Name=Power
+Added Room: Name=Pressure_Transducers_SCH
+Added Room: Name=PT_to_ADCs
