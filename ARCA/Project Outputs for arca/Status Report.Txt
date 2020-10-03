@@ -1,14 +1,12 @@
-Project Outputs Generation Report
----------------------------------
-Start Output Generation At 4:33:47 PM On 3/7/2020
-
-Output: Electrical Rules Check
-Type  : ERC
-From  : Project [arca.PrjPCB]
-   Generated File[arca.html]
+Output: NC Drill Files
+Type  : NC Drill
+From  : PCB Document [arca.PcbDoc]
+   Generated File[arca.TXT]
+   Generated File[arca.LDP]
+   Generated File[arca.DRR]
 
 
-Files Generated   : 1
+Files Generated   : 3
 Documents Printed : 0
 
-Finished Output Generation At 4:35:30 PM On 3/7/2020
+Finished Output Generation At 11:18:20 AM On 10/3/2020
