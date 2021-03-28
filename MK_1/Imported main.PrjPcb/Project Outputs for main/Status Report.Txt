@@ -1,0 +1,14 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 1:26:06 PM On 3/28/2021
+
+Output: P-CAD V16 Schematic Design (AutoSCH)
+Type  : Exporter Wrapper
+From  : Project [main.PrjPcb]
+   Generated File[main_0.sch]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 1:26:15 PM On 3/28/2021

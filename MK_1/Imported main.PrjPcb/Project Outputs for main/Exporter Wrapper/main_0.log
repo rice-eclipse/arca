@@ -1,0 +1,904 @@
+P-CAD Schematic ASCII File Export Log :
+      Information : Start export of symbol definitions for parts
+      Warning :     Symbol name [AP2210N-3.3TRG1], mode [Normal], part [1] changed to [AP2210N-3.3TRG1_1_N]
+      Warning :     Symbol name [CPOL-USE2.5-5], mode [Normal], part [1] changed to [CPOL-USE2.5-5_1_N]
+      Warning :     Rectangle [-88.7mil : 26.3mil]-[-53.7mil : 31.3mil] exported as lines.
+      Warning :     Rectangle [-73.7mil : 11.3mil]-[-68.7mil : 46.3mil] exported as lines.
+      Warning :     Symbol name [LM1084ISX-5.0/NOPB], mode [Normal], part [1] changed to [LM1084ISX-5.0/NOPB_1_N]
+      Warning :     Symbol name [1101M2S3CQE2], mode [Normal], part [1] changed to [1101M2S3CQE2_1_N]
+      Warning :     Symbol name [LED5MM], mode [Normal], part [1] changed to [LED5MM_1_N]
+      Warning :     Symbol name [R-US_R0805], mode [Normal], part [1] changed to [R-US_R0805_1_N]
+      Warning :     Symbol name [UA78M*], mode [Normal], part [1] changed to [UA78M*_1_N]
+      Warning :     Symbol name [DIODE-DO201-15], mode [Normal], part [1] changed to [DIODE-DO201-15_1_N]
+      Warning :     Symbol name [1991095], mode [Normal], part [1] changed to [1991095_1_N]
+      Warning :     Symbol name [1991095], mode [Normal], part [2] changed to [1991095_2_N]
+      Warning :     Symbol name [RESISTOR0402], mode [Normal], part [1] changed to [RESISTOR0402_1_N]
+      Warning :     Symbol name [MCP6N11R], mode [Normal], part [1] changed to [MCP6N11R_1_N]
+      Warning :     Rectangle [-150mil : 380mil]-[-140mil : 430mil] exported as lines.
+      Warning :     Rectangle [-170mil : 400mil]-[-120mil : 410mil] exported as lines.
+      Warning :     Rectangle [-170mil : -400mil]-[-120mil : -390mil] exported as lines.
+      Warning :     Symbol name [C-USC0805], mode [Normal], part [1] changed to [C-USC0805_1_N]
+      Warning :     Symbol name [TRIM_US-S64W], mode [Normal], part [1] changed to [TRIM_US-S64W_1_N]
+      Warning :     Symbol name [PINHD-1X2], mode [Normal], part [1] changed to [PINHD-1X2_1_N]
+      Warning :     Symbol name [MCP3208SN], mode [Normal], part [1] changed to [MCP3208SN_1_N]
+      Warning :     Symbol name [LMV321LICTRT], mode [Normal], part [1] changed to [LMV321LICTRT_1_N]
+      Warning :     Symbol name [2N7000], mode [Normal], part [1] changed to [2N7000_1_N]
+      Warning :     Symbol name [1N4004], mode [Normal], part [1] changed to [1N4004_1_N]
+      Warning :     Symbol name [IRF740], mode [Normal], part [1] changed to [IRF740_1_N]
+      Warning :     Rectangle [-10mil : -100mil]-[20mil : -50mil] exported as lines.
+      Warning :     Rectangle [-10mil : 50mil]-[20mil : 100mil] exported as lines.
+      Warning :     Rectangle [-10mil : -35mil]-[20mil : 35mil] exported as lines.
+      Warning :     Symbol name [1991118], mode [Normal], part [1] changed to [1991118_1_N]
+      Warning :     Symbol name [1991118], mode [Normal], part [2] changed to [1991118_2_N]
+      Warning :     Symbol name [1991118], mode [Normal], part [3] changed to [1991118_3_N]
+      Warning :     Symbol name [1991118], mode [Normal], part [4] changed to [1991118_4_N]
+      Warning :     Symbol name [2540-5], mode [Normal], part [1] changed to [2540-5_1_N]
+      Warning :     Rectangle [0mil : -10mil]-[110mil : 10mil] exported as lines.
+      Warning :     Symbol name [2540-5], mode [Normal], part [2] changed to [2540-5_2_N]
+      Warning :     Rectangle [0mil : -10mil]-[110mil : 10mil] exported as lines.
+      Warning :     Symbol name [2540-5], mode [Normal], part [3] changed to [2540-5_3_N]
+      Warning :     Rectangle [0mil : -10mil]-[110mil : 10mil] exported as lines.
+      Warning :     Symbol name [2540-5], mode [Normal], part [4] changed to [2540-5_4_N]
+      Warning :     Rectangle [0mil : -10mil]-[110mil : 10mil] exported as lines.
+      Warning :     Symbol name [2540-5], mode [Normal], part [5] changed to [2540-5_5_N]
+      Warning :     Rectangle [0mil : -10mil]-[110mil : 10mil] exported as lines.
+      Warning :     Symbol name [2540-5], mode [Normal], part [6] changed to [2540-5_6_N]
+      Warning :     Rectangle [0mil : -10mil]-[110mil : 10mil] exported as lines.
+      Warning :     Symbol name [2540-5], mode [Normal], part [7] changed to [2540-5_7_N]
+      Warning :     Rectangle [0mil : -10mil]-[110mil : 10mil] exported as lines.
+      Warning :     Symbol name [2540-5], mode [Normal], part [8] changed to [2540-5_8_N]
+      Warning :     Rectangle [0mil : -10mil]-[110mil : 10mil] exported as lines.
+      Warning :     Symbol name [2540-5], mode [Normal], part [9] changed to [2540-5_9_N]
+      Warning :     Rectangle [0mil : -10mil]-[110mil : 10mil] exported as lines.
+      Warning :     Symbol name [2540-5], mode [Normal], part [10] changed to [2540-5_10_N]
+      Warning :     Rectangle [0mil : -10mil]-[110mil : 10mil] exported as lines.
+      Warning :     Symbol name [2540-5], mode [Normal], part [11] changed to [2540-5_11_N]
+      Warning :     Rectangle [0mil : -10mil]-[110mil : 10mil] exported as lines.
+      Warning :     Symbol name [2540-5], mode [Normal], part [12] changed to [2540-5_12_N]
+      Warning :     Rectangle [0mil : -10mil]-[110mil : 10mil] exported as lines.
+      Warning :     Symbol name [2540-5], mode [Normal], part [13] changed to [2540-5_13_N]
+      Warning :     Rectangle [0mil : -10mil]-[110mil : 10mil] exported as lines.
+      Warning :     Symbol name [2540-5], mode [Normal], part [14] changed to [2540-5_14_N]
+      Warning :     Rectangle [0mil : -10mil]-[110mil : 10mil] exported as lines.
+      Warning :     Symbol name [2540-5], mode [Normal], part [15] changed to [2540-5_15_N]
+      Warning :     Rectangle [0mil : -10mil]-[110mil : 10mil] exported as lines.
+      Warning :     Symbol name [2540-5], mode [Normal], part [16] changed to [2540-5_16_N]
+      Warning :     Rectangle [0mil : -10mil]-[110mil : 10mil] exported as lines.
+      Warning :     Symbol name [2540-5], mode [Normal], part [17] changed to [2540-5_17_N]
+      Warning :     Rectangle [0mil : -10mil]-[110mil : 10mil] exported as lines.
+      Warning :     Symbol name [2540-5], mode [Normal], part [18] changed to [2540-5_18_N]
+      Warning :     Rectangle [0mil : -10mil]-[110mil : 10mil] exported as lines.
+      Warning :     Symbol name [2540-5], mode [Normal], part [19] changed to [2540-5_19_N]
+      Warning :     Rectangle [0mil : -10mil]-[110mil : 10mil] exported as lines.
+      Warning :     Symbol name [2540-5], mode [Normal], part [20] changed to [2540-5_20_N]
+      Warning :     Rectangle [0mil : -10mil]-[110mil : 10mil] exported as lines.
+      Warning :     Symbol name [2540-5], mode [Normal], part [21] changed to [2540-5_21_N]
+      Warning :     Rectangle [0mil : -10mil]-[110mil : 10mil] exported as lines.
+      Warning :     Symbol name [2540-5], mode [Normal], part [22] changed to [2540-5_22_N]
+      Warning :     Rectangle [0mil : -10mil]-[110mil : 10mil] exported as lines.
+      Warning :     Symbol name [2540-5], mode [Normal], part [23] changed to [2540-5_23_N]
+      Warning :     Rectangle [0mil : -10mil]-[110mil : 10mil] exported as lines.
+      Warning :     Symbol name [2540-5], mode [Normal], part [24] changed to [2540-5_24_N]
+      Warning :     Rectangle [0mil : -10mil]-[110mil : 10mil] exported as lines.
+      Warning :     Symbol name [2540-5], mode [Normal], part [25] changed to [2540-5_25_N]
+      Warning :     Rectangle [0mil : -10mil]-[110mil : 10mil] exported as lines.
+      Warning :     Symbol name [2540-5], mode [Normal], part [26] changed to [2540-5_26_N]
+      Warning :     Rectangle [0mil : -10mil]-[110mil : 10mil] exported as lines.
+      Warning :     Symbol name [2540-5], mode [Normal], part [27] changed to [2540-5_27_N]
+      Warning :     Rectangle [0mil : -10mil]-[110mil : 10mil] exported as lines.
+      Warning :     Symbol name [2540-5], mode [Normal], part [28] changed to [2540-5_28_N]
+      Warning :     Rectangle [0mil : -10mil]-[110mil : 10mil] exported as lines.
+      Warning :     Symbol name [2540-5], mode [Normal], part [29] changed to [2540-5_29_N]
+      Warning :     Rectangle [0mil : -10mil]-[110mil : 10mil] exported as lines.
+      Warning :     Symbol name [2540-5], mode [Normal], part [30] changed to [2540-5_30_N]
+      Warning :     Rectangle [0mil : -10mil]-[110mil : 10mil] exported as lines.
+      Warning :     Symbol name [2540-5], mode [Normal], part [31] changed to [2540-5_31_N]
+      Warning :     Rectangle [0mil : -10mil]-[110mil : 10mil] exported as lines.
+      Warning :     Symbol name [2540-5], mode [Normal], part [32] changed to [2540-5_32_N]
+      Warning :     Rectangle [0mil : -10mil]-[110mil : 10mil] exported as lines.
+      Warning :     Symbol name [2540-5], mode [Normal], part [33] changed to [2540-5_33_N]
+      Warning :     Rectangle [0mil : -10mil]-[110mil : 10mil] exported as lines.
+      Warning :     Symbol name [2540-5], mode [Normal], part [34] changed to [2540-5_34_N]
+      Warning :     Rectangle [0mil : -10mil]-[110mil : 10mil] exported as lines.
+      Warning :     Symbol name [2540-5], mode [Normal], part [35] changed to [2540-5_35_N]
+      Warning :     Rectangle [0mil : -10mil]-[110mil : 10mil] exported as lines.
+      Warning :     Symbol name [2540-5], mode [Normal], part [36] changed to [2540-5_36_N]
+      Warning :     Rectangle [0mil : -10mil]-[110mil : 10mil] exported as lines.
+      Warning :     Symbol name [2540-5], mode [Normal], part [37] changed to [2540-5_37_N]
+      Warning :     Rectangle [0mil : -10mil]-[110mil : 10mil] exported as lines.
+      Warning :     Symbol name [2540-5], mode [Normal], part [38] changed to [2540-5_38_N]
+      Warning :     Rectangle [0mil : -10mil]-[110mil : 10mil] exported as lines.
+      Warning :     Symbol name [2540-5], mode [Normal], part [39] changed to [2540-5_39_N]
+      Warning :     Rectangle [0mil : -10mil]-[110mil : 10mil] exported as lines.
+      Warning :     Symbol name [2540-5], mode [Normal], part [40] changed to [2540-5_40_N]
+      Warning :     Rectangle [0mil : -10mil]-[110mil : 10mil] exported as lines.
+      Warning :     Symbol name [MPT5], mode [Normal], part [1] changed to [MPT5_1_N]
+      Warning :     Symbol name [MPT5], mode [Normal], part [2] changed to [MPT5_2_N]
+      Warning :     Symbol name [MPT5], mode [Normal], part [3] changed to [MPT5_3_N]
+      Warning :     Symbol name [MPT5], mode [Normal], part [4] changed to [MPT5_4_N]
+      Warning :     Symbol name [MPT5], mode [Normal], part [5] changed to [MPT5_5_N]
+      Warning :     Symbol name [MPT7], mode [Normal], part [1] changed to [MPT7_1_N]
+      Warning :     Symbol name [MPT7], mode [Normal], part [2] changed to [MPT7_2_N]
+      Warning :     Symbol name [MPT7], mode [Normal], part [3] changed to [MPT7_3_N]
+      Warning :     Symbol name [MPT7], mode [Normal], part [4] changed to [MPT7_4_N]
+      Warning :     Symbol name [MPT7], mode [Normal], part [5] changed to [MPT7_5_N]
+      Warning :     Symbol name [MPT7], mode [Normal], part [6] changed to [MPT7_6_N]
+      Warning :     Symbol name [MPT7], mode [Normal], part [7] changed to [MPT7_7_N]
+      Warning :     Symbol name [MPT8], mode [Normal], part [1] changed to [MPT8_1_N]
+      Warning :     Symbol name [MPT8], mode [Normal], part [2] changed to [MPT8_2_N]
+      Warning :     Symbol name [MPT8], mode [Normal], part [3] changed to [MPT8_3_N]
+      Warning :     Symbol name [MPT8], mode [Normal], part [4] changed to [MPT8_4_N]
+      Warning :     Symbol name [MPT8], mode [Normal], part [5] changed to [MPT8_5_N]
+      Warning :     Symbol name [MPT8], mode [Normal], part [6] changed to [MPT8_6_N]
+      Warning :     Symbol name [MPT8], mode [Normal], part [7] changed to [MPT8_7_N]
+      Warning :     Symbol name [MPT8], mode [Normal], part [8] changed to [MPT8_8_N]
+      Information : End export of symbol definitions for part
+      Information : Start exporting the symbol definitions for power ports
+      Warning :     End exporting the symbol defintions for power ports
+      Information : Start exporting component definitions
+      Warning :     Component [3.3V_REG] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :        Exporting component (AP2210N-3.3TRG1).
+      Warning :        Finish exporting component.
+      Warning :     Component [C4] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :        Exporting component (CPOL-USE2.5-5).
+      Warning :        Finish exporting component.
+      Warning :     Component [C5] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [5V_REG] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :        Exporting component (LM1084ISX-5.0/NOPB).
+      Warning :        Finish exporting component.
+      Warning :     Component [C6] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [C7] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [U6] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :        Exporting component (1101M2S3CQE2).
+      Warning :        Finish exporting component.
+      Warning :     Component [+12V_LED] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :        Exporting component (LED5MM).
+      Warning :        Finish exporting component.
+      Warning :     Component [+5V_LED] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [+3.3V_LED] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R26] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :        Exporting component (R-US_R0805).
+      Warning :        Finish exporting component.
+      Warning :     Component [R27] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R28] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [10V_REG] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :        Exporting component (UA78M*).
+      Warning :        Finish exporting component.
+      Warning :     Component [R35] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [+10V_LED] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [C16] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [C17] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [D5] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :        Exporting component (DIODE-DO201-15).
+      Warning :        Finish exporting component.
+      Warning :     Component [PWR_IN] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :        Exporting component (1991095).
+      Warning :        Finish exporting component.
+      Warning :     Component [PWR_IN] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R?] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :        Exporting component (RESISTOR0402).
+      Warning :        Finish exporting component.
+      Warning :     Component [IC5] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :        Exporting component (MCP6N11R).
+      Warning :        Finish exporting component.
+      Warning :     Component [RG1] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RF1] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [C30] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :        Exporting component (C-USC0805).
+      Warning :        Finish exporting component.
+      Warning :     Component [RZ1] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :        Exporting component (TRIM_US-S64W).
+      Warning :        Finish exporting component.
+      Warning :     Component [JP4] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :        Exporting component (PINHD-1X2).
+      Warning :        Finish exporting component.
+      Warning :     Component [IC10] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RG2] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RF2] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [C12] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RZ2] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [IC11] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RG3] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RF3] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [C32] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RZ3] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [IC12] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RG4] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RF4] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [C34] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RZ4] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPD1] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [LC_EN/CAL] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [ADC1] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :        Exporting component (MCP3208SN).
+      Warning :        Finish exporting component.
+      Warning :     Component [C3] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R25] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [ADC2] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [C1] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R29] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [ADC3] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [C2] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R30] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [JP1] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [IC1] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :        Exporting component (LMV321LICTRT).
+      Warning :        Finish exporting component.
+      Warning :     Component [R31] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [C8] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [JP2] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R36] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R37] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R38] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R39] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [IC2] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R32] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [C9] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R42] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R43] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R44] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R45] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [IC3] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R33] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [C14] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R34] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R52] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R53] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R54] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [IC4] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R55] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [C15] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R56] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R57] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R58] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R59] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [U$3] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :        Exporting component (2N7000).
+      Warning :        Finish exporting component.
+      Warning :     Component [R3] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R4] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [U$8] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R5] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R6] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [U$9] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R7] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R8] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [D2] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :        Exporting component (1N4004).
+      Warning :        Finish exporting component.
+      Warning :     Component [D3] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [D4] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [U$5] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :        Exporting component (IRF740).
+      Warning :        Finish exporting component.
+      Warning :     Component [R9] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R10] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [D6] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [U$2] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R1] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R2] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [D1] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R?] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [IC6] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [C18] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [C19] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [C20] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R41] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R40] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [IC7] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [C21] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [C22] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [C23] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R46] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R47] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [IC8] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [C24] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [C25] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [C26] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R48] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R49] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [IC9] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [C27] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [C28] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [C29] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R50] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R51] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [LC1/2] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :        Exporting component (1991118).
+      Warning :        Finish exporting component.
+      Warning :     Component [LC1/2] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [LC1/2] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [LC1/2] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [LC3/4] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [LC3/4] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [LC3/4] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [LC3/4] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [PT1/2] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [PT1/2] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [PT1/2] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [PT1/2] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [PT3/4] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [PT3/4] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [PT3/4] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [PT3/4] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [PWR_OUT1] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [PWR_OUT1] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [PWR_OUT2] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [PWR_OUT2] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_GPIO] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :        Exporting component (2540-5).
+      Warning :        Finish exporting component.
+      Warning :     Component [RPI_GPIO] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_GPIO] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_GPIO] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_GPIO] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_GPIO] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_GPIO] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_GPIO] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_GPIO] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_GPIO] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_GPIO] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_GPIO] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_GPIO] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_GPIO] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_GPIO] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_GPIO] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_GPIO] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_GPIO] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_GPIO] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_GPIO] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_GPIO] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_GPIO] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_GPIO] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_GPIO] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_GPIO] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_GPIO] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_GPIO] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_GPIO] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_GPIO] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_GPIO] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_GPIO] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_GPIO] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_GPIO] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_GPIO] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_GPIO] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_GPIO] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_GPIO] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_GPIO] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_GPIO] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_GPIO] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [SOL+RELAY] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [SOL+RELAY] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [SOLENOIDS] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [SOLENOIDS] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [SOLENOIDS2] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [SOLENOIDS2] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [THERMOCOUPLES] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [THERMOCOUPLES] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [THERMOCOUPLES] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [THERMOCOUPLES] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [IC13] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [C10] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [C36] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R11] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R12] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R13] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R14] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [C11] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [LCAA_EN] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [LC1] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [IC14] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [C37] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [C38] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R15] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R16] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R17] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R18] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [C39] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [LC2] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [IC15] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [C40] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [C41] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R19] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R20] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R21] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R22] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [C42] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [LC3] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [IC16] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [C43] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [C44] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R23] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R24] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R60] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R61] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [C45] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [LC4] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [LCIN1] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [LCIN2] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [LCIN3] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [LCIN4] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [IC17] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [C46] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [C47] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R62] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R63] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R64] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [R65] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [C48] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [LC5] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [LCIN5] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [PWR_DEBUG] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :        Exporting component (MPT5).
+      Warning :        Finish exporting component.
+      Warning :     Component [PWR_DEBUG] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [PWR_DEBUG] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [PWR_DEBUG] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [PWR_DEBUG] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_DEBUG] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :        Exporting component (MPT7).
+      Warning :        Finish exporting component.
+      Warning :     Component [RPI_DEBUG] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_DEBUG] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_DEBUG] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_DEBUG] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_DEBUG] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [RPI_DEBUG] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [X4] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :        Exporting component (MPT8).
+      Warning :        Finish exporting component.
+      Warning :     Component [X4] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [X4] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [X4] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [X4] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [X4] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [X4] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [X4] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [X7] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [X7] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [X7] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [X7] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [X7] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [X7] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [X7] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [X7] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [X8] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [X8] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [X8] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [X8] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [X8] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [X8] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [X8] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Warning :     Component [X8] in sheet [C:\Users\anyss\AppData\Local\Temp\ProA76F.tmp] doesn't have a library reference
+      Information : End exporting component definitions
+      Information : Start exporting component definitions for power ports
+      Warning :     End exporting component definitions for powerports
+      Information : Start export of netlist
+      Information : Start export of component instances
+      Information : End export of component instances
+      Information : Start export of nets
+      Information : End export of nets
+      Information : End export of netlist
+      Information : Start exporting the objects for sheet [main_0]
+      Warning :     Rectangle [400mil : 400mil]-[10650mil : 7450mil] exported as lines.
+      Warning :     Rectangle [400mil : 400mil]-[10650mil : 7450mil] exported as lines.
+      Information : Start WIRES export
+      Information : End WIRES export
+      Information : Start BUSES export
+      Information : End BUSES export
+      Information : Start PORTS export
+      Information : End PORTS export
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Information : End exporting the objects for sheet [main_0]
+      Information : Start exporting the objects for sheet [main_1]
+      Warning :     Rectangle [400mil : 400mil]-[10650mil : 7450mil] exported as lines.
+      Warning :     Rectangle [400mil : 400mil]-[10650mil : 7450mil] exported as lines.
+      Information : Start WIRES export
+      Information : End WIRES export
+      Information : Start BUSES export
+      Information : End BUSES export
+      Information : Start PORTS export
+      Information : End PORTS export
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Information : End exporting the objects for sheet [main_1]
+      Information : Start exporting the objects for sheet [main_3]
+      Warning :     Rectangle [400mil : 400mil]-[10650mil : 7450mil] exported as lines.
+      Information : Start WIRES export
+      Information : End WIRES export
+      Information : Start BUSES export
+      Information : End BUSES export
+      Information : Start PORTS export
+      Information : End PORTS export
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Information : End exporting the objects for sheet [main_3]
+      Information : Start exporting the objects for sheet [main_2]
+      Warning :     Rectangle [400mil : 400mil]-[10650mil : 7450mil] exported as lines.
+      Warning :     Rectangle [400mil : 400mil]-[10650mil : 7450mil] exported as lines.
+      Information : Start WIRES export
+      Information : End WIRES export
+      Information : Start BUSES export
+      Information : End BUSES export
+      Information : Start PORTS export
+      Information : End PORTS export
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Information : End exporting the objects for sheet [main_2]
+      Information : Start exporting the objects for sheet [main_4]
+      Warning :     Rectangle [400mil : 400mil]-[10650mil : 7450mil] exported as lines.
+      Information : Start WIRES export
+      Information : End WIRES export
+      Information : Start BUSES export
+      Information : End BUSES export
+      Information : Start PORTS export
+      Information : End PORTS export
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Information : End exporting the objects for sheet [main_4]
+      Information : Start exporting the objects for sheet [main_5]
+      Warning :     Rectangle [400mil : 400mil]-[10650mil : 7450mil] exported as lines.
+      Information : Start WIRES export
+      Information : End WIRES export
+      Information : Start BUSES export
+      Information : End BUSES export
+      Information : Start PORTS export
+      Information : End PORTS export
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Unknown]
+      Information : End exporting the objects for sheet [main_5]
+      Information : Start exporting the objects for sheet [main_6]
+      Warning :     Rectangle [400mil : 400mil]-[10650mil : 7450mil] exported as lines.
+      Information : Start WIRES export
+      Information : End WIRES export
+      Information : Start BUSES export
+      Information : End BUSES export
+      Information : Start PORTS export
+      Information : End PORTS export
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Information : End exporting the objects for sheet [main_6]
+      Information : Start exporting the objects for sheet [main_7]
+      Warning :     Rectangle [400mil : 400mil]-[10650mil : 7450mil] exported as lines.
+      Information : Start WIRES export
+      Information : End WIRES export
+      Information : Start BUSES export
+      Information : End BUSES export
+      Information : Start PORTS export
+      Information : End PORTS export
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Information : End exporting the objects for sheet [main_7]
+      Information : Start exporting the objects for sheet [main_8]
+      Warning :     Rectangle [400mil : 3200mil]-[10650mil : 10250mil] exported as lines.
+      Information : Start WIRES export
+      Information : End WIRES export
+      Information : Start BUSES export
+      Information : End BUSES export
+      Information : Start PORTS export
+      Information : End PORTS export
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Unknown]
+      Warning :     P-CAD doesn't support object type [Unknown]
+      Warning :     P-CAD doesn't support object type [Unknown]
+      Warning :     P-CAD doesn't support object type [Unknown]
+      Information : End exporting the objects for sheet [main_8]
+      Information : Start exporting the objects for sheet [main_9]
+      Information : Start WIRES export
+      Information : End WIRES export
+      Information : Start BUSES export
+      Information : End BUSES export
+      Information : Start PORTS export
+      Information : End PORTS export
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Warning :     P-CAD doesn't support object type [Parameter]
+      Information : End exporting the objects for sheet [main_9]
+EndLog
