@@ -1,0 +1,4 @@
+- Replace MCP6N11 inamp footprints to match real size
+- Set pullup resistor values on SPI CS for ADCs to 2k
+- Re-routed everything
+- Rounded resistor values on Butterworth filters to closest E48 values
