@@ -1,0 +1,73 @@
+Remove Pin=Drivers_1-3 From Net=DRIVER_4_NEGATIVE
+Remove Pin=Drivers_2-1 From Net=DRIVER_6_NEGATIVE
+Remove Pin=LC1-1 From Net=LC1_OUT_P
+Remove Pin=LC2-3 From Net=LC2_OUT_P
+Remove Pin=LC3-3 From Net=LC4_OUT_P
+Remove Pin=Power-2 From Net=+3V3
+Remove Pin=PT1-3 From Net=+10V
+Remove Pin=PT2-3 From Net=+10V
+Remove Pin=TC1-3 From Net=TC1
+Change Component Footprint: Designator=R4 Old Footprint=AXIAL-0.3 New Footprint=RESC_0805_2012
+Change Component Footprint: Designator=R5 Old Footprint=AXIAL-0.3 New Footprint=RESC_0805_2012
+Change Component Footprint: Designator=R6 Old Footprint=AXIAL-0.3 New Footprint=RESC_0805_2012
+Change Component Footprint: Designator=R7 Old Footprint=AXIAL-0.3 New Footprint=RESC_0805_2012
+Change Component Footprint: Designator=R8 Old Footprint=AXIAL-0.3 New Footprint=RESC_0805_2012
+Change Component Footprint: Designator=R9 Old Footprint=AXIAL-0.3 New Footprint=RESC_0805_2012
+Change Component Footprint: Designator=R10 Old Footprint=AXIAL-0.3 New Footprint=RESC_0805_2012
+Change Component Footprint: Designator=R11 Old Footprint=AXIAL-0.3 New Footprint=RESC_0805_2012
+Change Component Footprint: Designator=R12 Old Footprint=AXIAL-0.3 New Footprint=RESC_0805_2012
+Change Component Footprint: Designator=R13 Old Footprint=AXIAL-0.3 New Footprint=RESC_0805_2012
+Change Component Footprint: Designator=R14 Old Footprint=AXIAL-0.3 New Footprint=RESC_0805_2012
+Change Component Footprint: Designator=R15 Old Footprint=AXIAL-0.3 New Footprint=RESC_0805_2012
+Change Component Footprint: Designator=Q1 Old Footprint=E3 New Footprint=UA78M
+Change Component Footprint: Designator=Q2 Old Footprint=E3 New Footprint=UA78M
+Change Component Footprint: Designator=Q3 Old Footprint=E3 New Footprint=UA78M
+Change Component Footprint: Designator=Q4 Old Footprint=E3 New Footprint=UA78M
+Change Component Footprint: Designator=Q5 Old Footprint=E3 New Footprint=UA78M
+Change Component Footprint: Designator=Q6 Old Footprint=E3 New Footprint=UA78M
+Change Component Footprint: Designator=C36 Old Footprint=RAD-0.3 New Footprint=CAPCP2012X06N
+Change Component Footprint: Designator=C37 Old Footprint=RAD-0.3 New Footprint=CAPCP2012X06N
+Change Component Footprint: Designator=C38 Old Footprint=RAD-0.3 New Footprint=CAPCP2012X06N
+Change Component Footprint: Designator=C39 Old Footprint=RAD-0.3 New Footprint=CAPCP2012X06N
+Change Component Footprint: Designator=C40 Old Footprint=RAD-0.3 New Footprint=CAPCP2012X06N
+Change Component Footprint: Designator=C41 Old Footprint=RAD-0.3 New Footprint=CAPCP2012X06N
+Change Component Footprint: Designator=D1 Old Footprint=SMC New Footprint=DIOC2012X06N
+Change Component Footprint: Designator=D2 Old Footprint=SMC New Footprint=DIOC2012X06N
+Change Component Footprint: Designator=D3 Old Footprint=SMC New Footprint=DIOC2012X06N
+Change Component Footprint: Designator=D4 Old Footprint=SMC New Footprint=DIOC2012X06N
+Change Component Footprint: Designator=D5 Old Footprint=SMC New Footprint=DIOC2012X06N
+Change Component Footprint: Designator=D6 Old Footprint=SMC New Footprint=DIOC2012X06N
+Change Component Footprint: Designator=D8 Old Footprint=SMC New Footprint=DIODE-0.7
+Change Pin Designator/Name:  Old Designator=Drivers_1-0 Old Name=0 New Designator =1 New Name=1
+Change Pin Designator/Name:  Old Designator=Drivers_1-1 Old Name=1 New Designator =2 New Name=2
+Change Pin Designator/Name:  Old Designator=Drivers_1-2 Old Name=2 New Designator =3 New Name=3
+Change Pin Designator/Name:  Old Designator=Drivers_2-0 Old Name=0 New Designator =1 New Name=1
+Change Pin Designator/Name:  Old Designator=LC1-0 Old Name=0 New Designator =1 New Name=1
+Change Pin Designator/Name:  Old Designator=LC2-2 Old Name=2 New Designator =3 New Name=3
+Change Pin Designator/Name:  Old Designator=LC2-0 Old Name=0 New Designator =1 New Name=1
+Change Pin Designator/Name:  Old Designator=LC2-1 Old Name=1 New Designator =2 New Name=2
+Change Pin Designator/Name:  Old Designator=LC3-2 Old Name=2 New Designator =3 New Name=3
+Change Pin Designator/Name:  Old Designator=LC3-0 Old Name=0 New Designator =1 New Name=1
+Change Pin Designator/Name:  Old Designator=LC3-1 Old Name=1 New Designator =2 New Name=2
+Change Pin Designator/Name:  Old Designator=Power-0 Old Name=0 New Designator =2 New Name=2
+Change Pin Designator/Name:  Old Designator=PT1-1 Old Name=1 New Designator =2 New Name=2
+Change Pin Designator/Name:  Old Designator=PT1-2 Old Name=2 New Designator =3 New Name=3
+Change Pin Designator/Name:  Old Designator=PT1-0 Old Name=0 New Designator =1 New Name=1
+Change Pin Designator/Name:  Old Designator=PT2-1 Old Name=1 New Designator =2 New Name=2
+Change Pin Designator/Name:  Old Designator=PT2-2 Old Name=2 New Designator =3 New Name=3
+Change Pin Designator/Name:  Old Designator=PT2-0 Old Name=0 New Designator =1 New Name=1
+Change Pin Designator/Name:  Old Designator=Q1-2 Old Name=G New Designator =D New Name=1
+Change Pin Designator/Name:  Old Designator=Q1-1 Old Name=D New Designator =G New Name=2
+Change Pin Designator/Name:  Old Designator=Q2-2 Old Name=G New Designator =D New Name=1
+Change Pin Designator/Name:  Old Designator=Q2-1 Old Name=D New Designator =G New Name=2
+Change Pin Designator/Name:  Old Designator=Q3-2 Old Name=G New Designator =D New Name=1
+Change Pin Designator/Name:  Old Designator=Q3-1 Old Name=D New Designator =G New Name=2
+Change Pin Designator/Name:  Old Designator=Q4-2 Old Name=G New Designator =D New Name=1
+Change Pin Designator/Name:  Old Designator=Q4-1 Old Name=D New Designator =G New Name=2
+Change Pin Designator/Name:  Old Designator=Q5-2 Old Name=G New Designator =D New Name=1
+Change Pin Designator/Name:  Old Designator=Q5-1 Old Name=D New Designator =G New Name=2
+Change Pin Designator/Name:  Old Designator=Q6-2 Old Name=G New Designator =D New Name=1
+Change Pin Designator/Name:  Old Designator=Q6-1 Old Name=D New Designator =G New Name=2
+Change Pin Designator/Name:  Old Designator=TC1-2 Old Name=2 New Designator =3 New Name=3
+Change Pin Designator/Name:  Old Designator=TC1-1 Old Name=1 New Designator =2 New Name=2
+Change Pin Designator/Name:  Old Designator=TC1-0 Old Name=0 New Designator =1 New Name=1

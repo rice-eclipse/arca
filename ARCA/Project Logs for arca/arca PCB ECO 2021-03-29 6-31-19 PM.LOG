@@ -1,0 +1,19 @@
+Removed Pin From Net: NetName=DRIVER_4_NEGATIVE Pin=Drivers_1-4
+Removed Pin From Net: NetName=DRIVER_6_NEGATIVE Pin=Drivers_2-2
+Removed Pin From Net: NetName=GND Pin=GND-4
+Removed Pin From Net: NetName=LC1_OUT_P Pin=LC1-2
+Removed Pin From Net: NetName=LC2_OUT_P Pin=LC2-4
+Removed Pin From Net: NetName=LC4_OUT_P Pin=LC3-4
+Removed Pin From Net: NetName=+3V3 Pin=Power-4
+Removed Pin From Net: NetName=+10V Pin=PT1-4
+Removed Pin From Net: NetName=+10V Pin=PT2-4
+Removed Pin From Net: NetName=TC1 Pin=TC1-4
+Added Room: Name=ADC_SCH
+Added Room: Name=Connectors
+Added Room: Name=drivers_SCH
+Added Room: Name=LC_to_ADC
+Added Room: Name=Load_Cells_SCH
+Added Room: Name=PI_SCH
+Added Room: Name=Power
+Added Room: Name=Pressure_Transducers_SCH
+Added Room: Name=PT_to_ADCs

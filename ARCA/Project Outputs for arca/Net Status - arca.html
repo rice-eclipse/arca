@@ -1,0 +1,998 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 { 
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body { 
+			font-family : segoe ui;
+		}
+
+		td, th {  
+			padding: 0.5em;
+			text-align : left;
+		}
+		th { 
+			background-color : #EEEEEE;
+		
+		}
+		th.column1, td.column1 { 
+			width : 50%; 
+		}
+
+        th.column2, td.column2 {
+            width : 25%;
+        }
+
+		table { 
+			width : 100%; 
+            font-size: 0.9em;
+		}
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 5em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error { 
+			color : red;
+			font-weight : bold;
+		}	
+		tr.onmouseout_odd { 
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+			
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);		
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {	
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}	
+	</script><title>Net Status Report</title>
+</head>
+<body onload="document.getElementById('radio_mm').click()"><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD21\Templates\AD_logo.png
+		"><a href="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports" class="customize"><acronym title="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports">customize</acronym></a><h1>Net Status Report</h1>
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">2021-03-29</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">7:20:25 PM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:01</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc" class="file"><acronym title="C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc">C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc</acronym></a></td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Units:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">
+<form><input type="radio" name="radio_units" id="radio_mm" onclick="changeUnits(this, 'mm')">mm<input type="radio" name="radio_units" id="radio_mil" onclick="changeUnits(this, 'mil')">mils</form>
+</td>
+</tr>
+</table><a name="IDKIBMJOCXQJZLIZCXODFY4LLV4LUINRNAQYCH2YHFV4BQQ3HWCZAP"><table>
+<tr>
+<th class="column1">Nets</th>
+<th class="column2">Layer</th>
+<th class="column3">Length</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3255.472mil|Location2.X=12597mil|Location1.Y=1377.047mil|Location2.Y=4307.323mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3255.472mil|Location2.X=12597mil|Location1.Y=1377.047mil|Location2.Y=4307.323mil|Absolute=True">+10V</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="189711477">481.8672mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3035.472mil|Location2.X=4924.528mil|Location1.Y=3980mil|Location2.Y=4111.379mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3035.472mil|Location2.X=4924.528mil|Location1.Y=3980mil|Location2.Y=4111.379mil|Absolute=True">+12</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="23020298">58.4716mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2670.827mil|Location2.X=10612.48mil|Location1.Y=1419mil|Location2.Y=3402.323mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2670.827mil|Location2.X=10612.48mil|Location1.Y=1419mil|Location2.Y=3402.323mil|Absolute=True">+12V</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="103551067">263.0197mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2545mil|Location2.X=11821.18mil|Location1.Y=1415mil|Location2.Y=3677.913mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2545mil|Location2.X=11821.18mil|Location1.Y=1415mil|Location2.Y=3677.913mil|Absolute=True">+3V3</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="164107285">416.8325mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4135.472mil|Location2.X=6059.764mil|Location1.Y=1477.362mil|Location2.Y=3651.575mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4135.472mil|Location2.X=6059.764mil|Location1.Y=1477.362mil|Location2.Y=3651.575mil|Absolute=True">+3V3_LC</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="97152329">246.7669mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6046.024mil|Location2.X=11332.402mil|Location1.Y=1602.362mil|Location2.Y=3688.977mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6046.024mil|Location2.X=11332.402mil|Location1.Y=1602.362mil|Location2.Y=3688.977mil|Absolute=True">+3V3_LCAA</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="118735563">301.5883mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5787.52mil|Location2.X=7539mil|Location1.Y=1592.52mil|Location2.Y=2747.559mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5787.52mil|Location2.X=7539mil|Location1.Y=1592.52mil|Location2.Y=2747.559mil|Absolute=True">+3V3_PT</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="46158319">117.2421mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3490.475mil|Location2.X=10412.48mil|Location1.Y=1447mil|Location2.Y=3307.165mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3490.475mil|Location2.X=10412.48mil|Location1.Y=1447mil|Location2.Y=3307.165mil|Absolute=True">+5V</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="143771943">365.1807mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10247.52mil|Location2.X=10371mil|Location1.Y=2117.52mil|Location2.Y=2877.264mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10247.52mil|Location2.X=10371mil|Location1.Y=2117.52mil|Location2.Y=2877.264mil|Absolute=True">ADC1_A5</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="7969854">20.2434mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10273.82mil|Location2.X=10412.48mil|Location1.Y=2117.52mil|Location2.Y=2927.264mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10273.82mil|Location2.X=10412.48mil|Location1.Y=2117.52mil|Location2.Y=2927.264mil|Absolute=True">ADC1_A6</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="8401325">21.3394mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10273.82mil|Location2.X=10512.48mil|Location1.Y=2117.52mil|Location2.Y=2977.264mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10273.82mil|Location2.X=10512.48mil|Location1.Y=2117.52mil|Location2.Y=2977.264mil|Absolute=True">ADC1_A7</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="9208848">23.3905mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9861.606mil|Location2.X=12363.48mil|Location1.Y=2897.736mil|Location2.Y=3385.48mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9861.606mil|Location2.X=12363.48mil|Location1.Y=2897.736mil|Location2.Y=3385.48mil|Absolute=True">ADC1_CS</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="35907125">91.2041mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10547.52mil|Location2.X=11805mil|Location1.Y=2117.52mil|Location2.Y=4307.323mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10547.52mil|Location2.X=11805mil|Location1.Y=2117.52mil|Location2.Y=4307.323mil|Absolute=True">ADC2_A4</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="35445264">90.031mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10647.52mil|Location2.X=11825mil|Location1.Y=2117.52mil|Location2.Y=4504.173mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10647.52mil|Location2.X=11825mil|Location1.Y=2117.52mil|Location2.Y=4504.173mil|Absolute=True">ADC2_A5</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="36886593">93.6919mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10747.52mil|Location2.X=11845mil|Location1.Y=2117.52mil|Location2.Y=4521.22mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10747.52mil|Location2.X=11845mil|Location1.Y=2117.52mil|Location2.Y=4521.22mil|Absolute=True">ADC2_A6</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="39522166">100.3863mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10769.881mil|Location2.X=11865mil|Location1.Y=2117.52mil|Location2.Y=4541.22mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10769.881mil|Location2.X=11865mil|Location1.Y=2117.52mil|Location2.Y=4541.22mil|Absolute=True">ADC2_A7</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="38955312">98.9465mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10649.606mil|Location2.X=12363.48mil|Location1.Y=2900.236mil|Location2.Y=3285.48mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10649.606mil|Location2.X=12363.48mil|Location1.Y=2900.236mil|Location2.Y=3285.48mil|Absolute=True">ADC2_CS</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="20716140">52.619mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10947.52mil|Location2.X=12100mil|Location1.Y=2117.52mil|Location2.Y=4307.323mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10947.52mil|Location2.X=12100mil|Location1.Y=2117.52mil|Location2.Y=4307.323mil|Absolute=True">ADC3_A4</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="31395818">79.7454mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11047.52mil|Location2.X=12135mil|Location1.Y=2117.52mil|Location2.Y=4521.22mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11047.52mil|Location2.X=12135mil|Location1.Y=2117.52mil|Location2.Y=4521.22mil|Absolute=True">ADC3_A5</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="42322426">107.499mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11147.52mil|Location2.X=12165mil|Location1.Y=2117.52mil|Location2.Y=4344.37mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11147.52mil|Location2.X=12165mil|Location1.Y=2117.52mil|Location2.Y=4344.37mil|Absolute=True">ADC3_A6</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="34656960">88.0287mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11247.52mil|Location2.X=12190mil|Location1.Y=2117.52mil|Location2.Y=4504.173mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11247.52mil|Location2.X=12190mil|Location1.Y=2117.52mil|Location2.Y=4504.173mil|Absolute=True">ADC3_A7</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="40370690">102.5416mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11523.606mil|Location2.X=12363.48mil|Location1.Y=2900.236mil|Location2.Y=3185.48mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11523.606mil|Location2.X=12363.48mil|Location1.Y=2900.236mil|Location2.Y=3185.48mil|Absolute=True">ADC3_CS</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="9707425">24.6569mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4113mil|Location2.X=6009.764mil|Location1.Y=1527.362mil|Location2.Y=3400.394mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4113mil|Location2.X=6009.764mil|Location1.Y=1527.362mil|Location2.Y=3400.394mil|Absolute=True">CAL</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="90093474">228.8374mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3257.047mil|Location2.X=12495mil|Location1.Y=3603mil|Location2.Y=3961.732mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3257.047mil|Location2.X=12495mil|Location1.Y=3603mil|Location2.Y=3961.732mil|Absolute=True">DRIVER_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="97223634">246.948mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3035.472mil|Location2.X=5529.527mil|Location1.Y=4158.621mil|Location2.Y=4550mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3035.472mil|Location2.X=5529.527mil|Location1.Y=4158.621mil|Location2.Y=4550mil|Absolute=True">DRIVER_1_NEGATIVE</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="26399273">67.0542mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3622.047mil|Location2.X=12463.48mil|Location1.Y=3720.52mil|Location2.Y=3961.732mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3622.047mil|Location2.X=12463.48mil|Location1.Y=3720.52mil|Location2.Y=3961.732mil|Absolute=True">DRIVER_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="90718259">230.4244mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3401.472mil|Location2.X=5667.323mil|Location1.Y=4158.621mil|Location2.Y=4530mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3401.472mil|Location2.X=5667.323mil|Location1.Y=4158.621mil|Location2.Y=4530mil|Absolute=True">DRIVER_2_NEGATIVE</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="24948520">63.3692mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3605mil|Location2.X=12463.48mil|Location1.Y=3620.52mil|Location2.Y=3961.732mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3605mil|Location2.X=12463.48mil|Location1.Y=3620.52mil|Location2.Y=3961.732mil|Absolute=True">DRIVER_3</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="95022218">241.3564mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3767.472mil|Location2.X=5805.119mil|Location1.Y=4158.621mil|Location2.Y=4505mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3767.472mil|Location2.X=5805.119mil|Location1.Y=4158.621mil|Location2.Y=4505mil|Absolute=True">DRIVER_3_NEGATIVE</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="24439506">62.0763mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4367.047mil|Location2.X=12523mil|Location1.Y=3501mil|Location2.Y=4004.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4367.047mil|Location2.X=12523mil|Location1.Y=3501mil|Location2.Y=4004.5mil|Absolute=True">DRIVER_4</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="89954361">228.4841mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4133.472mil|Location2.X=5942.913mil|Location1.Y=4158.621mil|Location2.Y=4478.464mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4133.472mil|Location2.X=5942.913mil|Location1.Y=4158.621mil|Location2.Y=4478.464mil|Absolute=True">DRIVER_4_NEGATIVE</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="20673167">52.5098mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4742.047mil|Location2.X=12547mil|Location1.Y=2720.52mil|Location2.Y=4113mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4742.047mil|Location2.X=12547mil|Location1.Y=2720.52mil|Location2.Y=4113mil|Absolute=True">DRIVER_5</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="93718956">238.0461mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4499.472mil|Location2.X=6230.157mil|Location1.Y=4120mil|Location2.Y=4499.173mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4499.472mil|Location2.X=6230.157mil|Location1.Y=4120mil|Location2.Y=4499.173mil|Absolute=True">DRIVER_5_NEGATIVE</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="20007210">50.8183mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5107.047mil|Location2.X=12571mil|Location1.Y=2698mil|Location2.Y=4206mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5107.047mil|Location2.X=12571mil|Location1.Y=2698mil|Location2.Y=4206mil|Absolute=True">DRIVER_6</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="94306014">239.5373mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4865.472mil|Location2.X=6367.953mil|Location1.Y=4140mil|Location2.Y=4516.22mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4865.472mil|Location2.X=6367.953mil|Location1.Y=4140mil|Location2.Y=4516.22mil|Absolute=True">DRIVER_6_NEGATIVE</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="19882934">50.5027mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2506.22mil|Location2.X=12463.48mil|Location1.Y=1410.236mil|Location2.Y=4653.78mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2506.22mil|Location2.X=12463.48mil|Location1.Y=1410.236mil|Location2.Y=4653.78mil|Absolute=True">GND</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="288001620">731.5241mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6838.268mil|Location2.X=10338.78mil|Location1.Y=2450mil|Location2.Y=3492.362mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6838.268mil|Location2.X=10338.78mil|Location1.Y=2450mil|Location2.Y=3492.362mil|Absolute=True">LC1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="42970397">109.1448mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4415.236mil|Location2.X=6799.527mil|Location1.Y=3003.346mil|Location2.Y=4504.173mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4415.236mil|Location2.X=6799.527mil|Location1.Y=3003.346mil|Location2.Y=4504.173mil|Absolute=True">LC1_OUT_N</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="32008797">81.3023mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4465.236mil|Location2.X=6937.323mil|Location1.Y=3003.346mil|Location2.Y=4307.323mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4465.236mil|Location2.X=6937.323mil|Location1.Y=3003.346mil|Location2.Y=4307.323mil|Absolute=True">LC1_OUT_P</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="35877654">91.1292mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4137.441mil|Location2.X=7387.638mil|Location1.Y=3059.606mil|Location2.Y=3647.638mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4137.441mil|Location2.X=7387.638mil|Location1.Y=3059.606mil|Location2.Y=3647.638mil|Absolute=True">LC1_PREC</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="36186287">91.9132mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7917.205mil|Location2.X=10338.78mil|Location1.Y=2495mil|Location2.Y=3492.362mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7917.205mil|Location2.X=10338.78mil|Location1.Y=2495mil|Location2.Y=3492.362mil|Absolute=True">LC2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="32354521">82.1805mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5265.236mil|Location2.X=7522.009mil|Location1.Y=3000.198mil|Location2.Y=4504.173mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5265.236mil|Location2.X=7522.009mil|Location1.Y=3000.198mil|Location2.Y=4504.173mil|Absolute=True">LC2_OUT_N</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="31860382">80.9254mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5315.236mil|Location2.X=7659.803mil|Location1.Y=3000.198mil|Location2.Y=4307.323mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5315.236mil|Location2.X=7659.803mil|Location1.Y=3000.198mil|Location2.Y=4307.323mil|Absolute=True">LC2_OUT_P</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="31321312">79.5561mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4967.441mil|Location2.X=8421.3mil|Location1.Y=3041.458mil|Location2.Y=3687.638mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4967.441mil|Location2.X=8421.3mil|Location1.Y=3041.458mil|Location2.Y=3687.638mil|Absolute=True">LC2_PREC</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="37357906">94.8891mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8842.993mil|Location2.X=10338.78mil|Location1.Y=2518.898mil|Location2.Y=3469.96mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8842.993mil|Location2.X=10338.78mil|Location1.Y=2518.898mil|Location2.Y=3469.96mil|Absolute=True">LC3</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="23162014">58.8315mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6030.236mil|Location2.X=7246.417mil|Location1.Y=3033.346mil|Location2.Y=4504.173mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6030.236mil|Location2.X=7246.417mil|Location1.Y=3033.346mil|Location2.Y=4504.173mil|Absolute=True">LC3_OUT_N</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="20432791">51.8993mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6080.236mil|Location2.X=7384.213mil|Location1.Y=3033.346mil|Location2.Y=4307.323mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6080.236mil|Location2.X=7384.213mil|Location1.Y=3033.346mil|Location2.Y=4307.323mil|Absolute=True">LC3_OUT_P</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="21117105">53.6374mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5737.441mil|Location2.X=9401.3mil|Location1.Y=3117.006mil|Location2.Y=3697.638mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5737.441mil|Location2.X=9401.3mil|Location1.Y=3117.006mil|Location2.Y=3697.638mil|Absolute=True">LC3_PREC</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="39613979">100.6195mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10012.205mil|Location2.X=10338.78mil|Location1.Y=2747.736mil|Location2.Y=3507.362mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10012.205mil|Location2.X=10338.78mil|Location1.Y=2747.736mil|Location2.Y=3507.362mil|Absolute=True">LC4</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="10623423">26.9835mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4636mil|Location2.X=8222.637mil|Location1.Y=2043.346mil|Location2.Y=4576mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4636mil|Location2.X=8222.637mil|Location1.Y=2043.346mil|Location2.Y=4576mil|Absolute=True">LC4_OUT_N</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="61025819">155.0056mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4955.236mil|Location2.X=8360.433mil|Location1.Y=1880mil|Location2.Y=4307.323mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4955.236mil|Location2.X=8360.433mil|Location1.Y=1880mil|Location2.Y=4307.323mil|Absolute=True">LC4_OUT_P</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="51435122">130.6452mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4642.441mil|Location2.X=10574.252mil|Location1.Y=2104.606mil|Location2.Y=3724.686mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4642.441mil|Location2.X=10574.252mil|Location1.Y=2104.606mil|Location2.Y=3724.686mil|Absolute=True">LC4_PREC</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="70730658">179.6559mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10255mil|Location2.X=11332.402mil|Location1.Y=2797.736mil|Location2.Y=3559.96mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10255mil|Location2.X=11332.402mil|Location1.Y=2797.736mil|Location2.Y=3559.96mil|Absolute=True">LC5</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="16621344">42.2182mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5424.709mil|Location2.X=7947.047mil|Location1.Y=1990.08mil|Location2.Y=4504.173mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5424.709mil|Location2.X=7947.047mil|Location1.Y=1990.08mil|Location2.Y=4504.173mil|Absolute=True">LC5_OUT_N</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="40746810">103.4969mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5710.236mil|Location2.X=8084.843mil|Location1.Y=2008.346mil|Location2.Y=4307.323mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5710.236mil|Location2.X=8084.843mil|Location1.Y=2008.346mil|Location2.Y=4307.323mil|Absolute=True">LC5_OUT_P</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="48642674">123.5524mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5424.709mil|Location2.X=11708.464mil|Location1.Y=2072.756mil|Location2.Y=3756.216mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5424.709mil|Location2.X=11708.464mil|Location1.Y=2072.756mil|Location2.Y=3756.216mil|Absolute=True">LC5_PREC</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="70369328">178.7381mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10061.22mil|Location2.X=12463.48mil|Location1.Y=2797.736mil|Location2.Y=3385.48mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10061.22mil|Location2.X=12463.48mil|Location1.Y=2797.736mil|Location2.Y=3385.48mil|Absolute=True">MISO</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="37769783">95.9352mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9901.236mil|Location2.X=12523mil|Location1.Y=2715mil|Location2.Y=3485.48mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9901.236mil|Location2.X=12523mil|Location1.Y=2715mil|Location2.Y=3485.48mil|Absolute=True">MOSI</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="50966492">129.4549mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3937.143mil|Location2.X=3992.559mil|Location1.Y=1488.809mil|Location2.Y=1765.394mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3937.143mil|Location2.X=3992.559mil|Location1.Y=1488.809mil|Location2.Y=1765.394mil|Absolute=True">Net10V_K</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="2343521">5.9525mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3255.472mil|Location2.X=4236.191mil|Location1.Y=1440mil|Location2.Y=2985.433mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3255.472mil|Location2.X=4236.191mil|Location1.Y=1440mil|Location2.Y=2985.433mil|Absolute=True">Net12V_A</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="28277137">71.8239mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4282.441mil|Location2.X=4337.559mil|Location1.Y=1488.809mil|Location2.Y=1765.394mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4282.441mil|Location2.X=4337.559mil|Location1.Y=1488.809mil|Location2.Y=1765.394mil|Absolute=True">Net12V_K</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="2336620">5.935mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3243.809mil|Location2.X=3302.559mil|Location1.Y=1488.809mil|Location2.Y=1765.394mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3243.809mil|Location2.X=3302.559mil|Location1.Y=1488.809mil|Location2.Y=1765.394mil|Absolute=True">Net3V3_K</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="2357331">5.9876mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3587.441mil|Location2.X=3642.857mil|Location1.Y=1488.809mil|Location2.Y=1765.394mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3587.441mil|Location2.X=3642.857mil|Location1.Y=1488.809mil|Location2.Y=1765.394mil|Absolute=True">Net5V_K</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="2343521">5.9525mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6954.134mil|Location2.X=7391.221mil|Location1.Y=3283.975mil|Location2.Y=3320.394mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6954.134mil|Location2.X=7391.221mil|Location1.Y=3283.975mil|Location2.Y=3320.394mil|Absolute=True">NetC16_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3808160">9.6727mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8014.134mil|Location2.X=8423.267mil|Location1.Y=3340.945mil|Location2.Y=3377.362mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8014.134mil|Location2.X=8423.267mil|Location1.Y=3340.945mil|Location2.Y=3377.362mil|Absolute=True">NetC17_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3528606">8.9627mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6748.779mil|Location2.X=7208.19mil|Location1.Y=3369.606mil|Location2.Y=3600mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6748.779mil|Location2.X=7208.19mil|Location1.Y=3369.606mil|Location2.Y=3600mil|Absolute=True">NetC20_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="6189603">15.7216mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7818.779mil|Location2.X=8248.19mil|Location1.Y=3426.576mil|Location2.Y=3650mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7818.779mil|Location2.X=8248.19mil|Location1.Y=3426.576mil|Location2.Y=3650mil|Absolute=True">NetC21_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="6042201">15.3472mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8959.134mil|Location2.X=9402.559mil|Location1.Y=3330.945mil|Location2.Y=3375.394mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8959.134mil|Location2.X=9402.559mil|Location1.Y=3330.945mil|Location2.Y=3375.394mil|Absolute=True">NetC22_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3904802">9.9182mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10139.134mil|Location2.X=10576.221mil|Location1.Y=3365.945mil|Location2.Y=3402.362mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10139.134mil|Location2.X=10576.221mil|Location1.Y=3365.945mil|Location2.Y=3402.362mil|Absolute=True">NetC24_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3808152">9.6727mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8744.567mil|Location2.X=9215.636mil|Location1.Y=3419.606mil|Location2.Y=3636mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8744.567mil|Location2.X=9215.636mil|Location1.Y=3419.606mil|Location2.Y=3636mil|Absolute=True">NetC25_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="6480125">16.4595mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9913.779mil|Location2.X=10390.636mil|Location1.Y=3451.576mil|Location2.Y=3681mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9913.779mil|Location2.X=10390.636mil|Location1.Y=3451.576mil|Location2.Y=3681mil|Absolute=True">NetC27_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="6584759">16.7253mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11273.346mil|Location2.X=11710.433mil|Location1.Y=3398.543mil|Location2.Y=3434.96mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11273.346mil|Location2.X=11710.433mil|Location1.Y=3398.543mil|Location2.Y=3434.96mil|Absolute=True">NetC28_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3808152">9.6727mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11027.993mil|Location2.X=11524.848mil|Location1.Y=3484.174mil|Location2.Y=3713mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11027.993mil|Location2.X=11524.848mil|Location1.Y=3484.174mil|Location2.Y=3713mil|Absolute=True">NetC30_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="6908947">17.5487mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7897.441mil|Location2.X=8159.528mil|Location1.Y=2359.605mil|Location2.Y=2640.394mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7897.441mil|Location2.X=8159.528mil|Location1.Y=2359.605mil|Location2.Y=2640.394mil|Absolute=True">NetC48_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="4021246">10.214mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7897.441mil|Location2.X=8346.457mil|Location1.Y=2672.638mil|Location2.Y=2724.055mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7897.441mil|Location2.X=8346.457mil|Location1.Y=2672.638mil|Location2.Y=2724.055mil|Absolute=True">NetC49_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="4086310">10.3792mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7842.441mil|Location2.X=8124.528mil|Location1.Y=1565.945mil|Location2.Y=1850.394mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7842.441mil|Location2.X=8124.528mil|Location1.Y=1565.945mil|Location2.Y=1850.394mil|Absolute=True">NetC50_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="4236406">10.7605mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7842.441mil|Location2.X=8276.457mil|Location1.Y=1803.976mil|Location2.Y=1934.055mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7842.441mil|Location2.X=8276.457mil|Location1.Y=1803.976mil|Location2.Y=1934.055mil|Absolute=True">NetC51_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="4262144">10.8258mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8802.441mil|Location2.X=9079.528mil|Location1.Y=2335.945mil|Location2.Y=2610.394mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8802.441mil|Location2.X=9079.528mil|Location1.Y=2335.945mil|Location2.Y=2610.394mil|Absolute=True">NetC54_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="4086400">10.3795mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8802.441mil|Location2.X=9226.457mil|Location1.Y=2632.638mil|Location2.Y=2694.055mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8802.441mil|Location2.X=9226.457mil|Location1.Y=2632.638mil|Location2.Y=2694.055mil|Absolute=True">NetC55_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3877731">9.8494mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8742.441mil|Location2.X=8994.528mil|Location1.Y=1540.945mil|Location2.Y=1820.394mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8742.441mil|Location2.X=8994.528mil|Location1.Y=1540.945mil|Location2.Y=1820.394mil|Absolute=True">NetC56_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3965696">10.0729mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8747.441mil|Location2.X=9190.669mil|Location1.Y=1847.638mil|Location2.Y=1909.055mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8747.441mil|Location2.X=9190.669mil|Location1.Y=1847.638mil|Location2.Y=1909.055mil|Absolute=True">NetC57_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="4090568">10.39mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5638.425mil|Location2.X=5972.559mil|Location1.Y=2205.198mil|Location2.Y=2659.725mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5638.425mil|Location2.X=5972.559mil|Location1.Y=2205.198mil|Location2.Y=2659.725mil|Absolute=True">NetIC10_5</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="6237426">15.8431mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6450.905mil|Location2.X=6635.394mil|Location1.Y=2505.236mil|Location2.Y=2747.559mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6450.905mil|Location2.X=6635.394mil|Location1.Y=2505.236mil|Location2.Y=2747.559mil|Absolute=True">NetIC11_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3360412">8.5354mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6247.441mil|Location2.X=6505.394mil|Location1.Y=2212.441mil|Location2.Y=2459.96mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6247.441mil|Location2.X=6505.394mil|Location1.Y=2212.441mil|Location2.Y=2459.96mil|Absolute=True">NetIC11_3</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="4115546">10.4535mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7245.119mil|Location2.X=7410.394mil|Location1.Y=2492.638mil|Location2.Y=2732.559mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7245.119mil|Location2.X=7410.394mil|Location1.Y=2492.638mil|Location2.Y=2732.559mil|Absolute=True">NetIC12_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3192920">8.11mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7052.441mil|Location2.X=7300.394mil|Location1.Y=2192.441mil|Location2.Y=2455.394mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7052.441mil|Location2.X=7300.394mil|Location1.Y=2192.441mil|Location2.Y=2455.394mil|Absolute=True">NetIC12_3</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="4083015">10.3709mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7215.119mil|Location2.X=7429.054mil|Location1.Y=1737.638mil|Location2.Y=1987.559mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7215.119mil|Location2.X=7429.054mil|Location1.Y=1737.638mil|Location2.Y=1987.559mil|Absolute=True">NetIC13_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3603784">9.1536mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7012.441mil|Location2.X=7256.457mil|Location1.Y=1542.441mil|Location2.Y=1692.362mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7012.441mil|Location2.X=7256.457mil|Location1.Y=1542.441mil|Location2.Y=1692.362mil|Absolute=True">NetIC13_3</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3483175">8.8473mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6450.119mil|Location2.X=6705.394mil|Location1.Y=1722.638mil|Location2.Y=1952.559mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6450.119mil|Location2.X=6705.394mil|Location1.Y=1722.638mil|Location2.Y=1952.559mil|Absolute=True">NetIC14_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3495001">8.8773mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6277.441mil|Location2.X=6495.394mil|Location1.Y=1537.441mil|Location2.Y=1677.362mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6277.441mil|Location2.X=6495.394mil|Location1.Y=1537.441mil|Location2.Y=1677.362mil|Absolute=True">NetIC14_3</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="2682773">6.8142mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6562.441mil|Location2.X=6790.117mil|Location1.Y=3262.441mil|Location2.Y=3492.362mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6562.441mil|Location2.X=6790.117mil|Location1.Y=3262.441mil|Location2.Y=3492.362mil|Absolute=True">NetIC1_3</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3715503">9.4374mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7632.441mil|Location2.X=7870.394mil|Location1.Y=3257.441mil|Location2.Y=3495.394mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7632.441mil|Location2.X=7870.394mil|Location1.Y=3257.441mil|Location2.Y=3495.394mil|Absolute=True">NetIC2_3</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3783749">9.6107mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8581.103mil|Location2.X=8795.394mil|Location1.Y=3222.441mil|Location2.Y=3470.394mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8581.103mil|Location2.X=8795.394mil|Location1.Y=3222.441mil|Location2.Y=3470.394mil|Absolute=True">NetIC3_3</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3679666">9.3464mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9726.103mil|Location2.X=9970.394mil|Location1.Y=3282.441mil|Location2.Y=3507.362mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9726.103mil|Location2.X=9970.394mil|Location1.Y=3282.441mil|Location2.Y=3507.362mil|Absolute=True">NetIC4_3</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3808000">9.6723mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10847.441mil|Location2.X=11085.394mil|Location1.Y=3312.441mil|Location2.Y=3570.394mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10847.441mil|Location2.X=11085.394mil|Location1.Y=3312.441mil|Location2.Y=3570.394mil|Absolute=True">NetIC5_3</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3906496">9.9225mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4137.441mil|Location2.X=4687.559mil|Location1.Y=2976.93mil|Location2.Y=3107.994mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4137.441mil|Location2.X=4687.559mil|Location1.Y=2976.93mil|Location2.Y=3107.994mil|Absolute=True">NetIC6_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="6321670">16.057mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4408.425mil|Location2.X=4704.606mil|Location1.Y=3157.206mil|Location2.Y=3646.575mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4408.425mil|Location2.X=4704.606mil|Location1.Y=3157.206mil|Location2.Y=3646.575mil|Absolute=True">NetIC6_5</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="10815588">27.4716mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4967.441mil|Location2.X=5547.559mil|Location1.Y=2958.78mil|Location2.Y=3169.644mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4967.441mil|Location2.X=5547.559mil|Location1.Y=2958.78mil|Location2.Y=3169.644mil|Absolute=True">NetIC7_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="6617465">16.8084mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5223.425mil|Location2.X=5547.559mil|Location1.Y=3197.048mil|Location2.Y=3633.425mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5223.425mil|Location2.X=5547.559mil|Location1.Y=3197.048mil|Location2.Y=3633.425mil|Absolute=True">NetIC7_5</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="6271098">15.9286mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5737.441mil|Location2.X=6322.559mil|Location1.Y=3033.346mil|Location2.Y=3215.394mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5737.441mil|Location2.X=6322.559mil|Location1.Y=3033.346mil|Location2.Y=3215.394mil|Absolute=True">NetIC8_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="6183337">15.7057mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5958.425mil|Location2.X=6322.559mil|Location1.Y=3230.198mil|Location2.Y=3651.575mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5958.425mil|Location2.X=6322.559mil|Location1.Y=3230.198mil|Location2.Y=3651.575mil|Absolute=True">NetIC8_5</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="6341829">16.1082mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4642.441mil|Location2.X=5202.559mil|Location1.Y=2006.85mil|Location2.Y=2240.394mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4642.441mil|Location2.X=5202.559mil|Location1.Y=2006.85mil|Location2.Y=2240.394mil|Absolute=True">NetIC9_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="6263473">15.9092mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4873.425mil|Location2.X=5202.559mil|Location1.Y=2240.198mil|Location2.Y=2671.575mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4873.425mil|Location2.X=5202.559mil|Location1.Y=2240.198mil|Location2.Y=2671.575mil|Absolute=True">NetIC9_5</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="6149901">15.6207mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7336.103mil|Location2.X=7391.221mil|Location1.Y=3369.606mil|Location2.Y=3597.638mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7336.103mil|Location2.X=7391.221mil|Location1.Y=3369.606mil|Location2.Y=3597.638mil|Absolute=True">NetLCIN1_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1892156">4.8061mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8368.149mil|Location2.X=8423.267mil|Location1.Y=3426.576mil|Location2.Y=3637.638mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8368.149mil|Location2.X=8423.267mil|Location1.Y=3426.576mil|Location2.Y=3637.638mil|Absolute=True">NetLCIN2_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1729162">4.3921mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9347.441mil|Location2.X=9402.559mil|Location1.Y=3424.606mil|Location2.Y=3647.638mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9347.441mil|Location2.X=9402.559mil|Location1.Y=3424.606mil|Location2.Y=3647.638mil|Absolute=True">NetLCIN3_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1851789">4.7035mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10521.103mil|Location2.X=10576.221mil|Location1.Y=3451.576mil|Location2.Y=3673.618mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10521.103mil|Location2.X=10576.221mil|Location1.Y=3451.576mil|Location2.Y=3673.618mil|Absolute=True">NetLCIN4_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1856240">4.7148mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11655.315mil|Location2.X=11710.433mil|Location1.Y=3484.174mil|Location2.Y=3706.216mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11655.315mil|Location2.X=11710.433mil|Location1.Y=3484.174mil|Location2.Y=3706.216mil|Absolute=True">NetLCIN5_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1838942">4.6709mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3042.441mil|Location2.X=3312.559mil|Location1.Y=4010.946mil|Location2.Y=4461.417mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3042.441mil|Location2.X=3312.559mil|Location1.Y=4010.946mil|Location2.Y=4461.417mil|Absolute=True">NetQ1_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="5973794">15.1734mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3401.473mil|Location2.X=3677.559mil|Location1.Y=4010.946mil|Location2.Y=4461.417mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3401.473mil|Location2.X=3677.559mil|Location1.Y=4010.946mil|Location2.Y=4461.417mil|Absolute=True">NetQ2_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="6307681">16.0215mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3767.473mil|Location2.X=4057.559mil|Location1.Y=4010.946mil|Location2.Y=4461.417mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3767.473mil|Location2.X=4057.559mil|Location1.Y=4010.946mil|Location2.Y=4461.417mil|Absolute=True">NetQ3_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="6389102">16.2283mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4133.473mil|Location2.X=4427.559mil|Location1.Y=4010.946mil|Location2.Y=4461.417mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4133.473mil|Location2.X=4427.559mil|Location1.Y=4010.946mil|Location2.Y=4461.417mil|Absolute=True">NetQ4_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="6458392">16.4043mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4499.473mil|Location2.X=4797.559mil|Location1.Y=4010.946mil|Location2.Y=4461.417mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4499.473mil|Location2.X=4797.559mil|Location1.Y=4010.946mil|Location2.Y=4461.417mil|Absolute=True">NetQ5_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="6439813">16.3571mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4865.473mil|Location2.X=5162.559mil|Location1.Y=4010.946mil|Location2.Y=4461.417mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4865.473mil|Location2.X=5162.559mil|Location1.Y=4010.946mil|Location2.Y=4461.417mil|Absolute=True">NetQ6_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="6459102">16.4061mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8235.119mil|Location2.X=11163.78mil|Location1.Y=1677.047mil|Location2.Y=2629.764mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8235.119mil|Location2.X=11163.78mil|Location1.Y=1677.047mil|Location2.Y=2629.764mil|Absolute=True">PT1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="32975300">83.7573mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6225.394mil|Location2.X=8923.267mil|Location1.Y=2504.606mil|Location2.Y=4541.22mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6225.394mil|Location2.X=8923.267mil|Location1.Y=2504.606mil|Location2.Y=4541.22mil|Absolute=True">PT1_OUT</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="41106790">104.4112mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6549.331mil|Location2.X=7897.559mil|Location1.Y=1515mil|Location2.Y=2459.96mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6549.331mil|Location2.X=7897.559mil|Location1.Y=1515mil|Location2.Y=2459.96mil|Absolute=True">PT1_PREC</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="19261458">48.9241mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8305.119mil|Location2.X=11163.78mil|Location1.Y=2247.047mil|Location2.Y=2679.764mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8305.119mil|Location2.X=11163.78mil|Location1.Y=2247.047mil|Location2.Y=2679.764mil|Absolute=True">PT2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="30755890">78.12mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6545.394mil|Location2.X=8647.677mil|Location1.Y=2504.606mil|Location2.Y=4504.173mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6545.394mil|Location2.X=8647.677mil|Location1.Y=2504.606mil|Location2.Y=4504.173mil|Absolute=True">PT2_OUT</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="37442551">95.1041mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7326mil|Location2.X=7952.559mil|Location1.Y=2192.441mil|Location2.Y=2752.442mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7326mil|Location2.X=7952.559mil|Location1.Y=2192.441mil|Location2.Y=2752.442mil|Absolute=True">PT2_PREC</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="12310324">31.2682mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9149.331mil|Location2.X=11163.78mil|Location1.Y=1759.645mil|Location2.Y=2729.764mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9149.331mil|Location2.X=11163.78mil|Location1.Y=1759.645mil|Location2.Y=2729.764mil|Absolute=True">PT3</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="24286728">61.6883mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6525mil|Location2.X=9623.897mil|Location1.Y=1734.606mil|Location2.Y=4521.22mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6525mil|Location2.X=9623.897mil|Location1.Y=1734.606mil|Location2.Y=4521.22mil|Absolute=True">PT3_OUT</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="56391925">143.2355mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7304.606mil|Location2.X=8797.559mil|Location1.Y=1536.93mil|Location2.Y=1692.362mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7304.606mil|Location2.X=8797.559mil|Location1.Y=1536.93mil|Location2.Y=1692.362mil|Absolute=True">PT3_PREC</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="16076622">40.8346mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9185.119mil|Location2.X=11163.78mil|Location1.Y=2352.047mil|Location2.Y=2779.764mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9185.119mil|Location2.X=11163.78mil|Location1.Y=2352.047mil|Location2.Y=2779.764mil|Absolute=True">PT4</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="22659842">57.556mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6160mil|Location2.X=9348.307mil|Location1.Y=1724.606mil|Location2.Y=4561.22mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6160mil|Location2.X=9348.307mil|Location1.Y=1724.606mil|Location2.Y=4561.22mil|Absolute=True">PT4_OUT</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="53880094">136.8554mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6544.606mil|Location2.X=8857.559mil|Location1.Y=1495mil|Location2.Y=2375.394mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6544.606mil|Location2.X=8857.559mil|Location1.Y=1495mil|Location2.Y=2375.394mil|Absolute=True">PT4_PREC</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="33510119">85.1157mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9974.793mil|Location2.X=12502mil|Location1.Y=2747.736mil|Location2.Y=3285.48mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9974.793mil|Location2.X=12502mil|Location1.Y=2747.736mil|Location2.Y=3285.48mil|Absolute=True">SCK</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="22671868">57.5865mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10377.677mil|Location2.X=12033.78mil|Location1.Y=2600.236mil|Location2.Y=4561.22mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10377.677mil|Location2.X=12033.78mil|Location1.Y=2600.236mil|Location2.Y=4561.22mil|Absolute=True">TC1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="32470486">82.475mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10239.881mil|Location2.X=12033.78mil|Location1.Y=2650.236mil|Location2.Y=4581.22mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10239.881mil|Location2.X=12033.78mil|Location1.Y=2650.236mil|Location2.Y=4581.22mil|Absolute=True">TC2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="32940588">83.6691mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10102.087mil|Location2.X=12033.78mil|Location1.Y=2700.236mil|Location2.Y=4601.22mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10102.087mil|Location2.X=12033.78mil|Location1.Y=2700.236mil|Location2.Y=4601.22mil|Absolute=True">TC3</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="35650895">90.5533mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9964.291mil|Location2.X=12033.78mil|Location1.Y=2750.236mil|Location2.Y=4621.22mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\clayt\Documents\GitHub\arca\ARCA\arca.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9964.291mil|Location2.X=12033.78mil|Location1.Y=2750.236mil|Location2.Y=4621.22mil|Absolute=True">TC4</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="35230917">89.4865mm
+			</a></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

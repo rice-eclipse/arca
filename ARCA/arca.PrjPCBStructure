@@ -1,1 +1,9 @@
-Record=TopLevelDocument|FileName=ADC_SCH.SchDoc
+Record=TopLevelDocument|FileName=ADC_SCH.SchDoc|SheetNumber= 
+Record=NoMainPathDocument|SourceDocument=ADC_SCH.SchDoc|FileName=Connectors.SchDoc|SheetNumber= 
+Record=NoMainPathDocument|SourceDocument=ADC_SCH.SchDoc|FileName=drivers_SCH.SchDoc|SheetNumber= 
+Record=NoMainPathDocument|SourceDocument=ADC_SCH.SchDoc|FileName=LC_to_ADC.SchDoc|SheetNumber= 
+Record=NoMainPathDocument|SourceDocument=ADC_SCH.SchDoc|FileName=Load_Cells_SCH.SchDoc|SheetNumber= 
+Record=NoMainPathDocument|SourceDocument=ADC_SCH.SchDoc|FileName=PI_SCH.SchDoc|SheetNumber= 
+Record=NoMainPathDocument|SourceDocument=ADC_SCH.SchDoc|FileName=Power.SchDoc|SheetNumber= 
+Record=NoMainPathDocument|SourceDocument=ADC_SCH.SchDoc|FileName=Pressure_Transducers_SCH.SchDoc|SheetNumber= 
+Record=NoMainPathDocument|SourceDocument=ADC_SCH.SchDoc|FileName=PT_to_ADCs.SchDoc|SheetNumber= 
