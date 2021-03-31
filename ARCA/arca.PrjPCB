@@ -397,6 +397,23 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
+[Document22]
+DocumentPath=arca_pnp_generator.OutJob
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
 [GeneratedDocument1]
 DocumentPath=Project Outputs for arca\arca.DRR
 DItemRevisionGUID=
@@ -543,6 +560,10 @@ DItemRevisionGUID=
 
 [GeneratedDocument37]
 DocumentPath=Project Outputs for arca\Net Status - arca.html
+DItemRevisionGUID=
+
+[GeneratedDocument38]
+DocumentPath=Project Outputs for arca\Pick Place\Pick Place for arca.csv
 DItemRevisionGUID=
 
 [Configuration1]
