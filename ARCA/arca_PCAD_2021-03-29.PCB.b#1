@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -79,9 +79,9 @@
 <wire x1="305.181009375" y1="0" x2="305.181009375" y2="84.963" width="0.254" layer="48"/>
 <wire x1="0.381" y1="84.963" x2="305.181009375" y2="84.963" width="0.254" layer="48"/>
 <wire x1="0" y1="0" x2="0" y2="85.09" width="0.1524" layer="20"/>
-<wire x1="0" y1="85.09" x2="305.308" y2="85.09" width="0.1524" layer="20"/>
-<wire x1="305.308" y1="85.09" x2="305.308" y2="0" width="0.1524" layer="20"/>
-<wire x1="305.308" y1="0" x2="0" y2="0" width="0.1524" layer="20"/>
+<wire x1="0" y1="85.09" x2="304.8" y2="85.09" width="0.1524" layer="20"/>
+<wire x1="304.8" y1="85.09" x2="304.8" y2="0" width="0.1524" layer="20"/>
+<wire x1="304.8" y1="0" x2="0" y2="0" width="0.1524" layer="20"/>
 </plain>
 <libraries>
 <library name="arca_PCAD_2021-03-29">
