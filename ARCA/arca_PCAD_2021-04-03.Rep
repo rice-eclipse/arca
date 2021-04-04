@@ -1,0 +1,191 @@
+Export log for : arca_PCAD_2021-04-03.Rep
+AddingPadStyle (Default)
+AddingPadStyle P:EX244Y244D1081
+AddingPadStyle EF85X42TOP1
+AddingPadStyle EF24X59TOP1
+AddingPadStyle P:EX59Y59D351
+AddingPadStyle P:SX59Y59D351
+AddingPadStyle P:SX47Y47D281
+AddingPadStyle P:EX47Y47D281
+AddingPadStyle EF49X28TOP1
+AddingPadStyle P:EX79Y79D391
+AddingPadStyle P:SX67Y67D431
+AddingPadStyle P:EX67Y67D431
+AddingPadStyle EF24X35TOP1
+AddingPadStyle P:PX46Y46D321
+AddingPadStyle P:SX39Y39D241
+AddingPadStyle P:EX39Y39D241
+AddingPadStyle EF24X91TOP1
+AddingPadStyle P:EX65Y65D391
+AddingPadStyle EF53X30TOP1
+Adding ViaStyle (Default)
+Adding ViaStyle V:EX24Y24D121
+Adding TextStyle (Default)
+Adding TextStyle T:H60W10
+Adding TextStyle T:H50W8
+Adding PatternDef LM1084ISX-5.0/NOPB_1
+Adding PatternDef SOIC127P600X175-16N_1
+Adding PatternDef HDR2X20_1
+Adding PatternDef HDR1X5_1
+Adding PatternDef HDR1X11_1
+Adding PatternDef VR5_1
+Adding PatternDef VR5_2
+Adding PatternDef VR5_3
+Adding PatternDef RESC_0805_2012_1
+Adding PatternDef 4PinCanConnector_1
+Adding PatternDef UA78M_1
+Adding PatternDef 4PinCanConnector_2
+Adding PatternDef RESC_0805_2012_2
+Adding PatternDef RESC_0805_2012_3
+Adding PatternDef RESC_0805_2012_4
+Adding PatternDef RESC_0805_2012_5
+Adding PatternDef 2POS_GREEN_BOI_1
+Adding PatternDef SOT95P245X110-3N_1
+Adding PatternDef RESC_0805_2012_6
+Adding PatternDef RESC_0805_2012_7
+Adding PatternDef RESC_0805_2012_8
+Adding PatternDef RESC_0805_2012_9
+Adding PatternDef RESC_0805_2012_10
+Adding PatternDef RESC_0805_2012_11
+Adding PatternDef RESC_0805_2012_12
+Adding PatternDef RESC_0805_2012_13
+Adding PatternDef RESC_0805_2012_14
+Adding PatternDef RESC_0805_2012_15
+Adding PatternDef RESC_0805_2012_16
+Adding PatternDef RESC_0805_2012_17
+Adding PatternDef 4PinCanConnector_3
+Adding PatternDef 4PinCanConnector_4
+Adding PatternDef HDR1X2_1
+Adding PatternDef LED5MM_1
+Adding PatternDef LED5MM_2
+Adding PatternDef LED5MM_3
+Adding PatternDef LED5MM_4
+Adding PatternDef MHDR1X2_1
+Adding PatternDef MHDR1X2_2
+Adding PatternDef MHDR1X2_3
+Adding PatternDef MHDR1X2_4
+Adding PatternDef 4PinCanConnector_5
+Adding PatternDef 4PinCanConnector_6
+Adding PatternDef 2POS_GREEN_BOI_2
+Adding PatternDef SOT95P245X110-5N_1
+Adding PatternDef SOT95P245X110-5N_2
+Adding PatternDef SOT95P245X110-5N_3
+Adding PatternDef SOT95P245X110-5N_4
+Adding PatternDef SOIC127P1030X265-8N_1
+Adding PatternDef SOIC127P1030X265-8N_2
+Adding PatternDef SOT95P245X110-5N_5
+Adding PatternDef SOT95P245X110-5N_6
+Adding PatternDef SOT95P245X110-5N_7
+Adding PatternDef DIODE-0.7_1
+Adding PatternDef DIOC2012X06N_1
+Adding PatternDef CAPCP2012X06N_1
+Adding PatternDef CAPCP2012X06N_2
+Adding PatternDef CAPCP2012X06N_3
+Adding PatternDef CAPCP2012X06N_4
+Adding PatternDef CAPCP2012X06N_5
+Adding PatternDef CAPCP2012X06N_6
+Adding PatternDef CAPCP2012X06N_7
+Adding PatternDef CAPCP2012X06N_8
+Adding PatternDef CAPCP2012X06N_9
+Adding PatternDef CAPCP2012X06N_10
+Adding PatternDef CAPCP2012X06N_11
+Adding PatternDef CAPCP2012X06N_12
+Adding PatternDef CAPCP2012X06N_13
+Adding PatternDef CAPCP2012X06N_14
+Adding PatternDef CAPCP2012X06N_15
+Adding PatternDef CAPCP2012X06N_16
+Adding CompDef LM1084ISX-5.0/NOPB_1
+Adding CompDef SOIC127P600X175-16N_1
+Adding CompDef HDR2X20_1
+Adding CompDef HDR1X5_1
+Adding CompDef HDR1X11_1
+Adding CompDef VR5_1
+Adding CompDef VR5_2
+Adding CompDef VR5_3
+Adding CompDef RESC_0805_2012_1
+Adding CompDef 4PinCanConnector_1
+Adding CompDef UA78M_1
+Adding CompDef 4PinCanConnector_2
+Adding CompDef RESC_0805_2012_2
+Adding CompDef RESC_0805_2012_3
+Adding CompDef RESC_0805_2012_4
+Adding CompDef RESC_0805_2012_5
+Adding CompDef 2POS_GREEN_BOI_1
+Adding CompDef SOT95P245X110-3N_1
+Adding CompDef RESC_0805_2012_6
+Adding CompDef RESC_0805_2012_7
+Adding CompDef RESC_0805_2012_8
+Adding CompDef RESC_0805_2012_9
+Adding CompDef RESC_0805_2012_10
+Adding CompDef RESC_0805_2012_11
+Adding CompDef RESC_0805_2012_12
+Adding CompDef RESC_0805_2012_13
+Adding CompDef RESC_0805_2012_14
+Adding CompDef RESC_0805_2012_15
+Adding CompDef RESC_0805_2012_16
+Adding CompDef RESC_0805_2012_17
+Adding CompDef 4PinCanConnector_3
+Adding CompDef 4PinCanConnector_4
+Adding CompDef HDR1X2_1
+Adding CompDef LED5MM_1
+Adding CompDef LED5MM_2
+Adding CompDef LED5MM_3
+Adding CompDef LED5MM_4
+Adding CompDef MHDR1X2_1
+Adding CompDef MHDR1X2_2
+Adding CompDef MHDR1X2_3
+Adding CompDef MHDR1X2_4
+Adding CompDef 4PinCanConnector_5
+Adding CompDef 4PinCanConnector_6
+Adding CompDef 2POS_GREEN_BOI_2
+Adding CompDef SOT95P245X110-5N_1
+Adding CompDef SOT95P245X110-5N_2
+Adding CompDef SOT95P245X110-5N_3
+Adding CompDef SOT95P245X110-5N_4
+Adding CompDef SOIC127P1030X265-8N_1
+Adding CompDef SOIC127P1030X265-8N_2
+Adding CompDef SOT95P245X110-5N_5
+Adding CompDef SOT95P245X110-5N_6
+Adding CompDef SOT95P245X110-5N_7
+Adding CompDef DIODE-0.7_1
+Adding CompDef DIOC2012X06N_1
+Adding CompDef CAPCP2012X06N_1
+Adding CompDef CAPCP2012X06N_2
+Adding CompDef CAPCP2012X06N_3
+Adding CompDef CAPCP2012X06N_4
+Adding CompDef CAPCP2012X06N_5
+Adding CompDef CAPCP2012X06N_6
+Adding CompDef CAPCP2012X06N_7
+Adding CompDef CAPCP2012X06N_8
+Adding CompDef CAPCP2012X06N_9
+Adding CompDef CAPCP2012X06N_10
+Adding CompDef CAPCP2012X06N_11
+Adding CompDef CAPCP2012X06N_12
+Adding CompDef CAPCP2012X06N_13
+Adding CompDef CAPCP2012X06N_14
+Adding CompDef CAPCP2012X06N_15
+Adding CompDef CAPCP2012X06N_16
+      Warning: Polygon has been imported as unpoured.  It will need to be repoured in PCAD
+      Warning: Polygon has been imported as unpoured.  It will need to be repoured in PCAD
+      Warning: Unexpected Poly Region Object Found On Layer TopOverlay.
+      Warning: Unexpected Poly Region Object Found On Layer TopOverlay.
+      Warning: Unexpected Poly Region Object Found On Layer TopOverlay.
+      Warning: Unexpected Poly Region Object Found On Layer TopOverlay.
+      Warning: Unexpected Poly Region Object Found On Layer TopOverlay.
+      Warning: Unexpected Poly Region Object Found On Layer TopOverlay.
+      Warning: Unexpected Poly Region Object Found On Layer TopOverlay.
+      Warning: Unexpected Poly Region Object Found On Layer TopOverlay.
+      Warning: Unexpected Poly Region Object Found On Layer TopOverlay.
+      Warning: Unexpected Poly Region Object Found On Layer TopOverlay.
+      Warning: Unexpected Poly Region Object Found On Layer TopOverlay.
+      Warning: Unexpected Poly Region Object Found On Layer TopOverlay.
+      Warning: Unexpected Poly Region Object Found On Layer TopOverlay.
+      Warning: Unexpected Poly Region Object Found On Layer TopOverlay.
+      Warning: Unexpected Poly Region Object Found On Layer TopOverlay.
+      Warning: Unexpected Poly Region Object Found On Layer TopOverlay.
+      Warning: Unexpected Poly Region Object Found On Layer TopOverlay.
+      Warning: Unexpected Poly Region Object Found On Layer TopOverlay.
+      Warning: Unexpected Poly Region Object Found On Layer TopOverlay.
+      Warning: Unexpected Poly Region Object Found On Layer TopOverlay.
+ 
+EndLog

@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2021-04-04T01:35:03Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.5.0"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "arca_PCAD_2021-04-03.PCB"
+        },
+        "Owner": "Clayton Ramsey <claytonwramsey@gmail.com>",
+        "Size": {
+            "X": 306.07,
+            "Y": 85.09
+        }
+    }
+}
