@@ -8133,19 +8133,17 @@ In this library the device names are the same as the pin names of the symbols, t
 </packages>
 <symbols>
 <symbol name="SCHOTTKY">
-<pin name="P$1" x="7.62" y="0" visible="off" length="middle" rot="R180"/>
-<pin name="P$2" x="-7.62" y="0" visible="off" length="middle"/>
-<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-2.54" x2="1.905" y2="0" width="0.254" layer="94"/>
-<wire x1="1.905" y1="0" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
-<wire x1="1.905" y1="2.54" x2="1.905" y2="0" width="0.254" layer="94"/>
-<wire x1="1.905" y1="0" x2="1.905" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="1.905" y1="-2.54" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="1.905" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
-<wire x1="1.905" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="1.27" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="2.54" y2="1.905" width="0.254" layer="94"/>
-<text x="3.81" y="1.27" size="1.27" layer="95">&gt;NAME</text>
+<pin name="P$1" x="3.81" y="0" visible="off" length="short" rot="R180"/>
+<pin name="P$2" x="-3.81" y="0" visible="off" length="short"/>
+<text x="-2.54" y="2.54" size="1.27" layer="95">&gt;NAME</text>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="0.79375" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.74625" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.74625" y1="1.27" x2="1.74625" y2="0.79375" width="0.254" layer="94"/>
+<wire x1="0.79375" y1="-1.27" x2="0.79375" y2="-0.79375" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -10274,13 +10272,13 @@ Source: www.kingbright.com</description>
 <attribute name="VALUE" x="41.656" y="132.969" size="1.778" layer="96"/>
 </instance>
 <instance part="D1" gate="D1" x="55.88" y="53.34" smashed="yes" rot="R180">
-<attribute name="NAME" x="63.5" y="50.8" size="1.27" layer="95" rot="R180"/>
+<attribute name="NAME" x="60.96" y="55.88" size="1.27" layer="95" rot="R180"/>
 </instance>
 <instance part="D2" gate="D1" x="55.88" y="96.52" smashed="yes" rot="R180">
-<attribute name="NAME" x="63.5" y="93.98" size="1.27" layer="95" rot="R180"/>
+<attribute name="NAME" x="60.96" y="99.06" size="1.27" layer="95" rot="R180"/>
 </instance>
 <instance part="D3" gate="D1" x="55.88" y="152.4" smashed="yes" rot="R180">
-<attribute name="NAME" x="63.5" y="149.86" size="1.27" layer="95" rot="R180"/>
+<attribute name="NAME" x="60.96" y="154.94" size="1.27" layer="95" rot="R180"/>
 </instance>
 <instance part="PWR_3V3" gate="G$1" x="81.28" y="38.1" smashed="yes">
 <attribute name="NAME" x="84.836" y="30.988" size="1.778" layer="95" rot="R90"/>
@@ -10332,7 +10330,7 @@ Source: www.kingbright.com</description>
 <wire x1="71.12" y1="83.82" x2="71.12" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="86.36" x2="71.12" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="D2" gate="D1" pin="P$2"/>
-<wire x1="71.12" y1="96.52" x2="63.5" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="96.52" x2="59.69" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="PWR_5V" gate="G$1" pin="A"/>
 <wire x1="81.28" y1="83.82" x2="81.28" y2="86.36" width="0.1524" layer="91"/>
 <junction x="81.28" y="86.36"/>
@@ -10403,7 +10401,7 @@ Source: www.kingbright.com</description>
 <wire x1="71.12" y1="40.64" x2="71.12" y2="43.18" width="0.1524" layer="91"/>
 <junction x="71.12" y="43.18"/>
 <pinref part="D1" gate="D1" pin="P$2"/>
-<wire x1="63.5" y1="53.34" x2="71.12" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="59.69" y1="53.34" x2="71.12" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="53.34" x2="71.12" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="PWR_3V3" gate="G$1" pin="A"/>
 <wire x1="81.28" y1="40.64" x2="81.28" y2="43.18" width="0.1524" layer="91"/>
@@ -10433,13 +10431,13 @@ Source: www.kingbright.com</description>
 <wire x1="43.18" y1="142.24" x2="40.64" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="D1" gate="D1" pin="P$1"/>
 <wire x1="40.64" y1="142.24" x2="33.02" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="53.34" x2="40.64" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="52.07" y1="53.34" x2="40.64" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="53.34" x2="40.64" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="D2" gate="D1" pin="P$1"/>
-<wire x1="48.26" y1="96.52" x2="40.64" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="52.07" y1="96.52" x2="40.64" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="96.52" x2="40.64" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="D3" gate="D1" pin="P$1"/>
-<wire x1="48.26" y1="152.4" x2="40.64" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="52.07" y1="152.4" x2="40.64" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="152.4" x2="40.64" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="40.64" y1="139.7" x2="40.64" y2="142.24" width="0.1524" layer="91"/>
@@ -10461,7 +10459,7 @@ Source: www.kingbright.com</description>
 <wire x1="76.2" y1="139.7" x2="76.2" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="142.24" x2="71.12" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="D3" gate="D1" pin="P$2"/>
-<wire x1="71.12" y1="152.4" x2="63.5" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="152.4" x2="59.69" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="PWR_10V" gate="G$1" pin="A"/>
 <wire x1="83.82" y1="139.7" x2="83.82" y2="142.24" width="0.1524" layer="91"/>
 <junction x="76.2" y="142.24"/>
