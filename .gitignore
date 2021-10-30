@@ -2,3 +2,6 @@
 
 __Previews/
 History/
+*.s#*
+*.l#*
+*.b#*
