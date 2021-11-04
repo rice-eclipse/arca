@@ -5,3 +5,5 @@ History/
 *.s#*
 *.l#*
 *.b#*
+*.job
+*.pro
