@@ -13471,6 +13471,130 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 </deviceset>
 </devicesets>
 </library>
+<library name="microchip-extra">
+<packages>
+<package name="SO-16">
+<description>&lt;B&gt;Small Outline Narrow Plastic Gull Wing&lt;/B&gt;&lt;p&gt;
+150-mil body, package type SN</description>
+<wire x1="-5.44" y1="3.9" x2="5.44" y2="3.9" width="0.1998" layer="39"/>
+<wire x1="5.44" y1="3.9" x2="5.44" y2="-3.9" width="0.1998" layer="39"/>
+<wire x1="5.44" y1="-3.9" x2="-5.44" y2="-3.9" width="0.1998" layer="39"/>
+<wire x1="-5.44" y1="-3.9" x2="-5.44" y2="3.9" width="0.1998" layer="39"/>
+<wire x1="4.94" y1="1.9" x2="4.94" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="4.94" y1="-1.4" x2="4.94" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="-4.94" y1="-1.9" x2="-4.94" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="-4.94" y1="-1.4" x2="-4.94" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="-4.94" y1="1.9" x2="4.94" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="4.94" y1="-1.4" x2="-4.94" y2="-1.4" width="0.2032" layer="51"/>
+<smd name="2" x="-3.175" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="7" x="3.175" y="-2.6" dx="0.6" dy="2.2" layer="1" rot="R180"/>
+<smd name="1" x="-4.445" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="3" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="4" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="8" x="4.445" y="-2.6" dx="0.6" dy="2.2" layer="1" rot="R180"/>
+<smd name="6" x="1.905" y="-2.6" dx="0.6" dy="2.2" layer="1" rot="R180"/>
+<smd name="5" x="0.635" y="-2.6" dx="0.6" dy="2.2" layer="1" rot="R180"/>
+<text x="-5.207" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="6.477" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<text x="-1.905" y="-0.635" size="0.4064" layer="48">IPC SO8</text>
+<text x="-1.905" y="0.365" size="0.3048" layer="48">JEDEC MS-012 AA</text>
+<rectangle x1="-4.6901" y1="-3.1001" x2="-4.1999" y2="-2" layer="51"/>
+<rectangle x1="-3.4201" y1="-3.1001" x2="-2.9299" y2="-2" layer="51"/>
+<rectangle x1="-2.1501" y1="-3.1001" x2="-1.6599" y2="-2" layer="51"/>
+<rectangle x1="-0.8801" y1="-3.1001" x2="-0.3899" y2="-2" layer="51"/>
+<rectangle x1="-0.8801" y1="2" x2="-0.3899" y2="3.1001" layer="51"/>
+<rectangle x1="-2.1501" y1="2" x2="-1.6599" y2="3.1001" layer="51"/>
+<rectangle x1="-3.4201" y1="2" x2="-2.9299" y2="3.1001" layer="51"/>
+<rectangle x1="-4.6901" y1="2" x2="-4.1999" y2="3.1001" layer="51"/>
+<rectangle x1="-1" y1="-1" x2="1" y2="1" layer="35"/>
+<rectangle x1="0.3899" y1="2" x2="0.8801" y2="3.1001" layer="51"/>
+<rectangle x1="1.6599" y1="2" x2="2.1501" y2="3.1001" layer="51"/>
+<rectangle x1="2.9299" y1="2" x2="3.4201" y2="3.1001" layer="51"/>
+<rectangle x1="4.1999" y1="2" x2="4.6901" y2="3.1001" layer="51"/>
+<rectangle x1="0.3899" y1="-3.1001" x2="0.8801" y2="-2" layer="51"/>
+<rectangle x1="1.6599" y1="-3.1001" x2="2.1501" y2="-2" layer="51"/>
+<rectangle x1="1.6599" y1="-3.1001" x2="2.1501" y2="-2" layer="51"/>
+<rectangle x1="1.6599" y1="-3.1001" x2="2.1501" y2="-2" layer="51"/>
+<wire x1="4.94" y1="-1.9" x2="-4.94" y2="-1.9" width="0.2032" layer="51"/>
+<rectangle x1="2.9299" y1="-3.1001" x2="3.4201" y2="-2" layer="51"/>
+<rectangle x1="2.9299" y1="-3.1001" x2="3.4201" y2="-2" layer="51"/>
+<rectangle x1="4.1999" y1="-3.1001" x2="4.6901" y2="-2" layer="51"/>
+<smd name="9" x="4.445" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="10" x="3.175" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="11" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="12" x="0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="13" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="14" x="-1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="15" x="-3.175" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="16" x="-4.445" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MCP3208">
+<wire x1="-10.16" y1="15.24" x2="10.16" y2="15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="15.24" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-15.24" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-15.24" x2="-10.16" y2="15.24" width="0.254" layer="94"/>
+<text x="-10.16" y="16.51" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="CH0" x="-12.7" y="12.7" length="short"/>
+<pin name="CH1" x="-12.7" y="10.16" length="short"/>
+<pin name="CH2" x="-12.7" y="7.62" length="short"/>
+<pin name="CH3" x="-12.7" y="5.08" length="short"/>
+<pin name="CH4" x="-12.7" y="2.54" length="short"/>
+<pin name="CH5" x="-12.7" y="0" length="short"/>
+<pin name="CH6" x="-12.7" y="-2.54" length="short"/>
+<pin name="CH7" x="-12.7" y="-5.08" length="short"/>
+<pin name="CS*" x="12.7" y="-12.7" length="short" rot="R180"/>
+<pin name="DIN" x="12.7" y="-10.16" length="short" rot="R180"/>
+<pin name="DOUT" x="12.7" y="-7.62" length="short" rot="R180"/>
+<pin name="VDD" x="12.7" y="12.7" length="short" rot="R180"/>
+<pin name="VREF" x="12.7" y="7.62" length="short" rot="R180"/>
+<pin name="AGND" x="12.7" y="2.54" length="short" rot="R180"/>
+<pin name="DGND" x="-12.7" y="-12.7" length="short"/>
+<pin name="CLK" x="12.7" y="-2.54" length="short" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MCP3208" prefix="ADC">
+<description>&lt;b&gt;2.7V Dual Channel 12-Bit A/D Converter with SPI Serial Interface&lt;/b&gt;&lt;p&gt;
+Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21034D.pdf</description>
+<gates>
+<gate name="P" symbol="MCP3208" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SN" package="SO-16">
+<connects>
+<connect gate="P" pin="AGND" pad="14"/>
+<connect gate="P" pin="CH0" pad="1"/>
+<connect gate="P" pin="CH1" pad="2"/>
+<connect gate="P" pin="CH2" pad="3"/>
+<connect gate="P" pin="CH3" pad="4"/>
+<connect gate="P" pin="CH4" pad="5"/>
+<connect gate="P" pin="CH5" pad="6"/>
+<connect gate="P" pin="CH6" pad="7"/>
+<connect gate="P" pin="CH7" pad="8"/>
+<connect gate="P" pin="CLK" pad="13"/>
+<connect gate="P" pin="CS*" pad="10"/>
+<connect gate="P" pin="DGND" pad="9"/>
+<connect gate="P" pin="DIN" pad="11"/>
+<connect gate="P" pin="DOUT" pad="12"/>
+<connect gate="P" pin="VDD" pad="16"/>
+<connect gate="P" pin="VREF" pad="15"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="MICROCHIP" constant="no"/>
+<attribute name="MPN" value="MCP3202-CI/SN" constant="no"/>
+<attribute name="OC_FARNELL" value="1196803" constant="no"/>
+<attribute name="OC_NEWARK" value="19C7207" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -13759,6 +13883,15 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <part name="SW2" library="switch-slide" deviceset="1101M2S3CQE2" device=""/>
 <part name="GND63" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="FRAME6" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="LETTER_L" device=""/>
+<part name="ADC1" library="microchip-extra" deviceset="MCP3208" device="SN"/>
+<part name="ADC2" library="microchip-extra" deviceset="MCP3208" device="SN"/>
+<part name="ADC3" library="microchip-extra" deviceset="MCP3208" device="SN"/>
+<part name="P+25" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="GND64" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND65" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R74" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="10k"/>
+<part name="GND66" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="C27" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="0.1u"/>
 </parts>
 <sheets>
 <sheet>
@@ -16496,10 +16629,133 @@ G = 10.21</text>
 <attribute name="SHEET" x="233.68" y="1.27" size="2.54" layer="94"/>
 <attribute name="DRAWING_NAME" x="165.1" y="19.05" size="2.54" layer="94"/>
 </instance>
+<instance part="ADC1" gate="P" x="53.34" y="154.94" smashed="yes">
+<attribute name="NAME" x="43.18" y="171.45" size="1.778" layer="95"/>
+<attribute name="VALUE" x="43.18" y="137.16" size="1.778" layer="96"/>
+</instance>
+<instance part="ADC2" gate="P" x="53.34" y="109.22" smashed="yes">
+<attribute name="NAME" x="43.18" y="125.73" size="1.778" layer="95"/>
+<attribute name="VALUE" x="43.18" y="91.44" size="1.778" layer="96"/>
+</instance>
+<instance part="ADC3" gate="P" x="53.34" y="60.96" smashed="yes">
+<attribute name="NAME" x="43.18" y="77.47" size="1.778" layer="95"/>
+<attribute name="VALUE" x="43.18" y="43.18" size="1.778" layer="96"/>
+</instance>
+<instance part="P+25" gate="1" x="68.58" y="175.26" smashed="yes">
+<attribute name="VALUE" x="66.04" y="170.18" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND64" gate="1" x="38.1" y="137.16" smashed="yes">
+<attribute name="VALUE" x="35.56" y="134.62" size="1.778" layer="96"/>
+</instance>
+<instance part="GND65" gate="1" x="68.58" y="154.94" smashed="yes">
+<attribute name="VALUE" x="71.12" y="154.94" size="1.778" layer="96"/>
+</instance>
+<instance part="R74" gate="G$1" x="71.12" y="137.16" smashed="yes" rot="R90">
+<attribute name="NAME" x="69.6214" y="133.35" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="74.422" y="133.35" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND66" gate="1" x="71.12" y="129.54" smashed="yes">
+<attribute name="VALUE" x="68.58" y="127" size="1.778" layer="96"/>
+</instance>
+<instance part="C27" gate="G$1" x="73.66" y="165.1" smashed="yes">
+<attribute name="NAME" x="74.676" y="165.735" size="1.778" layer="95"/>
+<attribute name="VALUE" x="74.676" y="160.909" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
+<net name="LC1_CAL" class="0">
+<segment>
+<pinref part="ADC1" gate="P" pin="CH0"/>
+<wire x1="40.64" y1="167.64" x2="27.94" y2="167.64" width="0.1524" layer="91"/>
+<label x="27.94" y="167.64" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LC2_CAL" class="0">
+<segment>
+<pinref part="ADC1" gate="P" pin="CH1"/>
+<wire x1="40.64" y1="165.1" x2="27.94" y2="165.1" width="0.1524" layer="91"/>
+<label x="27.94" y="165.1" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LC3_CAL" class="0">
+<segment>
+<pinref part="ADC1" gate="P" pin="CH2"/>
+<wire x1="40.64" y1="162.56" x2="27.94" y2="162.56" width="0.1524" layer="91"/>
+<label x="27.94" y="162.56" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LC4_CAL" class="0">
+<segment>
+<pinref part="ADC1" gate="P" pin="CH3"/>
+<wire x1="40.64" y1="160.02" x2="27.94" y2="160.02" width="0.1524" layer="91"/>
+<label x="27.94" y="160.02" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="+5V" class="3">
+<segment>
+<pinref part="P+25" gate="1" pin="+5V"/>
+<wire x1="68.58" y1="172.72" x2="68.58" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="ADC1" gate="P" pin="VREF"/>
+<wire x1="68.58" y1="167.64" x2="68.58" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="162.56" x2="66.04" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="ADC1" gate="P" pin="VDD"/>
+<wire x1="66.04" y1="167.64" x2="68.58" y2="167.64" width="0.1524" layer="91"/>
+<junction x="68.58" y="167.64"/>
+<pinref part="C27" gate="G$1" pin="1"/>
+<wire x1="73.66" y1="167.64" x2="68.58" y2="167.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="ADC1" gate="P" pin="AGND"/>
+<pinref part="GND65" gate="1" pin="GND"/>
+<wire x1="66.04" y1="157.48" x2="68.58" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="157.48" x2="73.66" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="C27" gate="G$1" pin="2"/>
+<wire x1="73.66" y1="157.48" x2="73.66" y2="160.02" width="0.1524" layer="91"/>
+<junction x="68.58" y="157.48"/>
+</segment>
+<segment>
+<pinref part="R74" gate="G$1" pin="1"/>
+<pinref part="GND66" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="ADC1" gate="P" pin="DGND"/>
+<wire x1="40.64" y1="142.24" x2="38.1" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="GND64" gate="1" pin="GND"/>
+<wire x1="38.1" y1="142.24" x2="38.1" y2="139.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SPI_CLK" class="0">
+<segment>
+<pinref part="ADC1" gate="P" pin="CLK"/>
+<wire x1="66.04" y1="152.4" x2="81.28" y2="152.4" width="0.1524" layer="91"/>
+<label x="81.28" y="152.4" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$49" class="0">
+<segment>
+<pinref part="ADC1" gate="P" pin="CS*"/>
+<pinref part="R74" gate="G$1" pin="2"/>
+<wire x1="66.04" y1="142.24" x2="71.12" y2="142.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SPI_MISO" class="0">
+<segment>
+<pinref part="ADC1" gate="P" pin="DOUT"/>
+<wire x1="66.04" y1="147.32" x2="81.28" y2="147.32" width="0.1524" layer="91"/>
+<label x="81.28" y="147.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SPI_MOSI" class="0">
+<segment>
+<pinref part="ADC1" gate="P" pin="DIN"/>
+<wire x1="66.04" y1="144.78" x2="81.28" y2="144.78" width="0.1524" layer="91"/>
+<label x="81.28" y="144.78" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
