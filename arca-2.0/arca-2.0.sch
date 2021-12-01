@@ -14690,8 +14690,8 @@ Source: 3M</description>
 <attribute name="NAME" x="109.22" y="124.46" size="1.27" layer="95"/>
 <attribute name="VALUE" x="119.38" y="124.46" size="1.27" layer="96"/>
 </instance>
-<instance part="SUPPLY1" gate="G$1" x="167.64" y="142.24" smashed="yes">
-<attribute name="VALUE" x="165.1" y="145.415" size="1.778" layer="96"/>
+<instance part="SUPPLY1" gate="G$1" x="165.1" y="142.24" smashed="yes">
+<attribute name="VALUE" x="162.56" y="145.415" size="1.778" layer="96"/>
 </instance>
 <instance part="R1" gate="G$1" x="132.08" y="127" smashed="yes" rot="R90">
 <attribute name="NAME" x="130.5814" y="123.19" size="1.778" layer="95" rot="R90"/>
@@ -14968,10 +14968,10 @@ Source: 3M</description>
 <junction x="137.16" y="134.62"/>
 <junction x="144.78" y="134.62"/>
 <pinref part="FS7" gate="G1" pin="2"/>
-<wire x1="144.78" y1="134.62" x2="167.64" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="134.62" x2="165.1" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="G$1" pin="+10V"/>
-<wire x1="167.64" y1="134.62" x2="167.64" y2="139.7" width="0.1524" layer="91"/>
-<junction x="167.64" y="134.62"/>
+<wire x1="165.1" y1="134.62" x2="167.64" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="139.7" x2="165.1" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+10V_FS" class="0">
@@ -14993,6 +14993,11 @@ Source: 3M</description>
 <pinref part="SW2" gate="A" pin="O"/>
 <pinref part="CON_FAN" gate="_1" pin="SK"/>
 <wire x1="111.76" y1="162.56" x2="132.08" y2="162.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$61" class="5">
+<segment>
+<junction x="165.1" y="134.62"/>
 </segment>
 </net>
 </nets>
