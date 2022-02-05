@@ -14663,6 +14663,9 @@ Source: 3M</description>
 <part name="P+32" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+33" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+34" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="HBT" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIPLED_1206" package3d_urn="urn:adsk.eagle:package:15823/2"/>
+<part name="R77" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="68"/>
+<part name="GND69" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -18404,6 +18407,17 @@ G = 10.21</text>
 <instance part="GND66" gate="1" x="88.9" y="43.18" smashed="yes">
 <attribute name="VALUE" x="86.36" y="40.64" size="1.778" layer="96"/>
 </instance>
+<instance part="HBT" gate="G$1" x="99.06" y="76.2" smashed="yes">
+<attribute name="NAME" x="102.616" y="71.628" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="104.775" y="71.628" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R77" gate="G$1" x="99.06" y="66.04" smashed="yes" rot="R90">
+<attribute name="NAME" x="97.5614" y="62.23" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="102.362" y="62.23" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND69" gate="1" x="99.06" y="58.42" smashed="yes">
+<attribute name="VALUE" x="96.52" y="55.88" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -18454,6 +18468,10 @@ G = 10.21</text>
 <junction x="88.9" y="101.6"/>
 <junction x="88.9" y="116.84"/>
 <junction x="88.9" y="129.54"/>
+</segment>
+<segment>
+<pinref part="R77" gate="G$1" pin="1"/>
+<pinref part="GND69" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="SPI_CLK" class="0">
@@ -18538,6 +18556,24 @@ G = 10.21</text>
 <pinref part="X1" gate="-26" pin="KL"/>
 <wire x1="50.8" y1="86.36" x2="55.88" y2="86.36" width="0.1524" layer="91"/>
 <label x="55.88" y="86.36" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="HBT" class="0">
+<segment>
+<pinref part="X1" gate="-29" pin="KL"/>
+<wire x1="50.8" y1="78.74" x2="55.88" y2="78.74" width="0.1524" layer="91"/>
+<label x="55.88" y="78.74" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="HBT" gate="G$1" pin="A"/>
+<wire x1="99.06" y1="78.74" x2="91.44" y2="78.74" width="0.1524" layer="91"/>
+<label x="91.44" y="78.74" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$75" class="0">
+<segment>
+<pinref part="HBT" gate="G$1" pin="C"/>
+<pinref part="R77" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
