@@ -12957,6 +12957,23 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <text x="-8" y="-3" size="1.27" layer="21" rot="R90">3</text>
 <text x="-8" y="-8" size="1.27" layer="21" rot="R90">4</text>
 </package>
+<package name="8.2X3">
+<pad name="1" x="-4.1" y="5" drill="1.3"/>
+<pad name="2" x="4.1" y="5" drill="1.3"/>
+<pad name="3" x="-4.1" y="0" drill="1.3"/>
+<pad name="4" x="4.1" y="0" drill="1.3"/>
+<wire x1="-7" y1="7.75" x2="10" y2="7.75" width="0.127" layer="21"/>
+<wire x1="10" y1="7.75" x2="10" y2="-7.75" width="0.127" layer="21"/>
+<wire x1="10" y1="-7.75" x2="-7" y2="-7.75" width="0.127" layer="21"/>
+<wire x1="-7" y1="-7.75" x2="-7" y2="7.75" width="0.127" layer="21"/>
+<text x="-10" y="-3.5" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<rectangle x1="-7" y1="-7.75" x2="10" y2="7.75" layer="39"/>
+<text x="-9" y="4.5" size="1.27" layer="21">1</text>
+<text x="-9" y="-0.5" size="1.27" layer="21">2</text>
+<pad name="5" x="-4.1" y="-5" drill="1.3"/>
+<pad name="6" x="4.1" y="-5" drill="1.3"/>
+<text x="-9" y="-5.5" size="1.27" layer="21">3</text>
+</package>
 </packages>
 <symbols>
 <symbol name="PIN">
@@ -12998,6 +13015,25 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="_2" pin="SK" pad="3 4"/>
 <connect gate="_3" pin="SK" pad="5 6"/>
 <connect gate="_4" pin="SK" pad="7 8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LPTA-3POS" prefix="CON">
+<gates>
+<gate name="_1" symbol="PIN" x="0" y="2.54"/>
+<gate name="_2" symbol="PIN" x="0" y="0"/>
+<gate name="_3" symbol="PIN" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="8.2X3">
+<connects>
+<connect gate="_1" pin="SK" pad="1 2"/>
+<connect gate="_2" pin="SK" pad="3 4"/>
+<connect gate="_3" pin="SK" pad="5 6"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -14614,13 +14650,9 @@ Source: 3M</description>
 <part name="GND71" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C29" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="0.1u"/>
 <part name="FRAME7" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="LETTER_L" device=""/>
-<part name="CON_TC1" library="con-phoenix-5mm" deviceset="LPTA-4POS" device=""/>
 <part name="GND73" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="CON_TC2" library="con-phoenix-5mm" deviceset="LPTA-4POS" device=""/>
 <part name="GND74" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="CON_TC3" library="con-phoenix-5mm" deviceset="LPTA-4POS" device=""/>
 <part name="GND75" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="CON_TC4" library="con-phoenix-5mm" deviceset="LPTA-4POS" device=""/>
 <part name="GND76" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X8" device="" package3d_urn="urn:adsk.eagle:package:22409/2"/>
 <part name="SW1" library="switch-slide" deviceset="1101M2S3CQE2" device=""/>
@@ -14666,6 +14698,10 @@ Source: 3M</description>
 <part name="HBT" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIPLED_1206" package3d_urn="urn:adsk.eagle:package:15823/2"/>
 <part name="R77" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="68"/>
 <part name="GND69" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="CON_TC1" library="con-phoenix-5mm" deviceset="LPTA-3POS" device=""/>
+<part name="CON_TC2" library="con-phoenix-5mm" deviceset="LPTA-3POS" device=""/>
+<part name="CON_TC3" library="con-phoenix-5mm" deviceset="LPTA-3POS" device=""/>
+<part name="CON_TC4" library="con-phoenix-5mm" deviceset="LPTA-3POS" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -17621,65 +17657,17 @@ G = 10.21</text>
 <attribute name="SHEET" x="233.68" y="1.27" size="2.54" layer="94"/>
 <attribute name="DRAWING_NAME" x="165.1" y="19.05" size="2.54" layer="94"/>
 </instance>
-<instance part="CON_TC1" gate="_1" x="30.48" y="167.64" smashed="yes">
-<attribute name="NAME" x="28.956" y="168.529" size="1.778" layer="95" rot="R180"/>
+<instance part="GND73" gate="1" x="43.18" y="152.4" smashed="yes">
+<attribute name="VALUE" x="40.64" y="149.86" size="1.778" layer="96"/>
 </instance>
-<instance part="CON_TC1" gate="_2" x="30.48" y="162.56" smashed="yes">
-<attribute name="NAME" x="28.956" y="163.449" size="1.778" layer="95" rot="R180"/>
+<instance part="GND74" gate="1" x="43.18" y="109.22" smashed="yes">
+<attribute name="VALUE" x="40.64" y="106.68" size="1.778" layer="96"/>
 </instance>
-<instance part="CON_TC1" gate="_3" x="30.48" y="157.48" smashed="yes">
-<attribute name="NAME" x="28.956" y="158.369" size="1.778" layer="95" rot="R180"/>
+<instance part="GND75" gate="1" x="43.18" y="68.58" smashed="yes">
+<attribute name="VALUE" x="40.64" y="66.04" size="1.778" layer="96"/>
 </instance>
-<instance part="CON_TC1" gate="_4" x="30.48" y="152.4" smashed="yes">
-<attribute name="NAME" x="28.956" y="153.289" size="1.778" layer="95" rot="R180"/>
-</instance>
-<instance part="GND73" gate="1" x="43.18" y="147.32" smashed="yes">
-<attribute name="VALUE" x="40.64" y="144.78" size="1.778" layer="96"/>
-</instance>
-<instance part="CON_TC2" gate="_1" x="30.48" y="124.46" smashed="yes">
-<attribute name="NAME" x="28.956" y="125.349" size="1.778" layer="95" rot="R180"/>
-</instance>
-<instance part="CON_TC2" gate="_2" x="30.48" y="119.38" smashed="yes">
-<attribute name="NAME" x="28.956" y="120.269" size="1.778" layer="95" rot="R180"/>
-</instance>
-<instance part="CON_TC2" gate="_3" x="30.48" y="114.3" smashed="yes">
-<attribute name="NAME" x="28.956" y="115.189" size="1.778" layer="95" rot="R180"/>
-</instance>
-<instance part="CON_TC2" gate="_4" x="30.48" y="109.22" smashed="yes">
-<attribute name="NAME" x="28.956" y="110.109" size="1.778" layer="95" rot="R180"/>
-</instance>
-<instance part="GND74" gate="1" x="43.18" y="104.14" smashed="yes">
-<attribute name="VALUE" x="40.64" y="101.6" size="1.778" layer="96"/>
-</instance>
-<instance part="CON_TC3" gate="_1" x="30.48" y="83.82" smashed="yes">
-<attribute name="NAME" x="28.956" y="84.709" size="1.778" layer="95" rot="R180"/>
-</instance>
-<instance part="CON_TC3" gate="_2" x="30.48" y="78.74" smashed="yes">
-<attribute name="NAME" x="28.956" y="79.629" size="1.778" layer="95" rot="R180"/>
-</instance>
-<instance part="CON_TC3" gate="_3" x="30.48" y="73.66" smashed="yes">
-<attribute name="NAME" x="28.956" y="74.549" size="1.778" layer="95" rot="R180"/>
-</instance>
-<instance part="CON_TC3" gate="_4" x="30.48" y="68.58" smashed="yes">
-<attribute name="NAME" x="28.956" y="69.469" size="1.778" layer="95" rot="R180"/>
-</instance>
-<instance part="GND75" gate="1" x="43.18" y="63.5" smashed="yes">
-<attribute name="VALUE" x="40.64" y="60.96" size="1.778" layer="96"/>
-</instance>
-<instance part="CON_TC4" gate="_1" x="30.48" y="43.18" smashed="yes">
-<attribute name="NAME" x="28.956" y="44.069" size="1.778" layer="95" rot="R180"/>
-</instance>
-<instance part="CON_TC4" gate="_2" x="30.48" y="38.1" smashed="yes">
-<attribute name="NAME" x="28.956" y="38.989" size="1.778" layer="95" rot="R180"/>
-</instance>
-<instance part="CON_TC4" gate="_3" x="30.48" y="33.02" smashed="yes">
-<attribute name="NAME" x="28.956" y="33.909" size="1.778" layer="95" rot="R180"/>
-</instance>
-<instance part="CON_TC4" gate="_4" x="30.48" y="27.94" smashed="yes">
-<attribute name="NAME" x="28.956" y="28.829" size="1.778" layer="95" rot="R180"/>
-</instance>
-<instance part="GND76" gate="1" x="43.18" y="22.86" smashed="yes">
-<attribute name="VALUE" x="40.64" y="20.32" size="1.778" layer="96"/>
+<instance part="GND76" gate="1" x="43.18" y="27.94" smashed="yes">
+<attribute name="VALUE" x="40.64" y="25.4" size="1.778" layer="96"/>
 </instance>
 <instance part="FS15" gate="G1" x="40.64" y="175.26" smashed="yes" rot="R90">
 <attribute name="NAME" x="39.243" y="171.45" size="1.778" layer="95" rot="R90"/>
@@ -17709,62 +17697,98 @@ G = 10.21</text>
 <instance part="P+34" gate="1" x="40.64" y="182.88" smashed="yes">
 <attribute name="VALUE" x="38.1" y="177.8" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="CON_TC1" gate="_1" x="30.48" y="167.64" smashed="yes">
+<attribute name="NAME" x="28.956" y="168.529" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="CON_TC1" gate="_2" x="30.48" y="162.56" smashed="yes">
+<attribute name="NAME" x="28.956" y="163.449" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="CON_TC1" gate="_3" x="30.48" y="157.48" smashed="yes">
+<attribute name="NAME" x="28.956" y="158.369" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="CON_TC2" gate="_1" x="30.48" y="124.46" smashed="yes">
+<attribute name="NAME" x="28.956" y="125.349" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="CON_TC2" gate="_2" x="30.48" y="119.38" smashed="yes">
+<attribute name="NAME" x="28.956" y="120.269" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="CON_TC2" gate="_3" x="30.48" y="114.3" smashed="yes">
+<attribute name="NAME" x="28.956" y="115.189" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="CON_TC3" gate="_1" x="30.48" y="83.82" smashed="yes">
+<attribute name="NAME" x="28.956" y="84.709" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="CON_TC3" gate="_2" x="30.48" y="78.74" smashed="yes">
+<attribute name="NAME" x="28.956" y="79.629" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="CON_TC3" gate="_3" x="30.48" y="73.66" smashed="yes">
+<attribute name="NAME" x="28.956" y="74.549" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="CON_TC4" gate="_1" x="30.48" y="43.18" smashed="yes">
+<attribute name="NAME" x="28.956" y="44.069" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="CON_TC4" gate="_2" x="30.48" y="38.1" smashed="yes">
+<attribute name="NAME" x="28.956" y="38.989" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="CON_TC4" gate="_3" x="30.48" y="33.02" smashed="yes">
+<attribute name="NAME" x="28.956" y="33.909" size="1.778" layer="95" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="CON_TC1" gate="_4" pin="SK"/>
-<wire x1="38.1" y1="152.4" x2="43.18" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="157.48" x2="43.18" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="GND73" gate="1" pin="GND"/>
-<wire x1="43.18" y1="152.4" x2="43.18" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="157.48" x2="43.18" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="CON_TC1" gate="_3" pin="SK"/>
 </segment>
 <segment>
-<pinref part="CON_TC2" gate="_4" pin="SK"/>
-<wire x1="38.1" y1="109.22" x2="43.18" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="114.3" x2="43.18" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="GND74" gate="1" pin="GND"/>
-<wire x1="43.18" y1="109.22" x2="43.18" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="114.3" x2="43.18" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="CON_TC2" gate="_3" pin="SK"/>
 </segment>
 <segment>
-<pinref part="CON_TC3" gate="_4" pin="SK"/>
-<wire x1="38.1" y1="68.58" x2="43.18" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="73.66" x2="43.18" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="GND75" gate="1" pin="GND"/>
-<wire x1="43.18" y1="68.58" x2="43.18" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="73.66" x2="43.18" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="CON_TC3" gate="_3" pin="SK"/>
 </segment>
 <segment>
-<pinref part="CON_TC4" gate="_4" pin="SK"/>
-<wire x1="38.1" y1="27.94" x2="43.18" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="33.02" x2="43.18" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="GND76" gate="1" pin="GND"/>
-<wire x1="43.18" y1="27.94" x2="43.18" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="33.02" x2="43.18" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="CON_TC4" gate="_3" pin="SK"/>
 </segment>
 </net>
 <net name="TC1" class="0">
 <segment>
-<pinref part="CON_TC1" gate="_2" pin="SK"/>
 <wire x1="38.1" y1="162.56" x2="50.8" y2="162.56" width="0.1524" layer="91"/>
 <label x="50.8" y="162.56" size="1.778" layer="95"/>
+<pinref part="CON_TC1" gate="_2" pin="SK"/>
 </segment>
 </net>
 <net name="TC2" class="0">
 <segment>
-<pinref part="CON_TC2" gate="_2" pin="SK"/>
 <wire x1="38.1" y1="119.38" x2="50.8" y2="119.38" width="0.1524" layer="91"/>
 <label x="50.8" y="119.38" size="1.778" layer="95"/>
+<pinref part="CON_TC2" gate="_2" pin="SK"/>
 </segment>
 </net>
 <net name="TC3" class="0">
 <segment>
-<pinref part="CON_TC3" gate="_2" pin="SK"/>
 <wire x1="38.1" y1="78.74" x2="50.8" y2="78.74" width="0.1524" layer="91"/>
 <label x="50.8" y="78.74" size="1.778" layer="95"/>
+<pinref part="CON_TC3" gate="_2" pin="SK"/>
 </segment>
 </net>
 <net name="TC4" class="0">
 <segment>
-<pinref part="CON_TC4" gate="_2" pin="SK"/>
 <wire x1="38.1" y1="38.1" x2="50.8" y2="38.1" width="0.1524" layer="91"/>
 <label x="50.8" y="38.1" size="1.778" layer="95"/>
+<pinref part="CON_TC4" gate="_2" pin="SK"/>
 </segment>
 </net>
 <net name="+5V" class="3">
@@ -17787,34 +17811,34 @@ G = 10.21</text>
 </net>
 <net name="N$71" class="0">
 <segment>
-<pinref part="CON_TC1" gate="_1" pin="SK"/>
 <pinref part="FS15" gate="G1" pin="1"/>
 <wire x1="38.1" y1="167.64" x2="40.64" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="167.64" x2="40.64" y2="170.18" width="0.1524" layer="91"/>
+<pinref part="CON_TC1" gate="_1" pin="SK"/>
 </segment>
 </net>
 <net name="N$72" class="0">
 <segment>
-<pinref part="CON_TC2" gate="_1" pin="SK"/>
 <pinref part="FS16" gate="G1" pin="1"/>
 <wire x1="38.1" y1="124.46" x2="40.64" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="124.46" x2="40.64" y2="127" width="0.1524" layer="91"/>
+<pinref part="CON_TC2" gate="_1" pin="SK"/>
 </segment>
 </net>
 <net name="N$73" class="0">
 <segment>
-<pinref part="CON_TC3" gate="_1" pin="SK"/>
 <pinref part="FS17" gate="G1" pin="1"/>
 <wire x1="38.1" y1="83.82" x2="40.64" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="83.82" x2="40.64" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="CON_TC3" gate="_1" pin="SK"/>
 </segment>
 </net>
 <net name="N$74" class="0">
 <segment>
-<pinref part="CON_TC4" gate="_1" pin="SK"/>
 <pinref part="FS18" gate="G1" pin="1"/>
 <wire x1="38.1" y1="43.18" x2="40.64" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="43.18" x2="40.64" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="CON_TC4" gate="_1" pin="SK"/>
 </segment>
 </net>
 </nets>

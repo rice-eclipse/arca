@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -107,6 +107,23 @@
 <text x="-8" y="-3" size="1.27" layer="21" rot="R90">3</text>
 <text x="-8" y="-8" size="1.27" layer="21" rot="R90">4</text>
 </package>
+<package name="8.2X3">
+<pad name="1" x="-4.1" y="5" drill="1.3"/>
+<pad name="2" x="4.1" y="5" drill="1.3"/>
+<pad name="3" x="-4.1" y="0" drill="1.3"/>
+<pad name="4" x="4.1" y="0" drill="1.3"/>
+<wire x1="-7" y1="7.75" x2="10" y2="7.75" width="0.127" layer="21"/>
+<wire x1="10" y1="7.75" x2="10" y2="-7.75" width="0.127" layer="21"/>
+<wire x1="10" y1="-7.75" x2="-7" y2="-7.75" width="0.127" layer="21"/>
+<wire x1="-7" y1="-7.75" x2="-7" y2="7.75" width="0.127" layer="21"/>
+<text x="-10" y="-3.5" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<rectangle x1="-7" y1="-7.75" x2="10" y2="7.75" layer="39"/>
+<text x="-9" y="4.5" size="1.27" layer="21">1</text>
+<text x="-9" y="-0.5" size="1.27" layer="21">2</text>
+<pad name="5" x="-4.1" y="-5" drill="1.3"/>
+<pad name="6" x="4.1" y="-5" drill="1.3"/>
+<text x="-9" y="-5.5" size="1.27" layer="21">3</text>
+</package>
 </packages>
 <symbols>
 <symbol name="PIN">
@@ -148,6 +165,25 @@
 <connect gate="_2" pin="SK" pad="3 4"/>
 <connect gate="_3" pin="SK" pad="5 6"/>
 <connect gate="_4" pin="SK" pad="7 8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LPTA-3POS" prefix="CON">
+<gates>
+<gate name="_1" symbol="PIN" x="0" y="2.54"/>
+<gate name="_2" symbol="PIN" x="0" y="0"/>
+<gate name="_3" symbol="PIN" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="8.2X3">
+<connects>
+<connect gate="_1" pin="SK" pad="1 2"/>
+<connect gate="_2" pin="SK" pad="3 4"/>
+<connect gate="_3" pin="SK" pad="5 6"/>
 </connects>
 <technologies>
 <technology name=""/>
