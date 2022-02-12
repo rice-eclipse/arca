@@ -12928,12 +12928,12 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pad name="2" x="4.1" y="2.5" drill="1.3"/>
 <pad name="3" x="-4.1" y="-2.5" drill="1.3"/>
 <pad name="4" x="4.1" y="-2.5" drill="1.3"/>
-<wire x1="-7" y1="5.25" x2="10" y2="5.25" width="0.127" layer="21"/>
-<wire x1="10" y1="5.25" x2="10" y2="-5.25" width="0.127" layer="21"/>
-<wire x1="10" y1="-5.25" x2="-7" y2="-5.25" width="0.127" layer="21"/>
-<wire x1="-7" y1="-5.25" x2="-7" y2="5.25" width="0.127" layer="21"/>
+<wire x1="-7.25" y1="5.33" x2="12.05" y2="5.33" width="0.127" layer="21"/>
+<wire x1="12.05" y1="5.33" x2="12.05" y2="-6.17" width="0.127" layer="21"/>
+<wire x1="12.05" y1="-6.17" x2="-7.25" y2="-6.17" width="0.127" layer="21"/>
+<wire x1="-7.25" y1="-6.17" x2="-7.25" y2="5.33" width="0.127" layer="21"/>
 <text x="-10" y="-3" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<rectangle x1="-7" y1="-5.25" x2="10" y2="5.25" layer="39"/>
+<rectangle x1="-7.25" y1="-6.17" x2="12.05" y2="5.33" layer="39"/>
 <text x="-9" y="2" size="1.27" layer="21">1</text>
 <text x="-9" y="-3" size="1.27" layer="21">2</text>
 </package>
@@ -12942,16 +12942,16 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pad name="2" x="4.1" y="7.5" drill="1.3"/>
 <pad name="3" x="-4.1" y="2.5" drill="1.3"/>
 <pad name="4" x="4.1" y="2.5" drill="1.3"/>
-<wire x1="-7" y1="10.25" x2="10.8" y2="10.25" width="0.127" layer="21"/>
-<wire x1="10.8" y1="10.25" x2="10.8" y2="-10.25" width="0.127" layer="21"/>
-<wire x1="-7" y1="-10.25" x2="-7" y2="10.25" width="0.127" layer="21"/>
+<wire x1="-7.25" y1="10.33" x2="12.05" y2="10.33" width="0.127" layer="21"/>
+<wire x1="12.05" y1="10.33" x2="12.05" y2="-11.17" width="0.127" layer="21"/>
+<wire x1="-7.25" y1="-11.17" x2="-7.25" y2="10.33" width="0.127" layer="21"/>
 <pad name="5" x="-4.1" y="-2.5" drill="1.3"/>
 <pad name="6" x="4.1" y="-2.5" drill="1.3"/>
 <pad name="7" x="-4.1" y="-7.5" drill="1.3"/>
 <pad name="8" x="4.1" y="-7.5" drill="1.3"/>
-<wire x1="10.8" y1="-10.25" x2="-7" y2="-10.25" width="0.127" layer="21"/>
+<wire x1="12.05" y1="-11.17" x2="-7.25" y2="-11.17" width="0.127" layer="21"/>
 <text x="-10" y="-3" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<rectangle x1="-7" y1="-10.25" x2="10.8" y2="10.25" layer="39"/>
+<rectangle x1="-7.25" y1="-11.17" x2="12.05" y2="10.33" layer="39"/>
 <text x="-8" y="7" size="1.27" layer="21" rot="R90">1</text>
 <text x="-8" y="2" size="1.27" layer="21" rot="R90">2</text>
 <text x="-8" y="-3" size="1.27" layer="21" rot="R90">3</text>
@@ -12962,12 +12962,12 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pad name="2" x="4.1" y="5" drill="1.3"/>
 <pad name="3" x="-4.1" y="0" drill="1.3"/>
 <pad name="4" x="4.1" y="0" drill="1.3"/>
-<wire x1="-7" y1="7.75" x2="10" y2="7.75" width="0.127" layer="21"/>
-<wire x1="10" y1="7.75" x2="10" y2="-7.75" width="0.127" layer="21"/>
-<wire x1="10" y1="-7.75" x2="-7" y2="-7.75" width="0.127" layer="21"/>
-<wire x1="-7" y1="-7.75" x2="-7" y2="7.75" width="0.127" layer="21"/>
+<wire x1="-7.25" y1="7.83" x2="12.05" y2="7.83" width="0.127" layer="21"/>
+<wire x1="12.05" y1="7.83" x2="12.05" y2="-8.67" width="0.127" layer="21"/>
+<wire x1="12.05" y1="-8.67" x2="-7.25" y2="-8.67" width="0.127" layer="21"/>
+<wire x1="-7.25" y1="-8.67" x2="-7.25" y2="7.83" width="0.127" layer="21"/>
 <text x="-10" y="-3.5" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<rectangle x1="-7" y1="-7.75" x2="10" y2="7.75" layer="39"/>
+<rectangle x1="-7.25" y1="-8.67" x2="12.05" y2="7.83" layer="39"/>
 <text x="-9" y="4.5" size="1.27" layer="21">1</text>
 <text x="-9" y="-0.5" size="1.27" layer="21">2</text>
 <pad name="5" x="-4.1" y="-5" drill="1.3"/>
