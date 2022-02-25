@@ -2162,7 +2162,7 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="R" x="283.21" y="73.66" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="285.75" y="72.39" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="FS_STAT_1" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIPLED_1206" package3d_urn="urn:adsk.eagle:package:15823/2" value="" x="283.21" y="80.01" smashed="yes" rot="R180">
+<element name="FS_STAT_1" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIPLED_1206" package3d_urn="urn:adsk.eagle:package:15823/2" value="BLU" x="283.21" y="80.01" smashed="yes" rot="R180">
 <attribute name="NAME" x="284.48" y="82.55" size="1.27" layer="25" rot="R270"/>
 <attribute name="POPULARITY" value="28" x="283.21" y="80.01" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="280.67" y="81.28" size="1.27" layer="27" rot="R270"/>
@@ -2176,7 +2176,7 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="R" x="276.86" y="86.36" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="275.59" y="83.82" size="1.27" layer="27"/>
 </element>
-<element name="DRV_STAT_1" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIPLED_1206" package3d_urn="urn:adsk.eagle:package:15823/2" value="" x="283.21" y="86.36" smashed="yes" rot="R90">
+<element name="DRV_STAT_1" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIPLED_1206" package3d_urn="urn:adsk.eagle:package:15823/2" value="YLW" x="283.21" y="86.36" smashed="yes" rot="R90">
 <attribute name="NAME" x="285.75" y="85.09" size="1.27" layer="25" rot="R180"/>
 <attribute name="POPULARITY" value="28" x="283.21" y="86.36" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="284.48" y="88.9" size="1.27" layer="27" rot="R180"/>
@@ -2200,7 +2200,7 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="R" x="256.54" y="53.34" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="273.05" y="72.39" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="FS_STAT_2" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIPLED_1206" package3d_urn="urn:adsk.eagle:package:15823/2" value="" x="270.51" y="80.01" smashed="yes" rot="R180">
+<element name="FS_STAT_2" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIPLED_1206" package3d_urn="urn:adsk.eagle:package:15823/2" value="BLU" x="270.51" y="80.01" smashed="yes" rot="R180">
 <attribute name="NAME" x="271.78" y="82.55" size="1.27" layer="25" rot="R270"/>
 <attribute name="POPULARITY" value="28" x="278.13" y="72.39" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="267.97" y="81.28" size="1.27" layer="27" rot="R270"/>
@@ -2214,7 +2214,7 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="R" x="257.81" y="91.44" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="262.89" y="83.82" size="1.27" layer="27"/>
 </element>
-<element name="DRV_STAT_2" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIPLED_1206" package3d_urn="urn:adsk.eagle:package:15823/2" value="" x="270.51" y="86.36" smashed="yes" rot="R90">
+<element name="DRV_STAT_2" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIPLED_1206" package3d_urn="urn:adsk.eagle:package:15823/2" value="YLW" x="270.51" y="86.36" smashed="yes" rot="R90">
 <attribute name="NAME" x="273.05" y="85.09" size="1.27" layer="25" rot="R180"/>
 <attribute name="POPULARITY" value="28" x="293.37" y="72.39" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="271.78" y="88.9" size="1.27" layer="27" rot="R180"/>
@@ -2238,7 +2238,7 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="R" x="243.84" y="53.34" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="260.35" y="72.39" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="FS_STAT_3" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIPLED_1206" package3d_urn="urn:adsk.eagle:package:15823/2" value="" x="257.81" y="80.01" smashed="yes" rot="R180">
+<element name="FS_STAT_3" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIPLED_1206" package3d_urn="urn:adsk.eagle:package:15823/2" value="BLU" x="257.81" y="80.01" smashed="yes" rot="R180">
 <attribute name="NAME" x="259.08" y="82.55" size="1.27" layer="25" rot="R270"/>
 <attribute name="POPULARITY" value="28" x="265.43" y="72.39" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="255.27" y="81.28" size="1.27" layer="27" rot="R270"/>
@@ -2252,7 +2252,7 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="R" x="243.84" y="91.44" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="248.92" y="83.82" size="1.27" layer="27"/>
 </element>
-<element name="DRV_STAT_3" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIPLED_1206" package3d_urn="urn:adsk.eagle:package:15823/2" value="" x="256.54" y="86.36" smashed="yes" rot="R90">
+<element name="DRV_STAT_3" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIPLED_1206" package3d_urn="urn:adsk.eagle:package:15823/2" value="YLW" x="256.54" y="86.36" smashed="yes" rot="R90">
 <attribute name="NAME" x="260.35" y="85.09" size="1.27" layer="25" rot="R180"/>
 <attribute name="POPULARITY" value="28" x="279.4" y="72.39" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="257.81" y="88.9" size="1.27" layer="27" rot="R180"/>
@@ -2276,7 +2276,7 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="R" x="208.28" y="35.56" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="247.65" y="72.39" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="FS_STAT_4" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIPLED_1206" package3d_urn="urn:adsk.eagle:package:15823/2" value="" x="245.11" y="80.01" smashed="yes" rot="R180">
+<element name="FS_STAT_4" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIPLED_1206" package3d_urn="urn:adsk.eagle:package:15823/2" value="BLU" x="245.11" y="80.01" smashed="yes" rot="R180">
 <attribute name="NAME" x="246.38" y="82.55" size="1.27" layer="25" rot="R270"/>
 <attribute name="POPULARITY" value="28" x="298.45" y="73.66" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="242.57" y="81.28" size="1.27" layer="27" rot="R270"/>
@@ -2290,7 +2290,7 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="R" x="187.96" y="105.41" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="236.22" y="83.82" size="1.27" layer="27"/>
 </element>
-<element name="DRV_STAT_4" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIPLED_1206" package3d_urn="urn:adsk.eagle:package:15823/2" value="" x="243.84" y="86.36" smashed="yes" rot="R90">
+<element name="DRV_STAT_4" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIPLED_1206" package3d_urn="urn:adsk.eagle:package:15823/2" value="YLW" x="243.84" y="86.36" smashed="yes" rot="R90">
 <attribute name="NAME" x="247.65" y="85.09" size="1.27" layer="25" rot="R180"/>
 <attribute name="POPULARITY" value="28" x="267.97" y="72.39" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="245.11" y="88.9" size="1.27" layer="27" rot="R180"/>
@@ -2314,7 +2314,7 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="R" x="241.3" y="55.88" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="233.68" y="72.39" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="FS_STAT_5" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIPLED_1206" package3d_urn="urn:adsk.eagle:package:15823/2" value="" x="231.14" y="80.01" smashed="yes" rot="R180">
+<element name="FS_STAT_5" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIPLED_1206" package3d_urn="urn:adsk.eagle:package:15823/2" value="BLU" x="231.14" y="80.01" smashed="yes" rot="R180">
 <attribute name="NAME" x="232.41" y="82.55" size="1.27" layer="25" rot="R270"/>
 <attribute name="POPULARITY" value="28" x="251.46" y="118.11" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="228.6" y="81.28" size="1.27" layer="27" rot="R270"/>
@@ -2328,7 +2328,7 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="R" x="195.58" y="58.42" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="223.52" y="83.82" size="1.27" layer="27"/>
 </element>
-<element name="DRV_STAT_5" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIPLED_1206" package3d_urn="urn:adsk.eagle:package:15823/2" value="" x="231.14" y="86.36" smashed="yes" rot="R90">
+<element name="DRV_STAT_5" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIPLED_1206" package3d_urn="urn:adsk.eagle:package:15823/2" value="YLW" x="231.14" y="86.36" smashed="yes" rot="R90">
 <attribute name="NAME" x="233.68" y="85.09" size="1.27" layer="25" rot="R180"/>
 <attribute name="POPULARITY" value="28" x="312.42" y="54.61" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="232.41" y="88.9" size="1.27" layer="27" rot="R180"/>
@@ -2352,7 +2352,7 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="R" x="184.15" y="-53.34" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="228.6" y="11.43" size="1.27" layer="27"/>
 </element>
-<element name="FS_STAT_6" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIPLED_1206" package3d_urn="urn:adsk.eagle:package:15823/2" value="" x="236.22" y="13.97" smashed="yes" rot="R90">
+<element name="FS_STAT_6" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIPLED_1206" package3d_urn="urn:adsk.eagle:package:15823/2" value="BLU" x="236.22" y="13.97" smashed="yes" rot="R90">
 <attribute name="NAME" x="238.76" y="12.7" size="1.27" layer="25" rot="R180"/>
 <attribute name="POPULARITY" value="28" x="331.47" y="-24.13" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="237.49" y="16.51" size="1.27" layer="27" rot="R180"/>
@@ -2366,7 +2366,7 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="R" x="157.48" y="78.74" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="240.03" y="22.86" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="DRV_STAT_6" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIPLED_1206" package3d_urn="urn:adsk.eagle:package:15823/2" value="" x="242.57" y="15.24" smashed="yes">
+<element name="DRV_STAT_6" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIPLED_1206" package3d_urn="urn:adsk.eagle:package:15823/2" value="YLW" x="242.57" y="15.24" smashed="yes">
 <attribute name="NAME" x="241.3" y="12.7" size="1.27" layer="25" rot="R90"/>
 <attribute name="POPULARITY" value="28" x="193.04" y="-123.19" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="245.11" y="13.97" size="1.27" layer="27" rot="R90"/>
@@ -3112,7 +3112,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="166.814" y="86.47" size="1.27" layer="25" rot="R270"/>
 <attribute name="VALUE" x="157.814" y="86.47" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="HBT" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIPLED_1206" package3d_urn="urn:adsk.eagle:package:15823/2" value="" x="76.2" y="29.21" smashed="yes">
+<element name="HBT" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIPLED_1206" package3d_urn="urn:adsk.eagle:package:15823/2" value="BLU" x="76.2" y="29.21" smashed="yes">
 <attribute name="NAME" x="74.93" y="27.94" size="1.27" layer="25" rot="R90"/>
 <attribute name="POPULARITY" value="28" x="68.58" y="41.91" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="78.74" y="27.94" size="1.27" layer="27" rot="R90"/>

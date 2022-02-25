@@ -2,8 +2,11 @@
 
 __Previews/
 History/
+
+# ignores for EAGLE
 *.s#*
 *.l#*
 *.b#*
 *.job
 *.pro
+*.csv
