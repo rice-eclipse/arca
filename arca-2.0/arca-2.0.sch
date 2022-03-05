@@ -13190,59 +13190,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="fuse-holder-littlefuse">
-<packages>
-<package name="178.6165">
-<pad name="1" x="-5.9" y="1.25" drill="1.2"/>
-<pad name="2" x="-2.9" y="1.25" drill="1.2"/>
-<pad name="3" x="-5.9" y="-1.25" drill="1.2"/>
-<pad name="4" x="-2.9" y="-1.25" drill="1.2"/>
-<pad name="5" x="2.9" y="1.25" drill="1.2"/>
-<pad name="6" x="5.9" y="1.25" drill="1.2"/>
-<pad name="7" x="2.9" y="-1.25" drill="1.2"/>
-<pad name="8" x="5.9" y="-1.25" drill="1.2"/>
-<hole x="0" y="0" drill="2.5"/>
-<wire x1="-10" y1="3" x2="10" y2="3" width="0.127" layer="21"/>
-<wire x1="10" y1="3" x2="10" y2="-3" width="0.127" layer="21"/>
-<wire x1="10" y1="-3" x2="-10" y2="-3" width="0.127" layer="21"/>
-<wire x1="-10" y1="-3" x2="-10" y2="3" width="0.127" layer="21"/>
-<text x="-9" y="4" size="1.27" layer="25">&gt;NAME</text>
-<text x="-9" y="-5" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-10" y1="-3" x2="10" y2="3" layer="39"/>
-</package>
-</packages>
-<symbols>
-<symbol name="FUSE">
-<wire x1="-3.81" y1="-0.762" x2="3.81" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="3.81" y1="0.762" x2="-3.81" y2="0.762" width="0.254" layer="94"/>
-<wire x1="3.81" y1="-0.762" x2="3.81" y2="0.762" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="0.762" x2="-3.81" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<text x="-3.81" y="1.397" size="1.778" layer="95">&gt;NAME</text>
-<text x="-3.81" y="-2.921" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="178.6165" prefix="FS">
-<gates>
-<gate name="G1" symbol="FUSE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="178.6165">
-<connects>
-<connect gate="G1" pin="1" pad="1 2 3 4"/>
-<connect gate="G1" pin="2" pad="5 6 7 8"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="inamp-microchip">
 <packages>
 <package name="SO-8">
@@ -17017,6 +16964,52 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="fuse-keystone">
+<packages>
+<package name="3588-20">
+<smd name="P$1" x="-4.953" y="3.0353" dx="1.5748" dy="2.8194" layer="1"/>
+<smd name="P$2" x="-4.953" y="-3.0353" dx="1.5748" dy="2.8194" layer="1"/>
+<smd name="P$3" x="4.953" y="3.0353" dx="1.5748" dy="2.8194" layer="1"/>
+<smd name="P$4" x="4.953" y="-3.0353" dx="1.5748" dy="2.8194" layer="1"/>
+<rectangle x1="-8.001" y1="-3.3655" x2="8.001" y2="3.3655" layer="39"/>
+<wire x1="-8.89" y1="3.81" x2="-8.89" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="-8.89" y1="-3.81" x2="8.89" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="8.89" y1="-3.81" x2="8.89" y2="3.81" width="0.127" layer="21"/>
+<wire x1="8.89" y1="3.81" x2="-8.89" y2="3.81" width="0.127" layer="21"/>
+<text x="-10.16" y="-3.81" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="FUSE">
+<wire x1="-3.81" y1="-0.762" x2="3.81" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="3.81" y1="0.762" x2="-3.81" y2="0.762" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-0.762" x2="3.81" y2="0.762" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="0.762" x2="-3.81" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<text x="-3.81" y="1.397" size="1.778" layer="95">&gt;NAME</text>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="HOLDER_3588-20" prefix="FS">
+<gates>
+<gate name="FS1" symbol="FUSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="3588-20">
+<connects>
+<connect gate="FS1" pin="1" pad="P$1 P$2"/>
+<connect gate="FS1" pin="2" pad="P$3 P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -17195,12 +17188,6 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="GND47" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R31" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="68k"/>
 <part name="R32" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="68k"/>
-<part name="FS1" library="fuse-holder-littlefuse" deviceset="178.6165" device=""/>
-<part name="FS2" library="fuse-holder-littlefuse" deviceset="178.6165" device=""/>
-<part name="FS3" library="fuse-holder-littlefuse" deviceset="178.6165" device=""/>
-<part name="FS4" library="fuse-holder-littlefuse" deviceset="178.6165" device=""/>
-<part name="FS5" library="fuse-holder-littlefuse" deviceset="178.6165" device=""/>
-<part name="FS6" library="fuse-holder-littlefuse" deviceset="178.6165" device=""/>
 <part name="R33" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="15k"/>
 <part name="R34" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="10k"/>
 <part name="GND48" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -17322,26 +17309,14 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="GND66" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+10V" device=""/>
 <part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+10V" device=""/>
-<part name="FS7" library="fuse-holder-littlefuse" deviceset="178.6165" device=""/>
-<part name="FS8" library="fuse-holder-littlefuse" deviceset="178.6165" device=""/>
-<part name="FS9" library="fuse-holder-littlefuse" deviceset="178.6165" device=""/>
-<part name="FS10" library="fuse-holder-littlefuse" deviceset="178.6165" device=""/>
 <part name="P+9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+24" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+29" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+30" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="FS11" library="fuse-holder-littlefuse" deviceset="178.6165" device=""/>
-<part name="FS12" library="fuse-holder-littlefuse" deviceset="178.6165" device=""/>
-<part name="FS13" library="fuse-holder-littlefuse" deviceset="178.6165" device=""/>
-<part name="FS14" library="fuse-holder-littlefuse" deviceset="178.6165" device=""/>
 <part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+10V" device=""/>
 <part name="SUPPLY5" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+10V" device=""/>
 <part name="SUPPLY6" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+10V" device=""/>
 <part name="SUPPLY7" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+10V" device=""/>
-<part name="FS15" library="fuse-holder-littlefuse" deviceset="178.6165" device=""/>
-<part name="FS16" library="fuse-holder-littlefuse" deviceset="178.6165" device=""/>
-<part name="FS17" library="fuse-holder-littlefuse" deviceset="178.6165" device=""/>
-<part name="FS18" library="fuse-holder-littlefuse" deviceset="178.6165" device=""/>
 <part name="P+31" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+32" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+33" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
@@ -17367,6 +17342,24 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND34" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="FS1" library="fuse-keystone" deviceset="HOLDER_3588-20" device=""/>
+<part name="FS2" library="fuse-keystone" deviceset="HOLDER_3588-20" device=""/>
+<part name="FS3" library="fuse-keystone" deviceset="HOLDER_3588-20" device=""/>
+<part name="FS4" library="fuse-keystone" deviceset="HOLDER_3588-20" device=""/>
+<part name="FS5" library="fuse-keystone" deviceset="HOLDER_3588-20" device=""/>
+<part name="FS6" library="fuse-keystone" deviceset="HOLDER_3588-20" device=""/>
+<part name="FS7" library="fuse-keystone" deviceset="HOLDER_3588-20" device=""/>
+<part name="FS8" library="fuse-keystone" deviceset="HOLDER_3588-20" device=""/>
+<part name="FS9" library="fuse-keystone" deviceset="HOLDER_3588-20" device=""/>
+<part name="FS10" library="fuse-keystone" deviceset="HOLDER_3588-20" device=""/>
+<part name="FS11" library="fuse-keystone" deviceset="HOLDER_3588-20" device=""/>
+<part name="FS12" library="fuse-keystone" deviceset="HOLDER_3588-20" device=""/>
+<part name="FS13" library="fuse-keystone" deviceset="HOLDER_3588-20" device=""/>
+<part name="FS14" library="fuse-keystone" deviceset="HOLDER_3588-20" device=""/>
+<part name="FS15" library="fuse-keystone" deviceset="HOLDER_3588-20" device=""/>
+<part name="FS16" library="fuse-keystone" deviceset="HOLDER_3588-20" device=""/>
+<part name="FS17" library="fuse-keystone" deviceset="HOLDER_3588-20" device=""/>
+<part name="FS18" library="fuse-keystone" deviceset="HOLDER_3588-20" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -17948,9 +17941,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <attribute name="NAME" x="110.236" y="76.708" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="120.015" y="84.328" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="P+7" gate="1" x="114.3" y="109.22" smashed="yes">
-<attribute name="VALUE" x="111.76" y="104.14" size="1.778" layer="96" rot="R90"/>
-</instance>
+<instance part="P+7" gate="1" x="114.3" y="109.22" smashed="yes"/>
 <instance part="D9" gate="D1" x="127" y="81.28" smashed="yes" rot="R90">
 <attribute name="NAME" x="124.46" y="78.74" size="1.27" layer="95" rot="R90"/>
 </instance>
@@ -17993,35 +17984,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <attribute name="NAME" x="181.356" y="76.708" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="191.135" y="84.328" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="P+8" gate="1" x="185.42" y="109.22" smashed="yes">
-<attribute name="VALUE" x="182.88" y="104.14" size="1.778" layer="96" rot="R90"/>
-</instance>
+<instance part="P+8" gate="1" x="185.42" y="109.22" smashed="yes"/>
 <instance part="D10" gate="D1" x="198.12" y="81.28" smashed="yes" rot="R90">
 <attribute name="NAME" x="195.58" y="78.74" size="1.27" layer="95" rot="R90"/>
-</instance>
-<instance part="FS1" gate="G1" x="43.18" y="175.26" smashed="yes" rot="R90">
-<attribute name="NAME" x="41.783" y="171.45" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="46.101" y="171.45" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="FS2" gate="G1" x="114.3" y="172.72" smashed="yes" rot="R90">
-<attribute name="NAME" x="112.903" y="168.91" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="117.221" y="168.91" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="FS3" gate="G1" x="185.42" y="172.72" smashed="yes" rot="R90">
-<attribute name="NAME" x="184.023" y="168.91" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="188.341" y="168.91" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="FS4" gate="G1" x="43.18" y="104.14" smashed="yes" rot="R90">
-<attribute name="NAME" x="41.783" y="100.33" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="46.101" y="100.33" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="FS5" gate="G1" x="114.3" y="101.6" smashed="yes" rot="R90">
-<attribute name="NAME" x="112.903" y="97.79" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="117.221" y="97.79" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="FS6" gate="G1" x="185.42" y="101.6" smashed="yes" rot="R90">
-<attribute name="NAME" x="184.023" y="97.79" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="188.341" y="97.79" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R3" gate="G$1" x="27.94" y="134.62" smashed="yes" rot="R90">
 <attribute name="NAME" x="26.4414" y="130.81" size="1.778" layer="95" rot="R90"/>
@@ -18068,6 +18033,24 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <instance part="JP7" gate="A" x="33.02" y="22.86" smashed="yes">
 <attribute name="NAME" x="26.67" y="36.195" size="1.778" layer="95"/>
 <attribute name="VALUE" x="26.67" y="10.16" size="1.778" layer="96"/>
+</instance>
+<instance part="FS1" gate="FS1" x="43.18" y="175.26" smashed="yes" rot="R90">
+<attribute name="NAME" x="41.783" y="171.45" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="FS2" gate="FS1" x="114.3" y="172.72" smashed="yes" rot="R90">
+<attribute name="NAME" x="112.903" y="168.91" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="FS3" gate="FS1" x="185.42" y="172.72" smashed="yes" rot="R90">
+<attribute name="NAME" x="184.023" y="168.91" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="FS4" gate="FS1" x="43.18" y="104.14" smashed="yes" rot="R90">
+<attribute name="NAME" x="41.783" y="100.33" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="FS5" gate="FS1" x="114.3" y="101.6" smashed="yes" rot="R90">
+<attribute name="NAME" x="112.903" y="97.79" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="FS6" gate="FS1" x="185.42" y="101.6" smashed="yes" rot="R90">
+<attribute name="NAME" x="184.023" y="97.79" size="1.778" layer="95" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -18205,7 +18188,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <wire x1="55.88" y1="167.64" x2="66.04" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="158.75" x2="55.88" y2="167.64" width="0.1524" layer="91"/>
 <junction x="55.88" y="167.64"/>
-<pinref part="FS1" gate="G1" pin="1"/>
+<pinref part="FS1" gate="FS1" pin="1"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -18266,7 +18249,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <wire x1="127" y1="165.1" x2="137.16" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="127" y1="156.21" x2="127" y2="165.1" width="0.1524" layer="91"/>
 <junction x="127" y="165.1"/>
-<pinref part="FS2" gate="G1" pin="1"/>
+<pinref part="FS2" gate="FS1" pin="1"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -18313,7 +18296,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <wire x1="198.12" y1="165.1" x2="208.28" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="156.21" x2="198.12" y2="165.1" width="0.1524" layer="91"/>
 <junction x="198.12" y="165.1"/>
-<pinref part="FS3" gate="G1" pin="1"/>
+<pinref part="FS3" gate="FS1" pin="1"/>
 </segment>
 </net>
 <net name="DRV_NEG_3" class="2">
@@ -18398,7 +18381,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <wire x1="55.88" y1="96.52" x2="66.04" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="87.63" x2="55.88" y2="96.52" width="0.1524" layer="91"/>
 <junction x="55.88" y="96.52"/>
-<pinref part="FS4" gate="G1" pin="1"/>
+<pinref part="FS4" gate="FS1" pin="1"/>
 </segment>
 </net>
 <net name="DRV_NEG_4" class="2">
@@ -18447,7 +18430,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <wire x1="127" y1="93.98" x2="137.16" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="127" y1="85.09" x2="127" y2="93.98" width="0.1524" layer="91"/>
 <junction x="127" y="93.98"/>
-<pinref part="FS5" gate="G1" pin="1"/>
+<pinref part="FS5" gate="FS1" pin="1"/>
 </segment>
 </net>
 <net name="DRV_NEG_5" class="2">
@@ -18510,33 +18493,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <wire x1="198.12" y1="93.98" x2="208.28" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="85.09" x2="198.12" y2="93.98" width="0.1524" layer="91"/>
 <junction x="198.12" y="93.98"/>
-<pinref part="FS6" gate="G1" pin="1"/>
-</segment>
-</net>
-<net name="+12V" class="1">
-<segment>
-<pinref part="P+3" gate="1" pin="+12V"/>
-<pinref part="FS1" gate="G1" pin="2"/>
-</segment>
-<segment>
-<pinref part="P+4" gate="1" pin="+12V"/>
-<pinref part="FS2" gate="G1" pin="2"/>
-</segment>
-<segment>
-<pinref part="P+5" gate="1" pin="+12V"/>
-<pinref part="FS3" gate="G1" pin="2"/>
-</segment>
-<segment>
-<pinref part="P+6" gate="1" pin="+12V"/>
-<pinref part="FS4" gate="G1" pin="2"/>
-</segment>
-<segment>
-<pinref part="P+7" gate="1" pin="+12V"/>
-<pinref part="FS5" gate="G1" pin="2"/>
-</segment>
-<segment>
-<pinref part="P+8" gate="1" pin="+12V"/>
-<pinref part="FS6" gate="G1" pin="2"/>
+<pinref part="FS6" gate="FS1" pin="1"/>
 </segment>
 </net>
 <net name="+5V" class="3">
@@ -18575,6 +18532,32 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <segment>
 <pinref part="JP7" gate="A" pin="8"/>
 <wire x1="30.48" y1="15.24" x2="10.16" y2="15.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="+12V" class="1">
+<segment>
+<pinref part="P+3" gate="1" pin="+12V"/>
+<pinref part="FS1" gate="FS1" pin="2"/>
+</segment>
+<segment>
+<pinref part="P+4" gate="1" pin="+12V"/>
+<pinref part="FS2" gate="FS1" pin="2"/>
+</segment>
+<segment>
+<pinref part="P+5" gate="1" pin="+12V"/>
+<pinref part="FS3" gate="FS1" pin="2"/>
+</segment>
+<segment>
+<pinref part="P+6" gate="1" pin="+12V"/>
+<pinref part="FS4" gate="FS1" pin="2"/>
+</segment>
+<segment>
+<pinref part="P+7" gate="1" pin="+12V"/>
+<pinref part="FS5" gate="FS1" pin="2"/>
+</segment>
+<segment>
+<pinref part="P+8" gate="1" pin="+12V"/>
+<pinref part="FS6" gate="FS1" pin="2"/>
 </segment>
 </net>
 </nets>
@@ -18760,31 +18743,13 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <attribute name="NAME" x="204.47" y="117.475" size="1.778" layer="95"/>
 <attribute name="VALUE" x="204.47" y="101.6" size="1.778" layer="96"/>
 </instance>
-<instance part="FS7" gate="G1" x="30.48" y="170.18" smashed="yes" rot="R90">
-<attribute name="NAME" x="29.083" y="166.37" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="33.401" y="166.37" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="FS8" gate="G1" x="121.92" y="170.18" smashed="yes" rot="R90">
-<attribute name="NAME" x="120.523" y="166.37" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="124.841" y="166.37" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="FS9" gate="G1" x="30.48" y="91.44" smashed="yes" rot="R90">
-<attribute name="NAME" x="29.083" y="87.63" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="33.401" y="87.63" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="FS10" gate="G1" x="121.92" y="91.44" smashed="yes" rot="R90">
-<attribute name="NAME" x="120.523" y="87.63" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="124.841" y="87.63" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="P+9" gate="1" x="30.48" y="177.8" smashed="yes">
 <attribute name="VALUE" x="27.94" y="172.72" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="P+24" gate="1" x="121.92" y="177.8" smashed="yes">
 <attribute name="VALUE" x="119.38" y="172.72" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="P+29" gate="1" x="30.48" y="99.06" smashed="yes">
-<attribute name="VALUE" x="27.94" y="93.98" size="1.778" layer="96" rot="R90"/>
-</instance>
+<instance part="P+29" gate="1" x="30.48" y="99.06" smashed="yes"/>
 <instance part="P+30" gate="1" x="121.92" y="99.06" smashed="yes">
 <attribute name="VALUE" x="119.38" y="93.98" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -18827,6 +18792,18 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </instance>
 <instance part="GND34" gate="1" x="142.24" y="33.02" smashed="yes">
 <attribute name="VALUE" x="139.7" y="30.48" size="1.778" layer="96"/>
+</instance>
+<instance part="FS7" gate="FS1" x="30.48" y="170.18" smashed="yes" rot="R90">
+<attribute name="NAME" x="29.083" y="166.37" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="FS8" gate="FS1" x="121.92" y="170.18" smashed="yes" rot="R90">
+<attribute name="NAME" x="120.523" y="166.37" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="FS9" gate="FS1" x="30.48" y="91.44" smashed="yes" rot="R90">
+<attribute name="NAME" x="29.083" y="87.63" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="FS10" gate="FS1" x="121.92" y="91.44" smashed="yes" rot="R90">
+<attribute name="NAME" x="120.523" y="87.63" size="1.778" layer="95" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -19164,22 +19141,6 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <wire x1="144.78" y1="96.52" x2="142.24" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="FS7" gate="G1" pin="2"/>
-<pinref part="P+9" gate="1" pin="+5V"/>
-</segment>
-<segment>
-<pinref part="FS8" gate="G1" pin="2"/>
-<pinref part="P+24" gate="1" pin="+5V"/>
-</segment>
-<segment>
-<pinref part="FS9" gate="G1" pin="2"/>
-<pinref part="P+29" gate="1" pin="+5V"/>
-</segment>
-<segment>
-<pinref part="FS10" gate="G1" pin="2"/>
-<pinref part="P+30" gate="1" pin="+5V"/>
-</segment>
-<segment>
 <pinref part="R78" gate="G$1" pin="E"/>
 <pinref part="P+20" gate="1" pin="+5V"/>
 </segment>
@@ -19194,6 +19155,22 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <segment>
 <pinref part="R48" gate="G$1" pin="E"/>
 <pinref part="P+23" gate="1" pin="+5V"/>
+</segment>
+<segment>
+<pinref part="P+9" gate="1" pin="+5V"/>
+<pinref part="FS7" gate="FS1" pin="2"/>
+</segment>
+<segment>
+<pinref part="P+24" gate="1" pin="+5V"/>
+<pinref part="FS8" gate="FS1" pin="2"/>
+</segment>
+<segment>
+<pinref part="P+29" gate="1" pin="+5V"/>
+<pinref part="FS9" gate="FS1" pin="2"/>
+</segment>
+<segment>
+<pinref part="P+30" gate="1" pin="+5V"/>
+<pinref part="FS10" gate="FS1" pin="2"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -19243,33 +19220,33 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <net name="N$61" class="0">
 <segment>
 <pinref part="CON_LC1" gate="_1" pin="SK"/>
-<pinref part="FS7" gate="G1" pin="1"/>
 <wire x1="27.94" y1="162.56" x2="30.48" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="162.56" x2="30.48" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="FS7" gate="FS1" pin="1"/>
 </segment>
 </net>
 <net name="N$62" class="0">
 <segment>
 <pinref part="CON_LC2" gate="_1" pin="SK"/>
-<pinref part="FS8" gate="G1" pin="1"/>
 <wire x1="119.38" y1="162.56" x2="121.92" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="162.56" x2="121.92" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="FS8" gate="FS1" pin="1"/>
 </segment>
 </net>
 <net name="N$63" class="0">
 <segment>
 <pinref part="CON_LC3" gate="_1" pin="SK"/>
-<pinref part="FS9" gate="G1" pin="1"/>
 <wire x1="27.94" y1="83.82" x2="30.48" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="83.82" x2="30.48" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="FS9" gate="FS1" pin="1"/>
 </segment>
 </net>
 <net name="N$64" class="0">
 <segment>
 <pinref part="CON_LC4" gate="_1" pin="SK"/>
-<pinref part="FS10" gate="G1" pin="1"/>
 <wire x1="119.38" y1="83.82" x2="121.92" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="83.82" x2="121.92" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="FS10" gate="FS1" pin="1"/>
 </segment>
 </net>
 </nets>
@@ -19924,22 +19901,6 @@ G = 10.21</text>
 <instance part="SUPPLY3" gate="G$1" x="20.32" y="58.42" smashed="yes">
 <attribute name="VALUE" x="17.78" y="61.595" size="1.778" layer="96"/>
 </instance>
-<instance part="FS11" gate="G1" x="33.02" y="167.64" smashed="yes" rot="R90">
-<attribute name="NAME" x="31.623" y="163.83" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="35.941" y="163.83" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="FS12" gate="G1" x="165.1" y="167.64" smashed="yes" rot="R90">
-<attribute name="NAME" x="163.703" y="163.83" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="168.021" y="163.83" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="FS13" gate="G1" x="33.02" y="111.76" smashed="yes" rot="R90">
-<attribute name="NAME" x="31.623" y="107.95" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="35.941" y="107.95" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="FS14" gate="G1" x="162.56" y="111.76" smashed="yes" rot="R90">
-<attribute name="NAME" x="161.163" y="107.95" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="165.481" y="107.95" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="SUPPLY4" gate="G$1" x="162.56" y="119.38" smashed="yes">
 <attribute name="VALUE" x="160.02" y="122.555" size="1.778" layer="96"/>
 </instance>
@@ -19951,6 +19912,18 @@ G = 10.21</text>
 </instance>
 <instance part="SUPPLY7" gate="G$1" x="33.02" y="119.38" smashed="yes">
 <attribute name="VALUE" x="30.48" y="122.555" size="1.778" layer="96"/>
+</instance>
+<instance part="FS11" gate="FS1" x="33.02" y="167.64" smashed="yes" rot="R90">
+<attribute name="NAME" x="31.623" y="163.83" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="FS12" gate="FS1" x="165.1" y="167.64" smashed="yes" rot="R90">
+<attribute name="NAME" x="163.703" y="163.83" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="FS13" gate="FS1" x="33.02" y="111.76" smashed="yes" rot="R90">
+<attribute name="NAME" x="31.623" y="107.95" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="FS14" gate="FS1" x="162.56" y="111.76" smashed="yes" rot="R90">
+<attribute name="NAME" x="161.163" y="107.95" size="1.778" layer="95" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -20256,52 +20229,52 @@ G = 10.21</text>
 <junction x="20.32" y="55.88"/>
 </segment>
 <segment>
-<pinref part="FS14" gate="G1" pin="2"/>
-<pinref part="SUPPLY4" gate="G$1" pin="+10V"/>
-</segment>
-<segment>
-<pinref part="FS12" gate="G1" pin="2"/>
-<pinref part="SUPPLY5" gate="G$1" pin="+10V"/>
-</segment>
-<segment>
-<pinref part="FS11" gate="G1" pin="2"/>
 <pinref part="SUPPLY6" gate="G$1" pin="+10V"/>
+<pinref part="FS11" gate="FS1" pin="2"/>
 </segment>
 <segment>
-<pinref part="FS13" gate="G1" pin="2"/>
+<pinref part="SUPPLY5" gate="G$1" pin="+10V"/>
+<pinref part="FS12" gate="FS1" pin="2"/>
+</segment>
+<segment>
 <pinref part="SUPPLY7" gate="G$1" pin="+10V"/>
+<pinref part="FS13" gate="FS1" pin="2"/>
+</segment>
+<segment>
+<pinref part="SUPPLY4" gate="G$1" pin="+10V"/>
+<pinref part="FS14" gate="FS1" pin="2"/>
 </segment>
 </net>
 <net name="N$65" class="0">
 <segment>
 <pinref part="CON_PT1" gate="_1" pin="SK"/>
-<pinref part="FS11" gate="G1" pin="1"/>
 <wire x1="30.48" y1="160.02" x2="33.02" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="160.02" x2="33.02" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="FS11" gate="FS1" pin="1"/>
 </segment>
 </net>
 <net name="N$66" class="0">
 <segment>
 <pinref part="CON_PT2" gate="_1" pin="SK"/>
-<pinref part="FS12" gate="G1" pin="1"/>
 <wire x1="162.56" y1="160.02" x2="165.1" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="160.02" x2="165.1" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="FS12" gate="FS1" pin="1"/>
 </segment>
 </net>
 <net name="N$69" class="0">
 <segment>
-<pinref part="FS13" gate="G1" pin="1"/>
 <pinref part="CON_PT3" gate="_1" pin="SK"/>
 <wire x1="33.02" y1="106.68" x2="33.02" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="104.14" x2="30.48" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="FS13" gate="FS1" pin="1"/>
 </segment>
 </net>
 <net name="N$70" class="0">
 <segment>
 <pinref part="CON_PT4" gate="_1" pin="SK"/>
-<pinref part="FS14" gate="G1" pin="1"/>
 <wire x1="160.02" y1="104.14" x2="162.56" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="104.14" x2="162.56" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="FS14" gate="FS1" pin="1"/>
 </segment>
 </net>
 </nets>
@@ -20329,22 +20302,6 @@ G = 10.21</text>
 </instance>
 <instance part="GND76" gate="1" x="43.18" y="27.94" smashed="yes">
 <attribute name="VALUE" x="40.64" y="25.4" size="1.778" layer="96"/>
-</instance>
-<instance part="FS15" gate="G1" x="40.64" y="175.26" smashed="yes" rot="R90">
-<attribute name="NAME" x="39.243" y="171.45" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="43.561" y="171.45" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="FS16" gate="G1" x="40.64" y="132.08" smashed="yes" rot="R90">
-<attribute name="NAME" x="39.243" y="128.27" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="43.561" y="128.27" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="FS17" gate="G1" x="40.64" y="91.44" smashed="yes" rot="R90">
-<attribute name="NAME" x="39.243" y="87.63" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="43.561" y="87.63" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="FS18" gate="G1" x="40.64" y="50.8" smashed="yes" rot="R90">
-<attribute name="NAME" x="39.243" y="46.99" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="43.561" y="46.99" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="P+31" gate="1" x="40.64" y="58.42" smashed="yes">
 <attribute name="VALUE" x="38.1" y="53.34" size="1.778" layer="96" rot="R90"/>
@@ -20393,6 +20350,18 @@ G = 10.21</text>
 </instance>
 <instance part="CON_TC4" gate="_3" x="30.48" y="33.02" smashed="yes">
 <attribute name="NAME" x="28.956" y="33.909" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="FS15" gate="FS1" x="40.64" y="175.26" smashed="yes" rot="R90">
+<attribute name="NAME" x="39.243" y="171.45" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="FS16" gate="FS1" x="40.64" y="132.08" smashed="yes" rot="R90">
+<attribute name="NAME" x="39.243" y="128.27" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="FS17" gate="FS1" x="40.64" y="91.44" smashed="yes" rot="R90">
+<attribute name="NAME" x="39.243" y="87.63" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="FS18" gate="FS1" x="40.64" y="50.8" smashed="yes" rot="R90">
+<attribute name="NAME" x="39.243" y="46.99" size="1.778" layer="95" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -20452,54 +20421,54 @@ G = 10.21</text>
 <pinref part="CON_TC4" gate="_2" pin="SK"/>
 </segment>
 </net>
-<net name="+5V" class="3">
-<segment>
-<pinref part="FS18" gate="G1" pin="2"/>
-<pinref part="P+31" gate="1" pin="+5V"/>
-</segment>
-<segment>
-<pinref part="FS17" gate="G1" pin="2"/>
-<pinref part="P+32" gate="1" pin="+5V"/>
-</segment>
-<segment>
-<pinref part="FS16" gate="G1" pin="2"/>
-<pinref part="P+33" gate="1" pin="+5V"/>
-</segment>
-<segment>
-<pinref part="FS15" gate="G1" pin="2"/>
-<pinref part="P+34" gate="1" pin="+5V"/>
-</segment>
-</net>
 <net name="N$71" class="0">
 <segment>
-<pinref part="FS15" gate="G1" pin="1"/>
 <wire x1="38.1" y1="167.64" x2="40.64" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="167.64" x2="40.64" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="CON_TC1" gate="_1" pin="SK"/>
+<pinref part="FS15" gate="FS1" pin="1"/>
 </segment>
 </net>
 <net name="N$72" class="0">
 <segment>
-<pinref part="FS16" gate="G1" pin="1"/>
 <wire x1="38.1" y1="124.46" x2="40.64" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="124.46" x2="40.64" y2="127" width="0.1524" layer="91"/>
 <pinref part="CON_TC2" gate="_1" pin="SK"/>
+<pinref part="FS16" gate="FS1" pin="1"/>
 </segment>
 </net>
 <net name="N$73" class="0">
 <segment>
-<pinref part="FS17" gate="G1" pin="1"/>
 <wire x1="38.1" y1="83.82" x2="40.64" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="83.82" x2="40.64" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="CON_TC3" gate="_1" pin="SK"/>
+<pinref part="FS17" gate="FS1" pin="1"/>
 </segment>
 </net>
 <net name="N$74" class="0">
 <segment>
-<pinref part="FS18" gate="G1" pin="1"/>
 <wire x1="38.1" y1="43.18" x2="40.64" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="43.18" x2="40.64" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="CON_TC4" gate="_1" pin="SK"/>
+<pinref part="FS18" gate="FS1" pin="1"/>
+</segment>
+</net>
+<net name="+5V" class="3">
+<segment>
+<pinref part="P+34" gate="1" pin="+5V"/>
+<pinref part="FS15" gate="FS1" pin="2"/>
+</segment>
+<segment>
+<pinref part="P+33" gate="1" pin="+5V"/>
+<pinref part="FS16" gate="FS1" pin="2"/>
+</segment>
+<segment>
+<pinref part="P+32" gate="1" pin="+5V"/>
+<pinref part="FS17" gate="FS1" pin="2"/>
+</segment>
+<segment>
+<pinref part="P+31" gate="1" pin="+5V"/>
+<pinref part="FS18" gate="FS1" pin="2"/>
 </segment>
 </net>
 </nets>

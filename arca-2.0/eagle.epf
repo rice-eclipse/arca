@@ -63,6 +63,7 @@ UsedLibrary="fuse-holder-littlefuse.lbr"
 UsedLibrary="transistor-FQP.lbr"
 UsedLibrary="inamp-microchip.lbr"
 UsedLibrary="microchip-extra.lbr"
+UsedLibrary="pot-extra.lbr"
 
 [Win_1]
 Type="Control Panel"
