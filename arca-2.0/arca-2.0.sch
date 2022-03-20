@@ -17170,7 +17170,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <attribute name="SPICEPREFIX" value="J"/>
 </part>
 <part name="FRAME4" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="LETTER_L" device=""/>
-<part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="0.1u"/>
+<part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="100n"/>
 <part name="GND43" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R25" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="15k"/>
 <part name="R26" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="10k"/>
@@ -17231,7 +17231,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="GND42" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="1n"/>
 <part name="GND52" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="0.1u"/>
+<part name="C20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="100n"/>
 <part name="CON_PT2" library="con-phoenix-5mm" deviceset="LPTA-2POS" device=""/>
 <part name="R57" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="22"/>
 <part name="GND53" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -17360,6 +17360,13 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="FS16" library="fuse-keystone" deviceset="HOLDER_3588-20" device=""/>
 <part name="FS17" library="fuse-keystone" deviceset="HOLDER_3588-20" device=""/>
 <part name="FS18" library="fuse-keystone" deviceset="HOLDER_3588-20" device=""/>
+<part name="JP8" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2"/>
+<part name="SUPPLY8" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+10V" device=""/>
+<part name="P+36" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="GND77" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="CON_12V" library="con-phoenix-5mm" deviceset="LPTA-2POS" device=""/>
+<part name="P+37" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
+<part name="GND78" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -17507,6 +17514,31 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <instance part="GND72" gate="1" x="129.54" y="132.08" smashed="yes">
 <attribute name="VALUE" x="127" y="129.54" size="1.778" layer="96"/>
 </instance>
+<instance part="JP8" gate="A" x="200.66" y="160.02" smashed="yes">
+<attribute name="NAME" x="194.31" y="168.275" size="1.778" layer="95"/>
+<attribute name="VALUE" x="194.31" y="152.4" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY8" gate="G$1" x="182.88" y="170.18" smashed="yes">
+<attribute name="VALUE" x="180.34" y="173.355" size="1.778" layer="96"/>
+</instance>
+<instance part="P+36" gate="1" x="177.8" y="170.18" smashed="yes">
+<attribute name="VALUE" x="175.26" y="165.1" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND77" gate="1" x="190.5" y="152.4" smashed="yes">
+<attribute name="VALUE" x="187.96" y="149.86" size="1.778" layer="96"/>
+</instance>
+<instance part="CON_12V" gate="_1" x="203.2" y="132.08" smashed="yes" rot="R180">
+<attribute name="NAME" x="204.724" y="131.191" size="1.778" layer="95"/>
+</instance>
+<instance part="CON_12V" gate="_2" x="203.2" y="127" smashed="yes" rot="R180">
+<attribute name="NAME" x="204.724" y="126.111" size="1.778" layer="95"/>
+</instance>
+<instance part="P+37" gate="1" x="193.04" y="137.16" smashed="yes">
+<attribute name="VALUE" x="190.5" y="132.08" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND78" gate="1" x="193.04" y="121.92" smashed="yes">
+<attribute name="VALUE" x="190.5" y="119.38" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -17528,6 +17560,12 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <pinref part="PWR_5V" gate="G$1" pin="A"/>
 <wire x1="142.24" y1="50.8" x2="142.24" y2="53.34" width="0.1524" layer="91"/>
 <junction x="142.24" y="53.34"/>
+</segment>
+<segment>
+<pinref part="P+36" gate="1" pin="+5V"/>
+<pinref part="JP8" gate="A" pin="3"/>
+<wire x1="177.8" y1="167.64" x2="177.8" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="160.02" x2="198.12" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -17587,6 +17625,18 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <wire x1="129.54" y1="137.16" x2="129.54" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="GND72" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="JP8" gate="A" pin="4"/>
+<pinref part="GND77" gate="1" pin="GND"/>
+<wire x1="198.12" y1="157.48" x2="190.5" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="157.48" x2="190.5" y2="154.94" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="CON_12V" gate="_2" pin="SK"/>
+<pinref part="GND78" gate="1" pin="GND"/>
+<wire x1="195.58" y1="127" x2="193.04" y2="127" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="127" x2="193.04" y2="124.46" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+12V" class="1">
 <segment>
@@ -17628,6 +17678,12 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <wire x1="93.98" y1="142.24" x2="132.08" y2="142.24" width="0.1524" layer="91"/>
 <junction x="93.98" y="142.24"/>
 <pinref part="CON_ROUTER" gate="_1" pin="SK"/>
+</segment>
+<segment>
+<pinref part="CON_12V" gate="_1" pin="SK"/>
+<wire x1="195.58" y1="132.08" x2="193.04" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="132.08" x2="193.04" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="P+37" gate="1" pin="+12V"/>
 </segment>
 </net>
 <net name="10V_FB" class="0">
@@ -17698,6 +17754,12 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <wire x1="144.78" y1="109.22" x2="165.1" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="G$1" pin="+10V"/>
 <wire x1="165.1" y1="114.3" x2="165.1" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="JP8" gate="A" pin="2"/>
+<pinref part="SUPPLY8" gate="G$1" pin="+10V"/>
+<wire x1="198.12" y1="162.56" x2="182.88" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="162.56" x2="182.88" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$48" class="0">
